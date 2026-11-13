@@ -1,0 +1,98 @@
+- id: SW1
+  stage: writing
+  signal_type: Corpus-scale adoption
+  headline: Distinct estimators put AI-assisted writing at ≥13.5% of 2024 PubMed abstracts and 89% of December 2025 PMC full texts
+  detail: Excess-vocabulary tracking across 15M+ PubMed abstracts placed 2024 LLM-assisted prevalence at ≥13.5%, while a newer estimator applied to structured English-language PubMed Central full texts estimates 89% in December 2025 (and 68% in Discussion versus 32% in Methods on random 255-word crops). Because the corpora, text units, and statistical estimators differ, the two figures measure distinct slices of biomedical writing.
+  evidence_ids:
+  - kobak-2025-excess-vocab
+  - holzwarth-2026-biomed-fulltext-llm
+
+- id: SW2
+  stage: writing
+  signal_type: Signal inversion & econometric debate
+  headline: Prose complexity flips its observational association with review outcomes; separately, LLM rewrites compress stylistic variance
+  detail: Across 2.1M preprints and 28K peer reviews, linguistic complexity showed opposite observational associations with later peer-reviewed publication and review scores in manuscripts classified as LLM-assisted versus undetected papers, while Renault et al. showed that first-detection adoption dating can mechanically inflate apparent productivity jumps. Separately, controlled rewrites of 1,000 arXiv abstracts and 1,000 Reddit stories narrowed writing-complexity variance across most tested models and prompts.
+  evidence_ids:
+  - kusumegi-2025-scientific-production-llm
+  - renault-2026-comment-kusumegi
+  - sourati-2026-shrinking-linguistic-diversity
+
+- id: SW3
+  stage: citations
+  signal_type: Bibliographic contamination
+  headline: Papers with at least one possibly fabricated reference climb from 6.3 to 23.0 per 10,000 (2023–Q1 2026)
+  detail: Screening 500,000 peer-reviewed papers in chemistry, physics, materials science, engineering and computer science found papers with at least one possibly fabricated reference rising from 6.3 per 10,000 in 2023 to 23.0 per 10,000 in the first quarter of 2026 (85.8% precision on masked checks; ‘fabricated’ means the reference could not be verified). The same team's audit of 2.5 million biomedical papers in PubMed Central found 4,046 fabricated references in 2,810 papers, at a rate that rose more than twelvefold to about 57 per 10,000 papers by early 2026, and an audit of 111 million references across arXiv, bioRxiv, SSRN and PubMed Central conservatively estimates 146,932 hallucinated citations in 2025 alone. At NeurIPS and USENIX Security 2025, about 1 in 20 accepted papers carried at least two suspect references before human checking, and most flags checked by hand proved recoverable or false. A Nature correspondence argues that confirmed hallucinated citations should count as misconduct.
+  evidence_ids:
+  - topaz-2026-fabricated-references-500k
+  - russinovich-2026-phantom-references
+  - pisek-veromann-2026-hallucinated-citations-misconduct
+  - topaz-2026-lancet-fabricated-citations-biomed
+  - zhao-2026-hallucinated-citations-wild
+
+- id: SW4
+  stage: submission_triage
+  signal_type: Policy-practice gap & submission caps
+  headline: Public AI disclosures appear in ~0.1% of sampled papers and private ones in 3–6% of medical-journal submissions, while arXiv and AJPS cap submissions
+  detail: 'Across 5,114 journals and 5.2 million papers, He and Bu found that about 70% of sampled Q1 journals had AI policies by January 2025, yet public writing-assistance statements appeared in only 76 of 75,172 sampled full texts published since 2023 (about 0.1%); a PNAS exchange debated how far private submission declarations change that picture. Private declarations at two medical publishers tell a similar story: 5.7% of 25,114 research manuscripts submitted to BMJ Group journals in 2024 and 3.3% of 105,538 manuscripts submitted to 13 JAMA Network journals (rising to about 6% by October 2025) disclosed AI use, far below the 28–76% of researchers who report using it in surveys. In autumn 2026, JACC reaffirmed its exemption for writing-only help, arXiv capped submitters at two papers per calendar month (a year after its computer-science section began requiring peer review for review and position papers), AJPS limited authors to three submissions in any rolling 12 months, and bioRxiv and medRxiv reserved the right to rate-limit authors.'
+  evidence_ids:
+  - he-bu-2026-journal-ai-policies-fail
+  - wang-2026-policy-snapshots-critique
+  - he-bu-2026-reply-policy-outcomes
+  - krumholz-2026-jacc-ai-medical-writing
+  - arxiv-updated-rate-limit-policy-2026
+  - ajps-2026-official-submission-cap
+  - alfayyad-2026-bmj-self-disclosed-ai
+  - perlis-2026-jama-network-ai-disclosure
+  - arxiv-cs-review-position-papers-2025
+  - openrxiv-approach-to-ai-2026
+
+- id: SW5
+  stage: submission_triage
+  signal_type: Industrialized fraud & synthetic figures
+  headline: Detected paper-mill output grows rapidly while PhD-level readers reach 50.5% accuracy telling authentic from selected AI-manipulated figures
+  detail: Forensic network analysis finds suspected paper-mill output growing far faster than publications overall, and a classifier trained on retracted mill papers flags 9.87% of 2.6 million cancer-research papers as similar to mill output, a share that rose from about 1% of annual output in the early 2000s to more than 15% by the early 2020s, including in the top 10% of journals. Commentators warn that agentic AI now mines open cohorts such as NHANES and UK Biobank at speed. In a controlled study, 24 PhD-level biomedical readers judging authentic and selected AI-manipulated Western blot and tumour images were right 50.5% of the time on average.
+  evidence_ids:
+  - richardson-2025-entities-scientific-fraud
+  - luo-2026-generative-ai-biomed-images
+  - barnett-spick-lse-agentic-ai-slop-2026
+  - scancar-2026-paper-mill-screening-cancer
+
+- id: SW6
+  stage: peer_review
+  signal_type: Shadow AI reviewing & detector limits
+  headline: Classifiers flag 12–21% of reviews as AI-written, and ICML catches 1% of reviews breaking a no-LLM pledge
+  detail: 'One preprint classifier flags about 20% of sampled ICLR 2025 reviews and 12% of sampled 2025 Nature Communications reviews as AI-generated, and a detector vendor reports 21% of ICLR 2026 reviews as fully AI-generated. At ICML 2026, hidden watermark phrases caught 795 reviews (about 1%) by reviewers who had agreed not to use LLMs, and in an anonymous survey 22.5% of reviewers under the no-LLM policy said they had used one anyway. An editorial sets a Frontiers survey, in which 53% of reviewers reported using AI, beside an informal count at one journal where more than 95% declared non-use. Controlled experiments show AI reviews agreeing excessively with one another and AI scores rising after an LLM rewrites a paper, and detectors misfire: Pangram and GPTZero label 3.1% and 3.4% of human-written, AI-polished reviews as fully AI-generated.'
+  evidence_ids:
+  - shen-wang-2026-detecting-ai-peer-reviews
+  - emi-pangram-iclr-21-percent-ai-reviews-2025
+  - baumann-2026-stop-automating-peer-review
+  - saha-2026-polishing-policies-unenforceable
+  - la-rosa-nasser-2026-elephant-editorial-room
+  - icml-2026-violations-llm-review-policies
+  - kim-2026-icml-llm-review-policy-rct
+
+- id: SW7
+  stage: peer_review
+  signal_type: Adversarial fragility vs. bounded technical screening
+  headline: AI reviewers catch planted errors and win editors' blinded preference tests, yet a hidden sentence can flip their verdicts
+  detail: 'In a clinical-trial preprint, 15 LLMs scored 53–96% on detecting major errors planted in three historical trial reports, against a 27% mean among journal peer reviewers in the original study, and 58–99% on recent trials (the top three models on three of 58), scored by LLM judges without new human comparators; models also flagged 14–29% of error categories in unmodified reports. At AAAI-26, all 22,977 papers that reached full review received an AI review, which surveyed authors and committee members preferred on six of nine criteria while finding it more prone to dwell on minor issues. In a social-science working paper, three former editors preferred AI reviews in 26 of 30 blinded judgments without reading the manuscripts. AI reviewers are also easy to steer: a hidden nudge flipped the accept-or-reject recommendations of four commercial models on medical manuscripts in 84% of cases, and warning them barely helped. A randomized ICLR trial tests a narrower role, feedback on human reviews.'
+  evidence_ids:
+  - lin-2026-hidden-prompts-peer-review
+  - brian-rust-2026-llm-clinical-trial-errors
+  - king-worthington-2026-ai-reviews-dominate-human
+  - thakkar-2025-iclr-review-feedback-rct
+  - biswas-2026-aaai26-ai-review-pilot
+  - tomazini-2026-hidden-nudge-medical-peer-review
+
+- id: SW8
+  stage: publishing_model
+  signal_type: Autonomous pipelines, workflow blind spots & executable packages
+  headline: AI Scientist enters Nature, ALIFE 2026 accepts a co-created paper, and PNAS shows why manuscript-only audits miss flaws
+  detail: Alongside Nature's report on The AI Scientist (covering a human-filtered, protocol-withdrawn workshop run) and the reported acceptance at ALIFE 2026 of an Error Diffusion paper that human researchers produced using a development version of The Agentic Scientist, a 2026 PNAS study showed that giving an LLM-based auditor agent logs and code lifted its accuracy from 53.7% to 81.5% on a constructed flaw benchmark — complementing PaperBench's partial-credit rubric scores (21.0% for Claude 3.5 Sonnet with BasicAgent; 24.4–26.0% for o1 with IterativeAgent; not the share of papers replicated), ClaimNov's controlled novelty benchmark, and Paper2Agent's 74/100 MCP conversions.
+  evidence_ids:
+  - lu-2026-nature-end-to-end-ai-scientist
+  - lange-2026-agentic-scientist-v3
+  - luo-kasirzadeh-shah-2026-hidden-pitfalls-ai-scientists
+  - liu-zhai-2026-do-ai-scientists-know-whats-new
+  - starace-2025-paperbench-replication
+  - miao-2026-paper2agent-nature

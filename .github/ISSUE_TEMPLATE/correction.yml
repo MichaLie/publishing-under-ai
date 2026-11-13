@@ -1,0 +1,16 @@
+name: Correction or disputed position
+description: A summary, quote or fault-line position that misreads a source.
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Which source (title or record ID)
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong, and what would be correct
+      description: If you are the author, say so; a quote from the source helps.
+    validations:
+      required: true

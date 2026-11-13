@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use Publishing Under AI, please cite it as below."
+title: "Publishing Under AI (2025–2026)"
+version: "1.1"
+date-released: 2026-11-13
+authors:
+  - family-names: "Liegertová"
+    given-names: "Michaela"
+    affiliation: "Jan Evangelista Purkyně University in Ústí nad Labem; Institute of Molecular Genetics of the Czech Academy of Sciences"
+type: dataset
+license:
+  - CC0-1.0
+  - MIT
+url: "https://michalie.github.io/publishing-under-ai/"
+repository-code: "https://github.com/MichaLie/publishing-under-ai"
+abstract: "A curated, checked map of 141 sources on how generative AI is changing scientific writing and peer review (2025–2026): eight measured shifts, seven questions where researchers and editors disagree, and eight fixes proposed or tried by journals, conferences, preprint servers and funders. Records are CC0; code is MIT; quoted excerpts remain their authors' and publishers'."
+keywords:
+  - generative AI
+  - peer review
+  - scientific publishing
+  - research integrity
+  - AI disclosure

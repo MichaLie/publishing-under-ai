@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+scratch/
+_snapshots/
+.licenses/
+
+# Working material, not part of the public site
+audit/
+companion.html
+companion_review.html
+REVIEW_*.md
+.claude/

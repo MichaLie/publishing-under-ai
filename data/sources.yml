@@ -1,0 +1,4489 @@
+- id: kobak-2025-excess-vocab
+  title: Delving into LLM-assisted writing in biomedical publications through excess vocabulary
+  authors: Dmitry Kobak, Rita González-Márquez, Emőke-Ágnes Horvát, Jan Lause
+  year: 2025
+  date: '2025-07-02'
+  venue: Science Advances
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.1126/sciadv.adt3813
+  arxiv_id: null
+  pmid: '40601754'
+  url: https://doi.org/10.1126/sciadv.adt3813
+  open_access: true
+  pipeline_stages:
+  - writing
+  - post_pub_audit
+  summary: Analyzes vocabulary changes in 15.1 million English-language PubMed abstracts from 2010–2024 and estimates
+    a 13.5% lower bound on LLM-assisted abstracts in 2024, conditional on attributing excess style-word use to
+    LLMs. The corpus-level method cannot identify individual AI-written papers or separate direct use from humans
+    adopting model-preferred vocabulary. Differences among subcorpora may also reflect editing practices and publication
+    delays.
+  verbatim_excerpt: We study vocabulary changes in more than 15 million biomedical abstracts from 2010 to 2024
+    indexed by PubMed and show how the appearance of LLMs led to an abrupt increase in the frequency of certain
+    style words. This excess word analysis suggests that at least 13.5% of 2024 abstracts were processed with
+    LLMs.
+  provenance: europepmc_api
+  stance_tags:
+  - empirical_signal
+  - corpus_estimation
+  positions:
+    F5: 0
+  related_models:
+  - M2
+- id: holzwarth-2026-biomed-fulltext-llm
+  title: Most biomedical publications show signs of LLM-assisted writing
+  authors: Lena Holzwarth, Rita González-Márquez, Dmitry Kobak
+  year: 2026
+  date: '2026-08-11'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: '2608.10715'
+  pmid: null
+  url: https://arxiv.org/abs/2608.10715
+  open_access: true
+  pipeline_stages:
+  - writing
+  - post_pub_audit
+  summary: Extending unbiased excess word-frequency estimation from abstracts to full-text open-access biomedical
+    articles in PubMed Central estimates that by December 2025, 89% of papers (77% across all of 2025) display
+    excess LLM-associated vocabulary. Paragraph-level prevalence is twice as high in Discussion sections (68%)
+    as in Methods sections (32%), and overall Methods-section prevalence exceeds 50%.
+  verbatim_excerpt: We apply our method to the full texts of open-access biomedical papers from Pubmed Central,
+    and show that by the end of 2025, 89% of papers show excess of LLM-associated vocabulary. We also find that
+    LLMs are twice as likely to be used when writing a paragraph in the Discussion section (68%) compared to a
+    paragraph in the Methods section (32%), but even inside the Methods section, the overall prevalence of LLM
+    usage is over 50%.
+  provenance: arxiv_api
+  stance_tags:
+  - empirical_signal
+  - ubiquitous_adoption
+  positions:
+    F5: 0
+  related_models:
+  - M4
+- id: liang-2025-quantifying-llm-papers
+  title: Quantifying large language model usage in scientific papers
+  authors: Weixin Liang, Yaohui Zhang, Zhengxuan Wu, Haley Lepp, Wenlong Ji, Xuandong Zhao, Hancheng Cao, Sheng
+    Liu, Siyu He, Zhi Huang, Diyi Yang, Christopher Potts, Christopher D. Manning, James Zou
+  year: 2025
+  date: '2025-08-04'
+  venue: Nature Human Behaviour
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/s41562-025-02273-8
+  arxiv_id: '2404.01268'
+  pmid: '40760036'
+  url: https://doi.org/10.1038/s41562-025-02273-8
+  open_access: false
+  pipeline_stages:
+  - writing
+  - post_pub_audit
+  summary: Word-frequency analysis of 1,121,912 preprints and papers on arXiv, bioRxiv and Nature portfolio journals (January
+    2020 to September 2024) tracks the share of LLM-modified text over time. It rises steadily, fastest in computer science
+    (up to 22%), against up to 9% in mathematics and the Nature portfolio, and is higher for first authors who post preprints
+    often, in crowded research areas and in shorter papers. The estimates describe the corpus as a whole.
+  verbatim_excerpt: Here we conduct a systematic analysis across 1,121,912 preprints and published papers from
+    January 2020 to September 2024 on arXiv, bioRxiv and Nature portfolio journals, using a population-level framework
+    based on word frequency shifts to estimate the prevalence of LLM-modified content over time. Our findings
+    suggest a steady increase in LLM usage, with the largest and fastest growth estimated for computer science
+    papers (up to 22%).
+  provenance: live_html
+  stance_tags:
+  - empirical_signal
+  - disciplinary_divergence
+  positions:
+    F4: 0
+    F5: 0
+  related_models:
+  - M2
+- id: kusumegi-2025-scientific-production-llm
+  title: Scientific production in the era of large language models
+  authors: Keigo Kusumegi, Xinyu Yang, Paul Ginsparg, Mathijs de Vaan, Toby Stuart, Yian Yin
+  year: 2025
+  date: '2025-12-18'
+  venue: Science
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1126/science.adw3000
+  arxiv_id: '2601.13187'
+  pmid: '41411417'
+  url: https://doi.org/10.1126/science.adw3000
+  open_access: false
+  pipeline_stages:
+  - writing
+  - citations
+  - peer_review
+  summary: Analyzes 2.1 million preprints, 28,000 review reports, and 246 million document views. Detected LLM
+    footprints correlate with higher output and shifted citation patterns under observational designs without
+    causal identification; linguistic complexity shows opposite associations with acceptance and review scores
+    across detected versus undetected manuscripts (using publication outcomes as indirect quality proxies), and
+    Renault et al. later critiqued the first-detection timing design.
+  verbatim_excerpt: 'We find: 1) scientists adopting LLMs to draft manuscripts demonstrate a large increase in
+    paper production, ranging from 23.7-89.3% depending on scientific field and author background, 2) LLM use
+    has reversed the relationship between writing complexity and paper quality, leading to an influx of manuscripts
+    that are linguistically complex but substantively underwhelming, and 3) LLM adopters access and cite more
+    diverse prior work, including books and younger, less-cited documents.'
+  provenance: arxiv_api
+  stance_tags:
+  - empirical_signal
+  - equity_gain
+  - quality_polish_decoupling
+  positions:
+    F4: 0
+    F5: 0
+    F1: 0
+  related_models:
+  - M3
+  - M4
+- id: renault-2026-comment-kusumegi
+  title: 'Scientific production in the era of large language models: Outcome-triggered treatment timing and spurious
+    event-study dynamics'
+  authors: Thomas Renault, Antonin Bergeaud, Clément Bosquet
+  year: 2026
+  date: '2026-08-11'
+  venue: PNAS
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1073/pnas.2618638123
+  arxiv_id: '2605.17979'
+  pmid: '42579485'
+  url: https://doi.org/10.1073/pnas.2618638123
+  open_access: true
+  pipeline_stages:
+  - writing
+  - post_pub_audit
+  summary: Reanalyzing Kusumegi et al. (2025) with reconstructed arXiv data, simulations and four placebo tests (random
+    treatment assignment, neutral-keyword triggers, inverted treatment, and pre-ChatGPT placebo periods) shows that
+    dating LLM adoption by the first paper detected as LLM-assisted ties treatment to high-output months and generates
+    spurious post-adoption productivity gains. First posted as an arXiv comment (May 2026); published in PNAS in August 2026.
+  verbatim_excerpt: Using reconstructed arXiv data, we show that random treatment assignments, neutral-keyword triggers,
+    inverted treatment, and pre-ChatGPT placebo periods all generate similar dynamics. Simulations with no treatment
+    effect also reproduce the same posttreatment patterns reported in K. Kusumegi et al., Science 390, 1240–1243 (2025).
+  provenance: crossref_abstract
+  stance_tags:
+  - methodological_critique
+  - empirical_signal
+  positions: {}
+  related_models: []
+- id: sourati-2026-shrinking-linguistic-diversity
+  title: The shrinking landscape of linguistic diversity in the age of large language models
+  authors: Zhivar Sourati, Farzan Karimi-Malekabadi, Meltem Ozcan, Colin McDaniel, Alireza Ziabari, Jackson Trager,
+    Ala N. Tak, Meng Chen, Fred Morstatter, Morteza Dehghani
+  year: 2026
+  date: '2026-08-24'
+  venue: Nature Human Behaviour
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/s41562-026-02550-0
+  arxiv_id: '2502.11266'
+  pmid: '42637911'
+  url: https://doi.org/10.1038/s41562-026-02550-0
+  open_access: false
+  pipeline_stages:
+  - writing
+  summary: Combines observational corpus analysis with controlled rewriting experiments. In 1,000 pre-ChatGPT
+    arXiv abstracts and 1,000 Reddit stories, rewriting usually reduced aggregate writing-complexity variance,
+    with exceptions by model and prompt. Trait classifiers generally lost predictive accuracy while remaining
+    above baseline; these are changes in textual signals, not demonstrated changes in people or cognition. In
+    our reading, some of the published supplementary statistics are internally inconsistent.
+  verbatim_excerpt: Across three studies spanning seven datasets in different domains and over 880,000 texts,
+    we show that the widespread adoption of large language models (LLMs) as writing assistants is linked to declines
+    in linguistic diversity, interfering with the societal and psychological insights language provides. While
+    core content is retained when LLMs polish and rewrite texts, LLMs also homogenize writing styles, reducing
+    writing-complexity variance by a statistically significant 21–50% across datasets and models (P ≤ 0.05), and
+    amplify patterns associated with dominant characteristics while suppressing others, emphasizing conformity
+    over individuality.
+  provenance: live_html
+  stance_tags:
+  - homogenization_warning
+  - empirical_signal
+  positions:
+    F5: -1
+  related_models: []
+- id: he-bu-2026-journal-ai-policies-fail
+  title: Academic journals' AI policies fail to curb the surge in AI-assisted academic writing
+  authors: Yongyuan He, Yi Bu
+  year: 2026
+  date: '2026-02-24'
+  venue: PNAS
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1073/pnas.2526734123
+  arxiv_id: null
+  pmid: '41734077'
+  url: https://doi.org/10.1073/pnas.2526734123
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - post_pub_audit
+  summary: 'Audits 5,114 journals (comparing January and October 2025 policy snapshots) and 5.2 million papers:
+    roughly 70% of sampled Q1 journals had AI policies in January 2025, yet estimated AI-associated writing grew
+    similarly across policy groups while detected public writing-assistance statements appeared in just 76 of
+    75,172 sampled full texts published since 2023 (~0.1%, excluding private submission-system disclosures).'
+  verbatim_excerpt: 'Non-English-speaking countries, physical sciences, and high-OA journals exhibit the highest
+    growth rates. Crucially, full-text analysis on 164 k scientific publications reveals a striking transparency
+    gap: Of the 75 k papers published since 2023, only 76 (~0.1%) explicitly disclosed AI use.'
+  provenance: europepmc_api
+  stance_tags:
+  - disclosure_gap
+  - equity_gain
+  - policy_unenforceable
+  positions:
+    F3: 0
+    F4: 1
+  related_models:
+  - M4
+- id: topaz-2026-fabricated-references-500k
+  title: Evaluation of possibly fabricated references in 500,000 science, engineering, and computing papers
+  authors: Maxim Topaz, Pallavi Gupta, Zhihong Zhang, Laura-Maria Peltonen
+  year: 2026
+  date: '2026-10-26'
+  venue: PNAS
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1073/pnas.2623869123
+  arxiv_id: null
+  pmid: '42932666'
+  url: https://doi.org/10.1073/pnas.2623869123
+  open_access: true
+  pipeline_stages:
+  - citations
+  - submission_triage
+  - post_pub_audit
+  summary: Auditing a stratified random sample of 500,000 peer-reviewed papers (January 2023–March 2026) across
+    chemistry, physics, materials science, engineering, and computer science identified 1,135 fabricated references
+    across 619 papers (85.8% precision on masked expert review), with affected-paper prevalence rising about 3.7-fold
+    from 6.3 per 10,000 in 2023 to 23.0 per 10,000 in Q1 2026 (~8,500 papers extrapolated across 7M OpenAlex works).
+    Fabricated is an operational verifiability label, not evidence of intent or AI causation; 18% of references
+    lacked resolvable DOIs and were excluded, recall was not estimated, and the projection does not incorporate
+    classification error.
+  verbatim_excerpt: Our automated pipeline classified 1,135 references across 619 papers as fabricated, with 85.8%
+    precision on masked expert review; fabricated is an operational label for a claimed title that could not be
+    located in any of seven bibliographic and open-web sources. Affected-paper prevalence rose from 1 in 1,600
+    (6.3 per 10,000) in 2023 to 1 in 435 (23.0 per 10,000) in the first quarter of 2026, and full-period rates
+    differed roughly sixfold across fields, from 25.6 per 10,000 papers in physics to 4.3 in chemistry.
+  provenance: europepmc_api
+  stance_tags:
+  - citation_hallucination
+  - empirical_signal
+  positions:
+    F6: 1
+    F4: -1
+  related_models:
+  - M2
+- id: russinovich-2026-phantom-references
+  title: 'Phantom References: Hallucinated Citations That Survive Peer Review at Top-Tier Conferences'
+  authors: Mark Russinovich, Ram Shankar Siva Kumar, Ahmed Salem
+  year: 2026
+  date: '2026-07-01'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2607.00738'
+  pmid: null
+  url: https://arxiv.org/abs/2607.00738
+  open_access: true
+  pipeline_stages:
+  - citations
+  - peer_review
+  - submission_triage
+  - post_pub_audit
+  summary: 'RefChecker scanned 48,095 accepted papers and 2,614,992 references. In 2025, 5.1% of NeurIPS and 4.8%
+    of USENIX Security papers had at least two likely invalid academic references flagged. These are candidates
+    requiring adjudication: most manually examined flags were recoverable references or false positives. A roughly
+    $0.04-per-paper API cost (from the ICLR 2025 scan) excludes human verification. The audit does not establish
+    AI authorship; some contacted authors reported that errors entered at the camera-ready stage, and the authors
+    conclude that peer review does not reliably catch hallucinated citations.'
+  verbatim_excerpt: False positives are the primary limitation.
+  provenance: arxiv_api
+  stance_tags:
+  - citation_hallucination
+  - automated_audit_tractable
+  positions:
+    F6: 1
+    F2: 1
+  related_models:
+  - M1
+  - M2
+- id: liang-2024-monitoring-peer-reviews
+  title: 'Monitoring AI-Modified Content at Scale: A Case Study on the Impact of ChatGPT on AI Conference Peer
+    Reviews'
+  authors: Weixin Liang, Zachary Izzo, Yaohui Zhang, Haley Lepp, Hancheng Cao, Xuandong Zhao, Lingjiao Chen, Haotian
+    Ye, Sheng Liu, Zhi Huang, Daniel A. McFarland, James Y. Zou
+  year: 2024
+  date: '2024-03-11'
+  venue: ICML 2024 / arXiv
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2403.07183'
+  pmid: null
+  url: https://arxiv.org/abs/2403.07183
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: A corpus-level mixture model estimates that 6.5%–16.9% of review sentences at four post-ChatGPT AI
+    conferences were substantially generated or modified by LLMs. These are model-based aggregate estimates, not
+    identified reviewers or wholly AI-written reviews; expansion of human-written outlines is compatible with
+    the signal. Higher estimates correlate with deadlines, lower confidence and fewer rebuttal replies without
+    establishing causation. Results depend on historical language distributions and simulated AI-writing practices.
+  verbatim_excerpt: 'Our results suggest that between 6.5% and 16.9% of text submitted as peer reviews to these
+    conferences could have been substantially modified by LLMs, i.e. beyond spell-checking or minor writing updates.
+    The circumstances in which generated text occurs offer insight into user behavior: the estimated fraction
+    of LLM-generated text is higher in reviews which report lower confidence, were submitted close to the deadline,
+    and from reviewers who are less likely to respond to author rebuttals.'
+  provenance: arxiv_api
+  stance_tags:
+  - empirical_signal
+  - reviewer_offloading
+  positions:
+    F2: 0
+  related_models:
+  - M1
+- id: liang-2024-llm-useful-feedback
+  title: Can Large Language Models Provide Useful Feedback on Research Papers? A Large-Scale Empirical Analysis
+  authors: Weixin Liang, Yuhui Zhang, Hancheng Cao, Binglu Wang, Daisy Yi Ding, Xinyu Yang, Kailas Vodrahalli,
+    Siyu He, Daniel Scott Smith, Yian Yin, Daniel A. McFarland, James Zou
+  year: 2024
+  date: '2024-07-17'
+  venue: NEJM AI
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1056/aioa2400196
+  arxiv_id: '2310.01783'
+  pmid: '42932702'
+  url: https://doi.org/10.1056/aioa2400196
+  open_access: false
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: 'Compares GPT-4 feedback with human peer reviews across 3,096 Nature-family papers, 1,709 ICLR submissions,
+    and 666 eLife submissions: point overlap was comparable to human–human reviewer overlap (measuring topical
+    overlap distinct from technical error detection), 57.4% of 308 surveyed authors in a self-selected user study
+    rated the feedback helpful or very helpful, and the authors recommend early-stage author feedback alongside
+    independent human expert review.'
+  verbatim_excerpt: It is important that expert human reviewers deeply engage with the manuscripts and provide
+    independent assessment without relying on LLM feedback.
+  provenance: fulltext_pdf
+  stance_tags:
+  - pro_hybrid_review
+  - empirical_signal
+  positions:
+    F2: 1
+  related_models:
+  - M1
+- id: thakkar-2025-iclr-review-feedback-rct
+  title: A large-scale randomized study of large language model feedback in peer review
+  authors: Nitya Thakkar, Mert Yuksekgonul, Jake Silberg, Animesh Garg, Nanyun Peng, Fei Sha, Rose Yu, Carl Vondrick,
+    James Zou
+  year: 2026
+  date: '2026-02-23'
+  venue: Nature Machine Intelligence
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: 10.1038/s42256-026-01188-x
+  arxiv_id: '2504.09737'
+  pmid: null
+  url: https://doi.org/10.1038/s42256-026-01188-x
+  open_access: false
+  pipeline_stages:
+  - peer_review
+  summary: Randomized trial at ICLR 2025 in which an LLM agent gave reviewers feedback on vague, mistaken or unprofessional
+    comments in their reviews. Of 18,946 reviews that received feedback, 26.6% were revised, and reviewers who revised
+    added about 80 words. A blinded evaluation rated the revised reviews as more informative, and author responses and
+    reviewer replies during rebuttal grew longer. Acceptance rates did not differ significantly between groups.
+  verbatim_excerpt: We show, through a randomized controlled study at ICLR 2025 with over 20,000 reviews, that 27% of reviewers
+    who received automated feedback updated their reviews, incorporating over 12,000 suggestions. This suggests that many
+    reviewers found the artificial intelligence-generated feedback sufficiently helpful to merit updating their reviews.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - pro_hybrid_review
+  - empirical_signal
+  positions:
+    F2: 1
+  related_models:
+  - M1
+- id: shen-wang-2026-detecting-ai-peer-reviews
+  title: Detecting AI-Generated Content in Academic Peer Reviews
+  authors: Siyuan Shen, Kai Wang
+  year: 2026
+  date: '2026-01-30'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: '2602.00319'
+  pmid: null
+  url: https://arxiv.org/abs/2602.00319
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - post_pub_audit
+  summary: Applying a detector trained on 2021 reviews plus synthetic LLM-generated reviews to samples from later
+    years, the preprint estimates that near-zero detection rates in 2022–2023 rose to about 20% of sampled ICLR
+    reviews (392 of 1,961) and 12% of sampled Nature Communications reviews (50 of 406) classified as AI-generated
+    in 2025, with Nature Communications rising most sharply between Q3 and Q4 2024.
+  verbatim_excerpt: We observe minimal detection of AI-generated content before 2022, followed by a substantial
+    increase through 2025, with approximately 20% of ICLR reviews and 12% of Nature Communications reviews classified
+    as AI-generated in 2025. The most pronounced growth of AI-generated reviews in NC occurs between the third
+    and fourth quarter of 2024.
+  provenance: arxiv_api
+  stance_tags:
+  - empirical_signal
+  - reviewer_offloading
+  positions:
+    F2: 0
+  related_models:
+  - M2
+- id: saha-2026-polishing-policies-unenforceable
+  title: Policies Permitting LLM Use for Polishing Peer Reviews Are Currently Not Enforceable
+  authors: Rounak Saha, Gurusha Juneja, Dayita Chaudhuri, Naveeja Sajeevan, Nihar B Shah, Danish Pruthi
+  year: 2026
+  date: '2026-03-20'
+  venue: ICML 2026 / arXiv
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2603.20450'
+  pmid: null
+  url: https://arxiv.org/abs/2603.20450
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - submission_triage
+  summary: Tests five detectors on 50,156 original, generated, polished and humanized peer reviews. On the harder subset,
+    Pangram and GPTZero label 3.1% and 3.4% of human-written, AI-polished reviews as fully AI-generated, while detecting
+    most fully generated reviews; open-source detectors trade sensitivity against specificity differently. The authors
+    conclude that no current detector is accurate enough to enforce policies that allow polishing.
+  verbatim_excerpt: While incorporating such signals yields measurable gains in some settings, we identify limitations
+    in each approach and find that none meets the accuracy standards required for identifying AI use in peer reviews.
+    Importantly, our results suggest that recent public estimates of AI use in peer reviews through the use of
+    AI-text detectors should be interpreted with caution, as current detectors misclassify mixed reviews (collaborative
+    human-AI outputs) as fully AI generated, potentially overstating the extent of policy violations.
+  provenance: arxiv_api
+  stance_tags:
+  - policy_unenforceable
+  - detector_false_positives
+  positions:
+    F6: -1
+    F2: 0
+  related_models:
+  - M4
+- id: howell-2025-prestige-over-merit
+  title: 'Prestige over merit: An adapted audit of LLM bias in peer review'
+  authors: Anthony Howell, Jieshu Wang, Luyu Du, Julia Melkers, Varshil Shah
+  year: 2025
+  date: '2025-09-18'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: '2509.15122'
+  pmid: null
+  url: https://arxiv.org/abs/2509.15122
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  summary: A randomized simulation using GPT-4o-mini, ten PNAS papers and four US institutions found lower editor
+    quality scores for low-prestige affiliations across three fields, surviving multiple-testing correction. Revealing
+    identity lowered reviewer rejection recommendations by 1.7 percentage points; the reported ~25% uses the overall
+    mean, not the blinded baseline. A gender-by-prestige interaction survived correction, but individual within-prestige
+    reviewer effects did not. These are model outputs from parallel prompts, not observed journal decisions or
+    a comparison with human reviewers. A separate synthetic-CV exercise used GPT-4.1-nano.
+  verbatim_excerpt: 'Revealing author identities lowers reviewer rejection recommendations by roughly 25% of the
+    mean rejection rate despite identical content, indicating that status cues beyond paper quality shape outcomes.
+    Institutional prestige is the dominant cue: papers attributed to low-prestige affiliations receive lower quality
+    scores in every field, a penalty that survives family-wise multiple-testing correction at the editor stage.'
+  provenance: arxiv_api
+  stance_tags:
+  - prestige_bias
+  - adversarial_vulnerability
+  positions:
+    F2: -1
+  related_models:
+  - M1
+- id: baumann-2026-stop-automating-peer-review
+  title: Stop Automating Peer Review Without Rigorous Evaluation
+  authors: Joachim Baumann, Jiaxin Pei, Sanmi Koyejo, Dirk Hovy
+  year: 2026
+  date: '2026-05-04'
+  venue: ICML 2026 (Oral) / arXiv
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2605.03202'
+  pmid: null
+  url: https://arxiv.org/abs/2605.03202
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: An ICML position paper combining detector-labelled ICLR reviews with a 60-paper simulation. AI reviews agreed
+    excessively with one another, within and across papers, a ‘hivemind’ effect measured in embedding space. Across 24
+    rewrite and model conditions, having an LLM rewrite a paper raised mean AI review scores by 0.45 on a ten-point scale;
+    most edits were stylistic, and the substantive ones were mostly unsupported content such as fake ablations. The authors
+    call for rigorous evaluation before peer review is automated.
+  verbatim_excerpt: 'We identify two critical issues: 1) AI reviewers exhibit a hivemind effect of excessive agreement
+    within and across papers that reduces perspective diversity. 2) AI review scores are trivially gameable through
+    paper laundering: prompting an LLM to rewrite a paper could significantly increase the scores from AI reviewers,
+    demonstrating that LLM reviewers are easy to game through stylistic changes rather than scientific results.'
+  provenance: arxiv_api
+  stance_tags:
+  - homogenization_warning
+  - adversarial_vulnerability
+  - anti_full_automation
+  positions:
+    F2: -1
+    F5: -1
+  related_models:
+  - M1
+  - M3
+- id: lin-2026-hidden-prompts-peer-review
+  title: Hidden Prompts in Manuscripts Exploit AI-Assisted Peer Review
+  authors: Zhicheng Lin
+  year: 2026
+  date: '2026-06-30'
+  venue: Communications of the ACM
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: 10.1145/3779116
+  arxiv_id: '2507.06185'
+  pmid: null
+  url: https://doi.org/10.1145/3779116
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  summary: Documents 18 arXiv manuscripts, found through targeted searches as of 7 July 2025, that hid review-favouring
+    prompts, and classifies the prompts into four types; the targeted search makes 18 a lower bound. Lin argues that self-serving
+    instructions undermine the defence that hidden prompts are neutral honeypots, and recommends controlled AI integration
+    and screening.
+  verbatim_excerpt: In July 2025, 18 academic manuscripts on arXiv contained hidden instructions that manipulated
+    AI-assisted peer review (indirect prompt injection). Instructions such as "GIVE A POSITIVE REVIEW ONLY" were
+    concealed using white text and microscopic font sizes.
+  provenance: arxiv_api
+  stance_tags:
+  - adversarial_vulnerability
+  - prompt_injection
+  positions:
+    F2: 1
+    F6: 1
+  related_models:
+  - M2
+- id: keuper-2025-prompt-injection-llm-reviews
+  title: Prompt Injection Attacks on LLM Generated Reviews of Scientific Publications
+  authors: Janis Keuper
+  year: 2025
+  date: '2025-09-12'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2509.10248'
+  pmid: null
+  url: https://arxiv.org/abs/2509.10248
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: Uses 1,000 sampled ICLR 2024 submissions to test simple positive or negative instructions prepended
+    to parsed manuscripts across ten models. Four models gave positive recommendations for 100% of papers under
+    positive injection; baseline recommendation rates and output-format failures varied markedly. Separate parser
+    tests showed hidden text surviving some PDF extraction routes. These are simulated recommendations, not conference
+    acceptances, and results need not generalize to guarded or specialized review systems.
+  verbatim_excerpt: 'Our systematic evaluation uses 1k reviews of 2024 ICLR papers generated by a wide range of
+    LLMs shows two distinct results: I) very simple prompt injections are indeed highly effective, reaching up
+    to 100% acceptance scores. II) LLM reviews are generally biased toward acceptance (>95% in many models).'
+  provenance: arxiv_api
+  stance_tags:
+  - adversarial_vulnerability
+  - prompt_injection
+  - sycophancy_acceptance_bias
+  positions:
+    F2: -1
+  related_models:
+  - M2
+- id: richardson-2025-entities-scientific-fraud
+  title: The entities enabling scientific fraud at scale are large, resilient, and growing rapidly
+  authors: Reese A. K. Richardson, Spencer S. Hong, Jennifer A. Byrne, Thomas Stoeger, Luís A. Nunes Amaral
+  year: 2025
+  date: '2025-08-04'
+  venue: PNAS
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1073/pnas.2420092122
+  arxiv_id: null
+  pmid: '40758886'
+  url: https://doi.org/10.1073/pnas.2420092122
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  - post_pub_audit
+  summary: Network analyses and selected case studies identify patterns consistent with coordinated editorial
+    misconduct, image reuse and brokers moving between journals. The observed corpus of suspected paper-mill products
+    grows faster than total publication output, but changing detection effort and field coverage limit inference
+    about population-wide fraud growth. Statistical flags are not individual misconduct verdicts, and the study
+    cannot always distinguish commercial mills from informal networks. It does not establish that generative AI
+    caused the observed growth.
+  verbatim_excerpt: Our results reveal some of the strategies that enable the entities promoting scientific fraud
+    to evade interventions. Our final analysis suggests that this ability to evade interventions is enabling the
+    number of fraudulent publications to grow at a rate far outpacing that of legitimate science.
+  provenance: europepmc_api
+  stance_tags:
+  - paper_mill_industrialization
+  - empirical_signal
+  positions:
+    F4: -1
+    F6: 1
+  related_models:
+  - M2
+  - M3
+- id: luo-2026-generative-ai-biomed-images
+  title: 'Biomedical Research Images Manipulated by Generative AI to Alter Scientific Outcomes: Diagnostic Study
+    of Human and Automated Detection'
+  authors: Shuhang Luo, Runhua Tang, Ziyin Chen, Jianye Wang, Ming Liu, Jianfeng Wang, Li Ma
+  year: 2026
+  date: '2026-10-02'
+  venue: Journal of Medical Internet Research
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.2196/100710
+  arxiv_id: null
+  pmid: '42826371'
+  url: https://doi.org/10.2196/100710
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  - post_pub_audit
+  summary: 'Controlled diagnostic study of 52 authentic and 52 matched, selected AI-manipulated Western blot and
+    xenograft tumor images (with failed generations excluded and each of 24 PhD-level biomedical reviewers judging
+    a 50-image sample): human accuracy averaged 50.5% (SD 6.9%) and the top tested commercial detector reached
+    AUC 0.790 across the two evaluated image modalities.'
+  verbatim_excerpt: In a diagnostic study of 104 western blot and subcutaneous xenograft tumor images, a high-fidelity
+    generative model produced forgeries that could alter the conclusions of a study; 24 PhD-level expert reviewers
+    could not reliably distinguish the forgeries from authentic figures (mean accuracy 50.5%, SD 6.9%), while
+    the best-performing commercial AI detector achieved only moderate discrimination (area under the curve 0.790,
+    95% CI 0.695-0.885), revealing critical vulnerabilities in current research-integrity safeguards.
+  provenance: europepmc_api
+  stance_tags:
+  - synthetic_figure_blindspot
+  - adversarial_vulnerability
+  positions:
+    F6: 0
+  related_models:
+  - M2
+  - M4
+- id: yamada-2025-ai-scientist-v2-iclr-workshop
+  title: 'The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search'
+  authors: Yutaro Yamada, Robert Tjarko Lange, Cong Lu, Shengran Hu, Chris Lu, Jakob Foerster, Jeff Clune, David
+    Ha
+  year: 2025
+  date: '2025-04-10'
+  venue: ICLR 2025 Workshop Experiment / arXiv
+  source_type: live_experiment
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2504.08066'
+  pmid: null
+  url: https://arxiv.org/abs/2504.08066
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  - publishing_model
+  summary: Presents The AI Scientist-v2 using progressive agentic tree search and VLM figure-refinement loops;
+    in an approved blind test at an ICLR 2025 workshop (the paper notes that workshop acceptance rates are typically
+    60–80%, and reviewers were told that some submissions might be AI-generated), one of three submitted manuscripts
+    cleared the workshop review threshold (mean score 6.33) before all three were withdrawn under the study protocol.
+    The authors chose the three ideas and picked the best manuscript from several generated for each.
+  verbatim_excerpt: We evaluated The AI Scientist-v2 by submitting three fully autonomous manuscripts to a peer-reviewed
+    ICLR workshop. Notably, one manuscript achieved high enough scores to exceed the average human acceptance
+    threshold, marking the first instance of a fully AI-generated paper successfully navigating a peer review.
+  provenance: arxiv_api
+  stance_tags:
+  - autonomous_authoring
+  - empirical_signal
+  positions: {}
+  related_models:
+  - M7
+- id: bianchi-2025-agents4science-conference
+  title: Exploring the use of AI authors and reviewers at Agents4Science
+  authors: Federico Bianchi, Owen Queen, Nitya Thakkar, Eric Sun, James Zou
+  year: 2025
+  date: '2025-12-17'
+  venue: Nature Biotechnology / Stanford Agents4Science 2025
+  source_type: live_experiment
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/s41587-025-02963-8
+  arxiv_id: '2511.15534'
+  pmid: '41407875'
+  url: https://www.nature.com/articles/s41587-025-02963-8
+  open_access: false
+  pipeline_stages:
+  - writing
+  - peer_review
+  - publishing_model
+  summary: Organizes and evaluates Stanford's inaugural Open Conference of AI Agents for Science (Agents4Science
+    2025), which its organisers describe as the first conference where AI agents served as both authors and reviewers
+    (with humans as co-authors/co-reviewers and public submissions, AI-involvement checklists, reviews and recordings).
+  verbatim_excerpt: 'Many fundamental questions are still open: how creative are AI scientist agents? How should
+    human researchers collaborate with them? How capable are LLMs at reviewing scientific work? These questions
+    are difficult to study because journals and conferences currently prohibit AI coauthors and LLM reviewers,
+    and researchers often hide how they use AI.'
+  provenance: browser_dom
+  stance_tags:
+  - agent_native_venue
+  - publishing_experiment
+  positions:
+    F7: 2
+    F2: 1
+  related_models:
+  - M7
+- id: starace-2025-paperbench-replication
+  title: 'PaperBench: Evaluating AI''s Ability to Replicate AI Research'
+  authors: Giulio Starace, Oliver Jaffe, Dane Sherburn, James Aung, Jun Shern Chan, Leon Maksin, Rachel Dias,
+    Evan Mays, Benjamin Kinsella, Wyatt Thompson, Johannes Heidecke, Amelia Glaese, Tejal Patwardhan
+  year: 2025
+  date: '2025-04-02'
+  venue: ICML 2025 / arXiv
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2504.01848'
+  pmid: null
+  url: https://arxiv.org/abs/2504.01848
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - post_pub_audit
+  - publishing_model
+  summary: PaperBench evaluates replication from scratch of 20 selected ICML 2024 papers using author-assisted
+    rubrics and an imperfect automated judge. Claude 3.5 Sonnet scored 21.0% with BasicAgent; o1 reached 24.4%
+    with IterativeAgent and 26.0% at 36 hours. These are weighted partial-credit scores, not fractions of papers
+    fully replicated. Original code and existing replications were prohibited; human comparisons cover only a
+    small subset and allow AI assistance.
+  verbatim_excerpt: We evaluate several frontier models on PaperBench, finding that the best-performing tested
+    agent, Claude 3.5 Sonnet (New) with open-source scaffolding, achieves an average replication score of 21.0%.
+    Finally, we recruit top ML PhDs to attempt a subset of PaperBench, finding that models do not yet outperform
+    the human baseline.
+  provenance: arxiv_api
+  stance_tags:
+  - executable_verification
+  - capability_gap
+  positions: {}
+  related_models:
+  - M5
+  - M7
+- id: miao-2026-paper2agent-nature
+  title: Reimagining research papers as interactive and reliable AI agents
+  authors: Jiacheng Miao, Joe R. Davis, Yaohui Zhang, Jonathan K. Pritchard, James Zou
+  year: 2026
+  date: '2026-09-16'
+  venue: Nature
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.1038/s41586-026-11044-y
+  arxiv_id: '2509.06917'
+  pmid: '42749808'
+  url: https://doi.org/10.1038/s41586-026-11044-y
+  open_access: true
+  pipeline_stages:
+  - post_pub_audit
+  - publishing_model
+  summary: Paper2Agent turns a published paper, its code and its data into an AI agent built on Model Context Protocol
+    tools. It converted 74 of 100 computational-biology papers. On 300 tutorial-derived questions, checked against the
+    outputs of the original code, the agents reached 91.2% accuracy, against 80.3% for Claude Code with direct repository
+    access on the same model (Sonnet 4) and 86.3% on Sonnet 4.6. Reproducing a paper's outputs tests faithful execution
+    of its code, and open-ended discovery with the agents stayed human-steered.
+  verbatim_excerpt: Paper2Agent addresses this challenge by converting a paper into an AI agent that functions
+    as a virtual corresponding author, exposing its manuscript, supplementary materials, datasets, code and workflows
+    as active, agent-native knowledge rather than static text. It analyses the paper and codebase using multiple
+    agents to construct a model context protocol (MCP) server, then generates and runs tests to refine and increase
+    robustness of the MCP.
+  provenance: europepmc_fulltext
+  stance_tags:
+  - executable_verification
+  - agent_native_venue
+  positions:
+    F1: 2
+    F7: 1
+  related_models:
+  - M5
+- id: hosseini-2025-voluntary-ai-writing-disclosure
+  title: Disclosing generative AI use for writing assistance should be voluntary
+  authors: Mohammad Hosseini, Bert Gordijn, Gregory E. Kaebnick, Kristi Holmes
+  year: 2025
+  date: '2025-06-21'
+  venue: Research Ethics
+  source_type: perspective_essay
+  discipline_scope: cross_disciplinary
+  doi: 10.1177/17470161251345499
+  arxiv_id: null
+  pmid: '40950847'
+  url: https://doi.org/10.1177/17470161251345499
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - peer_review
+  summary: Reversing their earlier position, the authors propose voluntary disclosure for revision of existing
+    text for grammar, style and readability, distinguished from generating new prose. They argue that detailed
+    mandates are difficult to enforce and could introduce reviewer bias, and propose optional submission checkboxes
+    disclosed after publication. These are ethical and practical arguments, not measured causal effects of disclosure
+    on bias.
+  verbatim_excerpt: Nevertheless, as we show in this paper, we have changed our position and now support instituting
+    a voluntary disclosure policy because currently (1) the credit due to machines for assisting researchers is
+    moving below the threshold of requiring recognition; (2) it is impractical (if not impossible) to accurately
+    specify what parts of the text are human-/GenAI-generated; and (3) disclosures could increase biases against
+    non-native speakers of the English language and compromise the integrity of the peer review system.
+  provenance: europepmc_fulltext
+  stance_tags:
+  - anti_disclosure_theatre
+  - equity_defense
+  positions:
+    F3: 2
+    F4: 1
+  related_models:
+  - M4
+- id: earp-2026-against-mandatory-prompt-disclosure
+  title: Against mandatory prompt disclosure in AI-assisted scholarship
+  authors: Brian D. Earp, Udo Schüklenk, Julian Savulescu, Sebastian Porsdam Mann
+  year: 2026
+  date: '2026-10-05'
+  venue: AI & Society
+  source_type: perspective_essay
+  discipline_scope: cross_disciplinary
+  doi: 10.1007/s00146-026-03326-w
+  arxiv_id: null
+  pmid: null
+  url: https://doi.org/10.1007/s00146-026-03326-w
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - peer_review
+  summary: Argues against mandatory inclusion of all prompts and outputs for ordinary writing assistance, citing enforceability,
+    burden, equity and surveillance concerns. Explicitly supports normalized AI-use declarations, targeted methods-level
+    documentation when validity or reproducibility requires it, voluntary records, and human authorship attestation.
+  verbatim_excerpt: We argue, however, against Mandatory Full Inclusion (MFI) of prompts and outputs for ordinary
+    writing assistance. Such a policy would, we suggest, be difficult to enforce, easy for dishonest users to
+    evade, burdensome for careful users to follow, and poorly suited to the capacities of editors and peer reviewers.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - anti_disclosure_theatre
+  - equity_defense
+  positions:
+    F3: 0
+    F4: 1
+  related_models:
+  - M4
+- id: resnik-hosseini-2025-mandatory-optional-unnecessary-disclosure
+  title: 'Disclosing artificial intelligence use in scientific research and publication: When should disclosure
+    be mandatory, optional, or unnecessary?'
+  authors: David B. Resnik, Mohammad Hosseini
+  year: 2025
+  date: '2025-03-24'
+  venue: Accountability in Research
+  source_type: perspective_essay
+  discipline_scope: cross_disciplinary
+  doi: 10.1080/08989621.2025.2481949
+  arxiv_id: null
+  pmid: '40126451'
+  url: https://doi.org/10.1080/08989621.2025.2481949
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: Proposes a three-tier framework (online 2025; 2026 issue) making disclosure mandatory for intentional,
+    substantial AI use such as drafting, translation, major revision, data generation, and analysis; optional
+    for grammar, spelling, or organization edits on existing human text; and unnecessary for isolated phrase suggestions
+    or incidental embedded software features, while noting variation across disciplines.
+  verbatim_excerpt: We distinguish between mandatory, optional, and unnecessary disclosure of AI use, arguing
+    that disclosure should be mandatory only when AI use is intentional and substantial.
+  provenance: fulltext_pdf
+  stance_tags:
+  - anti_disclosure_theatre
+  positions:
+    F3: 1
+  related_models:
+  - M4
+- id: lingard-2025-blurred-thresholds-ai-disclosure
+  title: 'The Blurred Thresholds of AI-Use Disclosure: Health Professions Education Journal Editors’ Expectations
+    of Necessity and Sufficiency'
+  authors: Lorelei Lingard, Erik Driessen, Kevin Oswald
+  year: 2025
+  date: '2025-12-18'
+  venue: Perspectives on Medical Education
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.5334/pme.2326
+  arxiv_id: null
+  pmid: '41424913'
+  url: https://doi.org/10.5334/pme.2326
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - peer_review
+  summary: Qualitative interview study of 18 journal editors (14 from health-professions-education journals, four
+    from general medical journals) finding that editors hold varying expectations about what counts as necessary
+    or sufficient AI disclosure, with thresholds vague enough that they may add to authors’ uncertainty.
+  verbatim_excerpt: Generative AI is a powerful resource for health professions education (HPE) researchers publishing
+    their work. However, questions remain about its use and guidance about disclosure is inconsistent.
+  provenance: europepmc_fulltext
+  stance_tags:
+  - anti_disclosure_theatre
+  positions:
+    F3: -1
+  related_models: []
+- id: thorp-2026-resisting-ai-slop
+  title: Resisting AI slop
+  authors: H. Holden Thorp
+  year: 2026
+  date: 2026-01
+  venue: Science
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1126/science.aee8267
+  arxiv_id: null
+  pmid: '41477903'
+  url: https://doi.org/10.1126/science.aee8267
+  open_access: false
+  pipeline_stages:
+  - writing
+  - citations
+  - submission_triage
+  - peer_review
+  summary: Science Editor-in-Chief H. Holden Thorp explains that the Science journals allow large language models
+    without disclosure for editing text for clarity and gathering references, require any use beyond that (for
+    example drafting manuscript text) to be declared, and do not allow AI-created figures, arguing that human
+    curation makes the journals less susceptible to 'AI slop' while no system, human or artificial, can catch
+    everything.
+  verbatim_excerpt: In some of the wildest speculations, the humans involved in conducting scientific studies
+    and experiments and vetting the results for publication will be steadily eliminated from the process. But
+    when such grandiose rhetoric starts flying, we at Science try to keep calm and carry on in contributing to
+    a robust, human-curated research literature that will stand the test of time.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - slop_crisis
+  - human_review_sanctuary
+  - anti_disclosure_theatre
+  positions:
+    F2: -1
+    F3: 1
+    F4: -1
+    F7: -1
+  related_models:
+  - M3
+- id: thorp-2026-slower-worse-more-expensive
+  title: 'AI in scientific publishing: Slower, worse, and more expensive'
+  authors: H. Holden Thorp
+  year: 2026
+  date: '2026-07-16'
+  venue: Science
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1126/science.aek5570
+  arxiv_id: null
+  pmid: '42462024'
+  url: https://doi.org/10.1126/science.aek5570
+  open_access: false
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - peer_review
+  summary: 'Science editorial comparing AI in publishing to industrial Taylorism: against promises that AI makes work faster,
+    better and cheaper, the rigorous human checking that AI-generated research papers require is creating bottlenecks that
+    make scientific publishing slower and more expensive.'
+  verbatim_excerpt: Indeed, scientific publishing is starting to experience some Taylorism with the insertion
+    of AI. Rigorous human checking of AI-generated research papers is creating bottlenecks as publishers strive
+    to maintain the integrity of the scientific record. The challenge is requiring even more human effort, making
+    the whole endeavor slower and more expensive.
+  provenance: fulltext_pdf
+  stance_tags:
+  - slop_crisis
+  - human_review_sanctuary
+  positions:
+    F4: -2
+    F7: -1
+  related_models:
+  - M3
+- id: gibney-2026-ai-slop-crisis-computer-science
+  title: How AI slop is causing a crisis in computer science
+  authors: Elizabeth Gibney
+  year: 2026
+  date: '2026-02-13'
+  venue: Nature
+  source_type: journal_news_feature
+  discipline_scope: cs_ml
+  doi: 10.1038/d41586-025-03967-9
+  arxiv_id: null
+  pmid: '41688752'
+  url: https://doi.org/10.1038/d41586-025-03967-9
+  open_access: false
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - peer_review
+  summary: 'Nature news report on computer science at ‘breaking point’ from AI-generated submissions: ICML 2026 received
+    more than 24,000, over double the 2025 number, and arXiv''s monthly rejections have risen fivefold since ChatGPT to
+    more than 2,400. It opens with a researcher who used OpenAI''s Prism to write up, in 54 seconds, an experiment he never
+    performed, and covers responses ranging from AI-assisted review to arXiv''s ban on unrefereed computer-science review
+    articles and IJCAI''s US$100 fee for each additional submission.'
+  verbatim_excerpt: Fifty-four seconds. That’s how long it took Raphael Wimmer to write up an experiment that
+    he did not actually perform, using a new artificial-intelligence tool called Prism, released by OpenAI last
+    month.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - slop_crisis
+  positions: {}
+  related_models:
+  - M2
+  - M3
+- id: chawla-2026-arxiv-capping-preprint-submissions
+  title: 'ArXiv versus AI slop: will capping preprint submissions work?'
+  authors: Dalmeet Singh Chawla
+  year: 2026
+  date: '2026-10-15'
+  venue: Nature
+  source_type: journal_news_feature
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-026-03194-w
+  arxiv_id: null
+  pmid: '42881243'
+  url: https://doi.org/10.1038/d41586-026-03194-w
+  open_access: false
+  pipeline_stages:
+  - submission_triage
+  - publishing_model
+  summary: Nature news report on arXiv's cap of two papers per month for each submitting researcher, in force since 1 October
+    2026 after a surge that arXiv's scientific director attributes mainly to AI slop (40,000 preprints in September, up
+    from about 30,000 a month earlier in the year). Researchers quoted call the cap reasonable, point out that co-authors
+    can take turns to submit, or warn that rejected papers will simply go elsewhere; SocArXiv now allows one article per
+    author per week.
+  verbatim_excerpt: In a bid to tackle the deluge of manuscripts it now receives, the preprint server arXiv has
+    announced a cap of two papers per month for each submitting researcher, which began on 1 October.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - slop_crisis
+  positions: {}
+  related_models:
+  - M3
+- id: bergstrom-bak-coleman-2025-human-activity-of-science
+  title: AI, peer review and the human activity of science
+  authors: Carl T. Bergstrom, Joe Bak-Coleman
+  year: 2025
+  date: '2025-06-25'
+  venue: Nature
+  source_type: perspective_essay
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-025-01839-w
+  arxiv_id: null
+  pmid: '40562909'
+  url: https://doi.org/10.1038/d41586-025-01839-w
+  open_access: false
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: Nature career column arguing that reading the literature, drafting manuscripts and peer review rest on scientists'
+    capacity for scientific decision-making, and that researchers who cede that capacity, and their agency, to machines
+    lose something important; LLM reviews lack the perspectives that real reviewers bring.
+  verbatim_excerpt: When researchers cede their scientific judgement to machines, we lose something important.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - human_review_sanctuary
+  - cognitive_writing_craft
+  positions:
+    F1: -2
+    F2: -2
+  related_models:
+  - M3
+- id: zhang-2026-peer-review-requires-ai-support
+  title: The future of peer review requires AI support, not AI bans
+  authors: Xuegong Zhang
+  year: 2026
+  date: '2026-08-25'
+  venue: Nature
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-026-02631-0
+  arxiv_id: null
+  pmid: '42642639'
+  url: https://doi.org/10.1038/d41586-026-02631-0
+  open_access: false
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  summary: Nature correspondence arguing that blanket journal bans on reviewer AI use protect confidentiality and accountability
+    imperfectly and are hard to monitor, and calling on journals to offer safeguards and reviewer-friendly AI services,
+    on publishers to set standards and build secure, purpose-built AI infrastructure, and on the AI industry to help.
+  verbatim_excerpt: Confidential manuscripts should not be exposed to public AI systems, and reviewers must remain
+    accountable for their assessment. Yet blanket bans address concerns imperfectly and are hard to monitor.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - pro_ai_triage
+  positions:
+    F2: 2
+  related_models:
+  - M1
+- id: naddaf-2025-ai-transforming-peer-review
+  title: AI is transforming peer review — and many scientists are worried
+  authors: Miryam Naddaf
+  year: 2025
+  date: '2025-03-26'
+  venue: Nature
+  source_type: journal_news_feature
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-025-00894-7
+  arxiv_id: null
+  pmid: '40140590'
+  url: https://doi.org/10.1038/d41586-025-00894-7
+  open_access: false
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  summary: Charts the dual-track spread of AI across peer review—publishers deploying automated integrity, citation,
+    and statistical screeners alongside reviewers using LLMs, sometimes in violation of journal rules—and captures
+    community concern about leaking confidential information and erosion of the peer-review social contract.
+  verbatim_excerpt: Artificial intelligence software is increasingly involved in reviewing papers, provoking interest
+    and unease.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - human_review_sanctuary
+  - pro_ai_triage
+  positions: {}
+  related_models:
+  - M1
+  - M2
+- id: brainard-2026-ready-for-robot-reviewers
+  title: Ready for the robot reviewers?
+  authors: Jeffrey Brainard
+  year: 2026
+  date: '2026-09-03'
+  venue: Science
+  source_type: journal_news_feature
+  discipline_scope: cross_disciplinary
+  doi: 10.1126/science.aem0443
+  arxiv_id: null
+  pmid: '42691179'
+  url: https://doi.org/10.1126/science.aem0443
+  open_access: false
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  summary: Science news feature (DOI 10.1126/science.aem0443; web edition 10.1126/science.z6vx92p) examining reviewer
+    uptake of AI amid surging submissions and referee fatigue — including NEJM AI’s fast track, in which an editor
+    reviews selected manuscripts in full without AI and editors then weigh the human and AI reviews — alongside
+    AI's verbosity, nitpicking, and weakness on conceptual novelty.
+  verbatim_excerpt: As AI’s capabilities grow, researchers and publishers are exploring how it can support peer
+    review—and where it still falls short
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - pro_ai_triage
+  - human_review_sanctuary
+  positions: {}
+  related_models:
+  - M1
+- id: perlis-2025-jama-ai-in-peer-review
+  title: Artificial Intelligence in Peer Review
+  authors: Roy H. Perlis, Dimitri A. Christakis, Neil M. Bressler, Dost Öngür, Jacob Kendall-Taylor, Annette Flanagin,
+    Kirsten Bibbins-Domingo
+  year: 2025
+  date: '2025-08-28'
+  venue: JAMA
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1001/jama.2025.15827
+  arxiv_id: null
+  pmid: '40875583'
+  url: https://doi.org/10.1001/jama.2025.15827
+  open_access: false
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  summary: JAMA Network editorial (published online 28 August 2025; financial-disclosure correction 4 November
+    2025) outlining a human-led 'driver-assistance' approach to exploring AI in editorial assessment — naming
+    tasks such as summarization, reporting-guideline checks, and consistency screening as candidates for automation
+    while keeping editors and reviewers in full decision-making control.
+  verbatim_excerpt: We see our approach as analogous to driver-assistance technologies, beginning with adaptive
+    cruise control or blind spot detection, but when it comes to peer review and editorial decisions, we are not
+    considering fully autonomous driving. Editors and reviewers will not be taking their hands off the wheels
+    or their eyes off the road.
+  provenance: fulltext_pdf
+  stance_tags:
+  - pro_ai_triage
+  - human_review_sanctuary
+  positions:
+    F2: 1
+  related_models:
+  - M1
+  - M2
+- id: rao-rahimi-2026-peer-review-without-expert
+  title: 'Peer review without the expert: artificial intelligence-assisted reviewing and the cost to science'
+  authors: Shishir Rao, Kazem Rahimi
+  year: 2026
+  date: '2026-08-18'
+  venue: Heart
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1136/heartjnl-2026-328603
+  arxiv_id: null
+  pmid: '42613172'
+  url: https://doi.org/10.1136/heartjnl-2026-328603
+  open_access: false
+  pipeline_stages:
+  - peer_review
+  summary: Opinion article in Heart examining referee reports the authors consider most likely LLM-generated (verified
+    from the publisher's opening preview paragraph; subsequent paragraphs remain behind subscription), describing
+    uniformly polished reports whose objections look plausible at first glance yet stay conceptually shallow,
+    penalize lesser-known methods, and repeat identical misreadings across supposedly independent reviews.
+  verbatim_excerpt: The text is uniformly polished. The objections are plausible on first reading and conceptually
+    shallow on inspection. The development and use of lesser-known methods is flagged as a methodological weakness
+    rather than recognised as the contribution.
+  provenance: publisher_preview_paragraph
+  stance_tags:
+  - human_review_sanctuary
+  positions:
+    F2: -1
+  related_models: []
+- id: naddaf-2026-qed-ai-top-preprints
+  title: This AI tool claims to pick the top 1% of preprints. Should researchers trust it?
+  authors: Miryam Naddaf
+  year: 2026
+  date: '2026-08-10'
+  venue: Nature
+  source_type: journal_news_feature
+  discipline_scope: biomed_lifesci
+  doi: 10.1038/d41586-026-02276-z
+  arxiv_id: null
+  pmid: '42576040'
+  url: https://doi.org/10.1038/d41586-026-02276-z
+  open_access: false
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  - publishing_model
+  summary: Nature Q&A with Niv Mastboim, co-founder and chief executive of QED Science, whose AI tool ranked more than
+    57,000 bioRxiv preprints by originality and validity and selected a ‘top 1%’; bioRxiv's operator is piloting it. Mastboim
+    says the company offers free services to authors, not to journals, and that blinded experts preferred the QED-favoured
+    paper in 75% of decisive disagreements with journal rank. The introduction notes concerns that the ranking creates
+    another badge of prestige.
+  verbatim_excerpt: A growing number of private firms are offering researchers artificial-intelligence tools for
+    scrutinizing manuscripts before publication. One such system, developed by a start-up called QED Science in
+    Tel Aviv, Israel, aims to judge whether life-sciences research is original and valid.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - pro_ai_triage
+  - post_paper_future
+  positions: {}
+  related_models:
+  - M5
+  - M6
+- id: trueblood-2025-misalignment-incentives-journal-reform
+  title: The misalignment of incentives in academic publishing and implications for journal reform
+  authors: Jennifer S. Trueblood, David B. Allison, Sarahanne M. Field, Ayelet Fishbach, Stefan D. M. Gaillard,
+    Gerd Gigerenzer, William R. Holmes, Stephan Lewandowsky, Dora Matzke, Mary C. Murphy, Sebastian Musslick,
+    Vencislav Popov, Adina L. Roskies, Judith ter Schure, Andrei R. Teodorescu
+  year: 2025
+  date: '2025-01-27'
+  venue: PNAS
+  source_type: perspective_essay
+  discipline_scope: cross_disciplinary
+  doi: 10.1073/pnas.2401231121
+  arxiv_id: null
+  pmid: '39869806'
+  url: https://doi.org/10.1073/pnas.2401231121
+  open_access: true
+  pipeline_stages:
+  - publishing_model
+  - peer_review
+  summary: A perspective on tensions between knowledge dissemination, academic prestige and journal revenue. Discusses
+    modular publishing, micropublications, community-reviewed preprints and changes to academic assessment, including financial
+    sustainability, adoption barriers and unintended incentives.
+  verbatim_excerpt: We also discuss new publishing models and platforms, such as preprint servers, the Peer Community
+    In (PCI) family, modular publishing (e.g., Research Equals), and micropublications.
+  provenance: europepmc_fulltext
+  stance_tags:
+  - post_paper_future
+  positions:
+    F7: 1
+  related_models:
+  - M5
+  - M6
+- id: bietti-bangerter-2026-llms-scientific-writing-critical-thinking
+  title: Will the widespread use of large language models in scientific writing undermine scientists’ critical
+    thinking?
+  authors: Lucas M. Bietti, Adrian Bangerter
+  year: 2026
+  date: '2026-06-03'
+  venue: PLOS Biology
+  source_type: perspective_essay
+  discipline_scope: biomed_lifesci
+  doi: 10.1371/journal.pbio.3003801
+  arxiv_id: null
+  pmid: '42234608'
+  url: https://doi.org/10.1371/journal.pbio.3003801
+  open_access: true
+  pipeline_stages:
+  - writing
+  summary: Contends that scientific writing is a constitutive epistemic and cognitive engine through which scientists
+    think, warning that widespread LLM drafting risks decoupling prose fluency from analytical reasoning even
+    as it lowers linguistic barriers for non-native English speakers.
+  verbatim_excerpt: Artificial intelligence (AI) is rapidly transforming scientific writing by expanding access
+    and efficiency, yet it risks decoupling writing from thinking. Scientific writing is a core cognitive and
+    epistemic practice that must be cultivated and preserved alongside AI use.
+  provenance: europepmc_fulltext
+  stance_tags:
+  - cognitive_writing_craft
+  - equity_defense
+  positions:
+    F1: -2
+    F4: 1
+  related_models: []
+- id: resnik-hosseini-2026-plagiarism-of-ideas-genai
+  title: Plagiarism of ideas in the age of generative artificial intelligence
+  authors: David Resnik, Mohammad Hosseini
+  year: 2026
+  date: '2026-05-18'
+  venue: Nature Machine Intelligence
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/s42256-026-01247-3
+  arxiv_id: null
+  pmid: '42232137'
+  url: https://doi.org/10.1038/s42256-026-01247-3
+  open_access: false
+  pipeline_stages:
+  - writing
+  - citations
+  - post_pub_audit
+  summary: Comment asking how to deal with plagiarism of ideas if it is becoming more common and is extremely hard to prove
+    once generative AI is involved, and calling for research-misconduct definitions that address generative-AI tools explicitly.
+  verbatim_excerpt: Generative artificial intelligence (GenAI) tools are challenging our understanding of plagiarism.
+    How should we deal with plagiarism of ideas if this misbehaviour is increasingly common, and it is extremely
+    difficult to prove when GenAI is involved? Definitions of research misconduct that specifically address the
+    use of GenAI tools are needed.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - cognitive_writing_craft
+  - automated_sleuthing
+  positions: {}
+  related_models:
+  - M4
+- id: gibney-2025-ai-spotting-errors-research-papers
+  title: 'AI tools are spotting errors in research papers: inside a growing movement'
+  authors: Elizabeth Gibney
+  year: 2025
+  date: '2025-03-07'
+  venue: Nature
+  source_type: journal_news_feature
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-025-00648-5
+  arxiv_id: null
+  pmid: '40055560'
+  url: https://doi.org/10.1038/d41586-025-00648-5
+  open_access: false
+  pipeline_stages:
+  - post_pub_audit
+  summary: Nature news report on the movement to check published papers with large language models, sparked by an arithmetic
+    error in a study of black plastic cooking utensils that an AI model could have caught in seconds. Researchers quoted
+    warn that the tools come with risks; a clarification on 11 March 2025 added detail on what the tools can do and the
+    concerns about them.
+  verbatim_excerpt: Late last year, media outlets worldwide warned that black plastic cooking utensils contained
+    worrying levels of cancer-linked flame retardants. The risk was found to be overhyped — a mathematical error
+    in the underlying research suggested a key chemical exceeded the safe limit when in fact it was ten times
+    lower than the limit. Keen-eyed researchers quickly showed that an artificial intelligence (AI) model could
+    have spotted the error in seconds.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - automated_sleuthing
+  positions: {}
+  related_models:
+  - M2
+  - M6
+- id: gibney-2025-prompt-injection-game-ai-peer-review
+  title: Scientists hide messages in papers to game AI peer review
+  authors: Elizabeth Gibney
+  year: 2025
+  date: '2025-07-11'
+  venue: Nature
+  source_type: journal_news_feature
+  discipline_scope: cs_ml
+  doi: 10.1038/d41586-025-02172-y
+  arxiv_id: null
+  pmid: '40646151'
+  url: https://www.nature.com/articles/d41586-025-02172-y
+  open_access: false
+  pipeline_stages:
+  - peer_review
+  - post_pub_audit
+  summary: Documents how authors embedded invisible white-text and tiny-font prompts in preprints (Nature independently
+    found 18) instructing AI tools to return positive reviews; researchers quoted in the piece call the practice
+    a form of academic misconduct, or ‘cheating’ that is also a symptom of faulty incentives in academic publishing.
+  verbatim_excerpt: Researchers have been sneaking secret messages into their papers in an effort to trick artificial
+    intelligence (AI) tools into giving them a positive peer-review report. The Tokyo-based news magazine Nikkei
+    Asia reported on 1 July on the practice, which had previously been discussed on social media. Nature has independently
+    found 18 preprint studies containing such hidden messages, which are usually included as white text and sometimes
+    in an extremely small font that would be invisible to a human but could be picked up as an instruction to
+    an AI reviewer.
+  provenance: browser_dom
+  stance_tags:
+  - automated_sleuthing
+  - human_review_sanctuary
+  positions: {}
+  related_models:
+  - M2
+- id: swain-scholarly-kitchen-peer-review-triage-2026
+  title: 'Guest Post — Peer Review Triage: Deciding What’s Worth Saving'
+  authors: Hannah Heckner Swain
+  year: 2026
+  date: '2026-09-15'
+  venue: The Scholarly Kitchen
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://scholarlykitchen.sspnet.org/2026/09/15/guest-post-peer-review-triage-deciding-whats-worth-saving/
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - peer_review
+  summary: Cites a roughly 68% rise in submissions between 2018 and 2025 (from a Silverchair report), about 2.5 desk rejections
+    per acceptance in 2025 and a 22.3% reviewer acceptance rate in 2024. Swain names AI-assisted writing, on top of publication
+    pressure, as one big driver of the overload, and advocates integrity tools alongside stronger reviewer relationships.
+  verbatim_excerpt: One big driver is the ubiquity of AI-assisted writing tools, sitting on top of a pressure-filled
+    culture where PhD students and early career researchers are asked to double their outputs to advance their
+    careers. The incentive to publish more collides with a technology that makes writing and publishing easier
+    to do.
+  provenance: live_html
+  stance_tags:
+  - editorial-triage-crisis
+  - submission-deluge
+  - publishing-insider
+  positions:
+    F4: -2
+    F2: 0
+    F7: -1
+  related_models:
+  - M1
+  - M3
+- id: corless-scholarly-kitchen-tacit-peer-review-2026
+  title: Guest Post — What AI Can’t Learn About Peer Review… Because Nobody Can Explain It
+  authors: Victoria Corless
+  year: 2026
+  date: '2026-11-05'
+  venue: The Scholarly Kitchen
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://scholarlykitchen.sspnet.org/2026/11/05/guest-post-what-ai-cant-learn-about-peer-review-because-nobody-can-explain-it/
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: Drawing on semi-structured conversations with researchers and Taylor & Francis journal editors, Corless
+    argues that expert peer review relies on tacit disciplinary judgment that resists rigid checklists, warning
+    that AI-generated summaries can anchor what human referees notice even when humans hold the final judgement.
+    The excerpt quotes interviewee Anja Baethge.
+  verbatim_excerpt: As reviewers, we have so many quality criteria to assess a manuscript. But being an expert
+    reviewer and defining ‘state of the art’ is not simply a matter of checking whether a paper meets each of
+    these criteria. It’s deciding which criteria matter most and knowing how to weigh them.
+  provenance: live_html
+  stance_tags:
+  - tacit-knowledge
+  - human-judgment-irreplaceable
+  - publishing-insider
+  positions:
+    F2: -1
+  related_models: []
+- id: smith-scholarly-kitchen-ai-reader-author-reviewer-2025
+  title: 'Guest Post — AI as Reader, Author, and Reviewer: What Stays Human?'
+  authors: Steve Smith
+  year: 2025
+  date: '2025-11-06'
+  venue: The Scholarly Kitchen
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://scholarlykitchen.sspnet.org/2025/11/06/guest-post-ai-as-reader-author-and-reviewer-what-stays-human/
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  - publishing_model
+  summary: Reports a Society for Scholarly Publishing panel on AI assistants becoming the first interface to scholarly
+    content, summarizing articles before readers reach a publisher's page and cutting referral traffic. Some publishers
+    now license content to AI platforms, and panellists urged machine-readable formats. The panel separated language assistance
+    from synthetic manuscript generation and noted that fear of stigma keeps disclosure rare.
+  verbatim_excerpt: AI assistants are increasingly the first interface that processes scholarly content, summarizing
+    and extracting answers before a person reaches a publisher’s page. Several publishers now report traffic declines
+    from search and referrals.
+  provenance: live_html
+  stance_tags:
+  - papers-read-by-ai
+  - content-licensing
+  - dual-layer-publishing
+  positions:
+    F7: 0
+  related_models:
+  - M5
+- id: aformeziem-lse-ai-democratise-publishing-2026
+  title: AI promised to democratise academic publishing – the evidence says otherwise
+  authors: Brendal Aformeziem
+  year: 2026
+  date: '2026-06-23'
+  venue: LSE Impact Blog
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://blogs.lse.ac.uk/impactofsocialsciences/2026/06/23/ai-promised-to-democratise-academic-publishing-the-evidence-says-otherwise/
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - peer_review
+  summary: Argues that language assistance alone cannot remove structural publishing inequalities and that AI-associated
+    phrasing can become another cue for bias. Drawing on secondary studies, the author warns that punitive disclosure rules
+    may disproportionately burden multilingual and under-resourced researchers.
+  verbatim_excerpt: Bias against non-native English speakers in peer review persists even when authors use large
+    language models to improve their writing. Reviewers use language as a proxy for identity, and when AI erases
+    one set of linguistic cues, they shift to another. The discrimination does not disappear. It adapts.
+  provenance: live_html
+  stance_tags:
+  - equity-paradox
+  - disclosure-stigma
+  - global-south-lens
+  positions:
+    F3: 1
+  related_models:
+  - M4
+- id: cheema-lse-academics-should-publish-less-2026
+  title: As AI writing proliferates academics should publish less
+  authors: Muhammad Aamir Cheema
+  year: 2026
+  date: '2026-07-21'
+  venue: LSE Impact Blog
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://blogs.lse.ac.uk/impactofsocialsciences/2026/07/21/as-ai-writing-proliferates-academics-should-publish-less/
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - publishing_model
+  summary: Argues that generative AI has cut the effort cost that once made publication counts a noisy but meaningful
+    proxy for research effort. Proposes a systemic, field-calibrated cap (possibly averaged over several years)
+    on the total number of papers any researcher can co-author across all venues so scarcity shifts back to human
+    judgment.
+  verbatim_excerpt: Once much of the labour of producing a paper can be automated, as it increasingly can, a long
+    publication list stops being evidence of anything except a willingness to keep submitting. The reward system,
+    still built around counting, has not caught up.
+  provenance: live_html
+  stance_tags:
+  - incentive-reform
+  - publication-caps
+  - zero-marginal-cost-prose
+  positions:
+    F4: -2
+    F7: -2
+  related_models:
+  - M3
+- id: barnett-spick-lse-agentic-ai-slop-2026
+  title: Research integrity is locked into an arms race with agentic AI slop
+  authors: Adrian Barnett and Matt Spick
+  year: 2026
+  date: '2026-03-17'
+  venue: LSE Impact Blog
+  source_type: blog_essay
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://blogs.lse.ac.uk/impactofsocialsciences/2026/03/17/research-integrity-is-locked-into-an-arms-race-with-agentic-ai-slop/
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  - post_pub_audit
+  summary: Barnett and Spick warn that agentic AI can now turn an open biomedical dataset, such as UK Biobank or NHANES,
+    into a paper in about 30 minutes, with no human hypothesis or checkpoint. They estimate that for some public datasets,
+    mass-produced formulaic papers now outnumber legitimate research ten to one.
+  verbatim_excerpt: The introduction of agentic artificial intelligence (AI) allows an automated assembly line
+    of research tasks without any human checkpoints. We recently demonstrated that writing a plausible and entirely
+    ‘new’ paper has become a 30 minute task, without any need for human agency in creating a research hypothesis
+    or interpreting results.
+  provenance: live_html
+  stance_tags:
+  - agentic-slop
+  - open-data-exploitation
+  - paper-mills
+  positions:
+    F4: -2
+  related_models:
+  - M2
+  - M3
+- id: orrall-retraction-watch-ai-peer-review-manipulation-2026
+  title: Ethics journal retracts paper by high school student for AI, peer review manipulation
+  authors: Avery Orrall
+  year: 2026
+  date: '2026-07-06'
+  venue: Retraction Watch
+  source_type: watchdog_investigation
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://retractionwatch.com/2026/07/06/ethics-journal-retracts-paper-by-high-school-student-for-ai-peer-review-manipulation/
+  open_access: true
+  pipeline_stages:
+  - citations
+  - peer_review
+  - post_pub_audit
+  summary: Reports a Journal of Medical Ethics retraction citing unverified AI-assisted references and evidence
+    of peer-review manipulation. The author agreed to retraction. The report separately investigates affiliations
+    on another paper by the same author; those affiliation concerns should not be conflated with the stated grounds
+    for the ethics-paper retraction.
+  verbatim_excerpt: “The journal investigated concerns about the quality of the work and the accuracy of the references,
+    including concerns that several references did not exist,” the notice reads.
+  provenance: live_html
+  stance_tags:
+  - fabricated-citations
+  - peer-review-manipulation
+  - retraction-watchdog
+  positions: {}
+  related_models:
+  - M2
+- id: richardson-worlds-laziest-peer-reviewer-2025
+  title: The world’s laziest peer reviewer
+  authors: Reese Richardson
+  year: 2025
+  date: '2025-09-15'
+  venue: Reese Richardson Blog
+  source_type: watchdog_investigation
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://reeserichardson.blog/2025/09/15/the-worlds-laziest-peer-reviewer/
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - post_pub_audit
+  summary: Investigative blog documenting repeated review templates and citation requests in 104 articles, describing an
+    apparent review mill. A 23 September update adds that Richardson has downloaded more than 600,000 peer-review documents
+    for over 85,000 articles at 14 BMC journals.
+  verbatim_excerpt: As of September 23, 2025, I have now downloaded >600K peer review documents for >85K articles
+    at 14 BMC journals.
+  provenance: live_html
+  stance_tags:
+  - sleuth-audit
+  - lazy-reviewing
+  - formulaic-biomed-slop
+  positions:
+    F6: 1
+  related_models:
+  - M6
+- id: bishop-acceleration-arms-race-fraudsters-2026
+  title: Acceleration of the arms race between fraudsters and honest researchers
+  authors: Dorothy Bishop
+  year: 2026
+  date: '2026-08-16'
+  venue: BishopBlog
+  source_type: blog_essay
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: http://deevybee.blogspot.com/2026/08/acceleration-of-arms-race-between.html
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  - post_pub_audit
+  summary: Bishop recounts a manuscript purporting to analyse her own data that required unavailable record linkage and
+    supplied non-functional code. She regards it as fabricated, suspects AI involvement, argues for checks of data, code
+    and citations, and doubts that automated screening will be enough.
+  verbatim_excerpt: I have strong doubts as to whether the world of academic publishing is ready for this, and
+    I'm not confident that any kind of AI-screening will cope with the more sophisticated kinds of AI-fraud. I
+    cling to the faint hope that human experts still might be able to trap some of it, but I'm feeling more and
+    more like a member of the Light Brigade, galloping into the Valley of Death-of-Research-Credibility.
+  provenance: live_html
+  stance_tags:
+  - plausible-ai-fabrication
+  - sleuth-alarm
+  - trust-collapse
+  positions:
+    F4: -1
+    F6: -1
+    F7: -1
+  related_models:
+  - M3
+  - M4
+- id: bik-peer-review-congress-chicago-day-1-2025
+  title: Peer Review Congress Chicago – Day 1
+  authors: Elisabeth Bik
+  year: 2025
+  date: '2025-09-16'
+  venue: Science Integrity Digest
+  source_type: blog_essay
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://scienceintegritydigest.com/2025/09/16/peer-review-congress-chicago-day-1/
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - peer_review
+  summary: Conference notes report presentations on self-disclosure and detector-estimated AI use at BMJ, JAMA
+    and AACR, alongside research-integrity investigations. The AACR presentation reportedly found fewer than 25%
+    of detector-flagged authors disclosed use and an association between flagged abstracts and lower progression
+    to review, with quality confounding noted. These are secondary notes on heterogeneous studies, not one validated
+    cross-publisher estimate.
+  verbatim_excerpt: Disclosure of AI use is not reliable. Less than 25% of authors who used AI (as detected by
+    tool) actually disclosed it. All AI-written Letters to the Editor were rejected without consideration until
+    April 2025.
+  provenance: live_html
+  stance_tags:
+  - empirical-audit
+  - undisclosed-ai-use
+  - integrity-sleuth
+  positions:
+    F3: 0
+    F4: 0
+  related_models:
+  - M2
+- id: newman-black-spatula-project-2024
+  title: The Black Spatula Project
+  authors: Steve Newman
+  year: 2024
+  date: '2024-12-18'
+  venue: Substack — Second Thoughts
+  source_type: community_thread_writeup
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://secondthoughts.ai/p/the-black-spatula-project
+  open_access: true
+  pipeline_stages:
+  - post_pub_audit
+  - peer_review
+  summary: Launch proposal for the Black Spatula Project, prompted by an o1 demonstration identifying a tenfold
+    arithmetic error in a published study. Proposes small-scale experiments before mass literature auditing and
+    explicitly leaves detection performance, false positives and practical costs unresolved.
+  verbatim_excerpt: 'In particular, if this project bears fruit, it will highlight one AI capability that I think
+    is under-appreciated: the ability to grind through an enormous amount of work, such as reviewing a million
+    scientific papers.'
+  provenance: live_html
+  stance_tags:
+  - ai-error-hunting
+  - crowdsourced-audit
+  - pro-tool-optimism
+  positions:
+    F6: 1
+  related_models:
+  - M6
+- id: melo-pangea-arxiv-prompt-injection-2025
+  title: 'The Hidden Influence: Prompt Injection in ArXiv Research Papers'
+  authors: Joey Melo
+  year: 2025
+  date: '2025-07-11'
+  venue: Pangea Blog
+  source_type: blog_essay
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://pangea.cloud/blog/the-hidden-influence-prompt-injection-in-arxiv-research-papers/
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - submission_triage
+  summary: 'Blog post from Pangea, an AI-security vendor, that relays Nikkei Asia’s reporting of concealed review-manipulation
+    prompts in arXiv papers and presents an informal demonstration with ChatGPT, Copilot and Gemini. The responses
+    differ: the author describes ChatGPT as following the injection, while Copilot and Gemini also identify weaknesses.
+    The demonstration illustrates a risk, without a controlled baseline, systematic sample or general model failure
+    rate.'
+  verbatim_excerpt: For context, consider a typical research paper with seemingly harmless white space between
+    lines. Nothing special, right? Well, if you toggle dark mode ON, this white text reveals the secret prompt
+    injection. This isn't an isolated incident; a quick search on arxiv.org for "DO NOT HIGHLIGHT ANY NEGATIVES"
+    uncovers numerous other papers employing the same strategy.
+  provenance: live_html
+  stance_tags:
+  - prompt-injection
+  - adversarial-peer-review
+  - security-exploit
+  positions:
+    F2: -1
+  related_models:
+  - M2
+- id: gptzero-neurips-2025-hallucinated-citations-2026
+  title: GPTZero finds 100 new hallucinations in NeurIPS 2025 accepted papers
+  authors: Nazar Shmatko, Alex Adam, Paul Esau, Alex Cui, and Edward Tian
+  year: 2026
+  date: '2026-01-21'
+  venue: GPTZero News
+  source_type: blog_essay
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://gptzero.me/news/neurips
+  open_access: true
+  pipeline_stages:
+  - citations
+  - peer_review
+  - post_pub_audit
+  summary: Vendor investigation scanned 4,841 of 5,290 accepted NeurIPS 2025 papers and presents 100 citation
+    errors it describes as human-confirmed hallucinations. Its definition includes fabricated or conflated bibliographic
+    elements, not only nonexistent works; AI provenance is inferred. The page inconsistently states 51 and 53
+    affected papers. This is neither a census of every accepted paper nor independently validated detector performance.
+  verbatim_excerpt: After scanning 4841 papers accepted by the equally prestigious Conference on Neural Information
+    Processing Systems (NeurIPS), we discovered 100s of hallucinated citations missed by the 3+ reviewers who
+    evaluated each paper. Below, we uncover 100 confirmed hallucinations in the table below, spanning over 51
+    NeurIPS papers, which were not previously reported.
+  provenance: live_html
+  stance_tags:
+  - vibe-citing
+  - hallucinated-references
+  - conference-audit
+  positions:
+    F6: 1
+    F4: -1
+  related_models:
+  - M2
+- id: emi-pangram-iclr-21-percent-ai-reviews-2025
+  title: Pangram Predicts 21% of ICLR Reviews are AI-Generated
+  authors: Bradley Emi
+  year: 2025
+  date: '2025-11-18'
+  venue: Pangram Blog
+  source_type: blog_essay
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://www.pangram.com/blog/pangram-predicts-21-of-iclr-reviews-are-ai-generated
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: Pangram’s vendor analysis classifies 21% (15,899) of examined ICLR 2026 reviews as fully AI-generated
+    and over half as involving some AI assistance. Detector-labelled groups differ in length and scores. These
+    are detector estimates and observational associations, not verified individual misconduct or proof that AI
+    caused the score differences.
+  verbatim_excerpt: In order to find out, we analyzed all 19,000 papers and 70,000 reviews from the International
+    Conference on Learning Representations, one of the most important and prestigious AI research publication
+    venues.
+  provenance: live_html
+  stance_tags:
+  - ai-reviewing-ai
+  - openreview-audit
+  - cs-review-crisis
+  positions:
+    F2: -1
+    F6: 1
+  related_models:
+  - M1
+  - M2
+- id: iclr-2026-program-chairs-retrospective-2026
+  title: A Retrospective on the ICLR 2026 Review Process
+  authors: ICLR 2026 Program Chairs
+  year: 2026
+  date: '2026-03-31'
+  venue: ICLR Blog
+  source_type: institutional_experiment
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://blog.iclr.cc/2026/03/31/a-retrospective-on-the-iclr-2026-review-process/
+  open_access: true
+  pipeline_stages:
+  - citations
+  - submission_triage
+  - peer_review
+  summary: 'Official post-mortem from the ICLR 2026 Program Chairs detailing how they handled 19,525 submissions
+    and 76,139 reviews amid rising LLM use and an OpenReview API deanonymization breach. Explains their hybrid
+    governance pipeline: running two LLM detectors to flag wholly AI-generated reviews to Area Chairs and combining
+    automated bibliographic checks with three-human verification to desk-reject papers containing hallucinated
+    references.'
+  verbatim_excerpt: The large scale of reviews (over 75,000) made it impossible to rely on human judgement alone
+    to consistently flag and discover problematic reviews. We consequently ran two LLM content detectors on all
+    submitted reviews and emailed area chairs to notify them of which reviews on their submissions were flagged
+    as being entirely LLM generated by both detectors.
+  provenance: live_html
+  stance_tags:
+  - conference-governance
+  - hybrid-human-ai-enforcement
+  - hallucinated-ref-desk-reject
+  positions:
+    F2: 1
+    F6: -1
+    F4: -1
+  related_models:
+  - M1
+  - M2
+- id: arxiv-updated-rate-limit-policy-2026
+  title: 'Fair Moderation, Equitable Access, and AI: arXiv’s Updated Rate Limit Policy'
+  authors: Kat Boboris (arXiv)
+  year: 2026
+  date: '2026-10-01'
+  venue: arXiv Blog
+  source_type: institutional_experiment
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  - publishing_model
+  summary: Announces a rate limit of two submissions per calendar month per submitter, alongside the existing
+    limit (in place since 2024) of three active submissions at a time, after monthly arXiv submissions doubled
+    in two years from 20,569 (September 2024) to 40,363 (September 2026).
+  verbatim_excerpt: In September of 2016, arXiv received 9,869 submissions. In September of 2024, arXiv received
+    20,569 submissions. This September, arXiv received 40,363 submissions, which in turn generated almost 9,000
+    support tickets for arXiv staff and moderators. In only the past two years, submissions have doubled.
+  provenance: live_html
+  stance_tags:
+  - preprint-rate-limiting
+  - moderator-exhaustion
+  - ai-submission-flood
+  positions:
+    F4: -2
+    F7: -1
+  related_models:
+  - M3
+- id: kapoor-narayanan-could-ai-slow-science-2025
+  title: Could AI slow science?
+  authors: Sayash Kapoor and Arvind Narayanan
+  year: 2025
+  date: '2025-07-16'
+  venue: Substack — AI as Normal Technology (AI Snake Oil)
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://www.normaltech.ai/p/could-ai-slow-science
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  - publishing_model
+  summary: Argues that AI-enabled individual productivity may worsen a production–progress gap when attention,
+    verification and understanding constrain collective progress. Reviews competing explanations and imperfect
+    metrics, and proposes institutional reform and tools for quality control. Explicitly allows beneficial AI
+    uses and says slowdown is not inevitable or uniform across fields.
+  verbatim_excerpt: Unfortunately, AI companies, science funders, and policy makers all seem oblivious to what
+    the actual bottlenecks to scientific progress are. They are simply trying to accelerate production, which
+    is like adding lanes to a highway when the slowdown is actually caused by a toll booth. It’s sure to make
+    things worse.
+  provenance: live_html
+  stance_tags:
+  - production-progress-paradox
+  - systems-critique
+  - normal-technology
+  positions:
+    F4: -1
+    F7: 1
+  related_models:
+  - M3
+  - M6
+- id: requarth-problem-with-ai-detector-companies-2026
+  title: The Problem with AI Detector Companies
+  authors: Tim Requarth
+  year: 2026
+  date: '2026-04-06'
+  venue: Substack — The Third Hemisphere
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://timrequarth.substack.com/p/why-you-shouldnt-trust-ai-detector
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - post_pub_audit
+  summary: Criticizes commercial conflicts and public accusations based on AI detectors. An April 17 correction
+    explicitly retracts the claim that detection is useful only at population level and acknowledges strong Pangram
+    performance on fully generated text from major models, including short text. Remaining concerns focus on real-world
+    failure modes and using detector results alone to accuse individuals.
+  verbatim_excerpt: The term AI “detector” is a bit of a misnomer, as tools like Pangram don't scan a database
+    of known AI text for a match; they make a guess about likely authorship based on differences in patterns between
+    AI-generated and human-generated text. Rather than a detector, thinks of it as an “AI inferencer” or more
+    colloquially, an “AI best guesser.”
+  provenance: live_html
+  stance_tags:
+  - anti-detector-skepticism
+  - false-positives
+  - methodological-critique
+  positions:
+    F6: -1
+  related_models:
+  - M4
+- id: chou-astera-scientific-publishing-enough-is-enough-2025
+  title: 'Scientific Publishing: Enough is Enough'
+  authors: Seemay Chou
+  year: 2025
+  date: '2025-06-02'
+  venue: Astera Institute
+  source_type: institutional_experiment
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://astera.org/scientific-publishing-enough-is-enough/
+  open_access: true
+  pipeline_stages:
+  - publishing_model
+  - peer_review
+  summary: Chou advocates replacing journal-centred publishing and says journal-free requirements already operate
+    at Arcadia Science and Astera, with alternatives funded through Astera and The Navigation Fund. She proposes
+    more frequent open release of data, code and provisional results with public evaluation. Institutional experiences
+    and future proposals are presented, not comparative proof that this system improves research quality.
+  verbatim_excerpt: I no longer believe that incremental fixes are enough. Science publishing must be built anew.
+    I help oversee billions of dollars in funding across several science and technology organizations. We are
+    expanding our requirement that all scientific work we fund will not go towards traditional journal publications.
+  provenance: live_html
+  stance_tags:
+  - post-journal-abolitionism
+  - funder-mandate
+  - modular-open-science
+  positions:
+    F7: 2
+    F1: 2
+  related_models:
+  - M5
+  - M8
+- id: elife-exploring-ai-research-engagement-2026
+  title: 'eLife Latest: Exploring AI’s potential for improving research engagement'
+  authors: eLife Staff (quoting Timothy Behrens)
+  year: 2026
+  date: '2026-08-12'
+  venue: Inside eLife
+  source_type: institutional_experiment
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://elifesciences.org/inside-elife/6ad10e4e/elife-latest-exploring-ai-s-potential-for-improving-research-engagement
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  - publishing_model
+  summary: 'eLife describes three AI projects built on its open peer reviews: OpenEval, which extracted results across
+    the whole eLife corpus; Zachary Mainen''s claim-tree prototype, which turned 10 neuroscience papers into 173 linked
+    claims; and a small opt-in pilot with QED Science, in which reviewers judged about 80% of their comments correctly
+    assigned to the AI-extracted claims. eLife argues for machine-readable claims alongside narrative papers and notes
+    that Preprints.ai is not one of its partnerships.'
+  verbatim_excerpt: While human reviews and AI-generated claim structures differ significantly, the goal was to
+    test whether this new communication format could help bring them together.
+  provenance: live_html
+  stance_tags:
+  - executable-claim-trees
+  - publish-review-curate
+  - prose-as-interface
+  positions:
+    F1: 1
+    F7: 2
+    F2: 1
+  related_models:
+  - M5
+  - M6
+- id: santos-robens-nature-writing-is-thinking-2026
+  title: 'Writing is thinking: understanding the real risks of AI in scientific writing'
+  authors: Ana Santos (featuring Jeffrey Robens)
+  year: 2026
+  date: '2026-06-10'
+  venue: Nature Partnerships Blog
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://partnerships.nature.com/resources/blog/writing-is-thinking-understanding-the-real-risks-of-ai-in-scientific-writing/
+  open_access: true
+  pipeline_stages:
+  - writing
+  - citations
+  summary: Nature Partnerships training blog arguing that drafting helps researchers clarify arguments, identify gaps and
+    develop their own voice. It warns against delegating the whole writing process and recommends AI help for grammar,
+    phrasing, flow and summaries.
+  verbatim_excerpt: One of the most important reasons for writing your own paper is that it forces you to think,
+    and really know, your research. When you write it up, you need to structure your thoughts in such a way that
+    your audience can clearly understand your thoughts and ideas. As we’ve already seen, it’s about more than
+    writing it down. It’s an exercise in itself about clarifying your thoughts to formulate arguments, and identifying
+    any gaps in your logic or evidence.
+  provenance: live_html
+  stance_tags:
+  - writing-is-thinking
+  - cognitive-ownership
+  - traditionalist-craft
+  positions:
+    F1: -2
+  related_models: []
+- id: webb-davies-toxic-simplicity-writing-is-thinking-2026
+  title: The Toxic Simplicity of "Writing is Thinking"
+  authors: Kelly Webb-Davies
+  year: 2026
+  date: '2026-02-01'
+  venue: Substack — Kelly Webb-Davies
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://kellywebbdavies.substack.com/p/the-toxic-simplicity-of-writing-is
+  open_access: true
+  pipeline_stages:
+  - writing
+  summary: Argues that the slogan ‘writing is thinking’ collapses cognition, language, authorship and drafting into one
+    act and drives fear-based assessment policies in education. Drawing on her own executive dysfunction and working-memory
+    difficulties, Webb-Davies describes dictation and AI-assisted writing as ways to think out loud, and argues for including
+    neurodivergent and multilingual writers.
+  verbatim_excerpt: Those three simple words collapse cognition, language, authorship, and drafting into a single
+    act and is the epicentre of the fear-based responses to generative AI in education. It leads to the belief
+    that if generative AI touches the text, thinking must be absent, and it drives assessment policies that police
+    writing rather than support learning.
+  provenance: live_html
+  stance_tags:
+  - neurodivergent-accessibility
+  - prose-as-transcription
+  - anti-gatekeeping
+  positions:
+    F1: 1
+    F4: 1
+  related_models: []
+- id: king-worthington-2026-ai-reviews-dominate-human
+  title: 'AI Article Reviews Dominate Human Peer Reviews at Their Best: Evidence and Policy Choices'
+  authors: Gary King, Steven Worthington
+  year: 2026
+  date: '2026-10-28'
+  venue: Harvard IQSS Working Paper
+  source_type: preprint
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://gking.harvard.edu/peerless/
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - publishing_model
+  summary: Working paper comparing AI reviews with 134 paid rapidPeer human reviews of 124 social-science manuscripts.
+    Three former editors preferred AI in 26 of 30 judgments on the same ten review pairs, without being asked
+    to read the manuscripts; most other evaluations used AI judges. The study measures review preferences and
+    assessed claims, not subsequent manuscript improvements or publication decisions.
+  verbatim_excerpt: We show that AI-generated article reviews are now better, by every measure we could construct,
+    than reviews written by well-compensated human experts and judged to be of unusually high quality by journal
+    editors and authors.
+  provenance: live_html
+  stance_tags:
+  - ai-vs-human-review
+  - harvard-iqss
+  - editor-preference
+  positions:
+    F2: 1
+    F7: 1
+  related_models:
+  - M1
+  - M6
+- id: brian-rust-2026-llm-clinical-trial-errors
+  title: Large language models detect methodological errors that human peer review misses in clinical trials
+  authors: Dominikus Brian, Xavier Isidro Pereira Hernández, Hao Yin, Jeffrey Koury, Ruslan Rust
+  year: 2026
+  date: '2026-10-28'
+  venue: medRxiv
+  source_type: preprint
+  discipline_scope: biomed_lifesci
+  doi: 10.64898/2026.10.25.26366455
+  arxiv_id: null
+  pmid: null
+  url: https://doi.org/10.64898/2026.10.25.26366455
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - post_pub_audit
+  summary: 'medRxiv v2 preprint testing 15 LLMs on inserted methodological errors: major-error scores of 53–96%
+    on three historical trial reports (compared against a 27% mean among journal peer reviewers given no extra
+    training in the original study) and 58–99% on recent trials, where the three highest-scoring frontier models
+    were evaluated on only three of 58 recent trials (the posted medRxiv supplement archive reflects the initial
+    3-trial v1 release). Scoring used two LLM judges without contemporary human comparators, and models flagged
+    14–29% of tested error categories in unmodified control reports. Four of the five authors are affiliated with
+    ResearchHub Foundation, which is implementing AI-assisted review.'
+  verbatim_excerpt: On the original reports, the models' major-error detection scores ranged from 53% to 96%.
+    On the 2026 trials, scores ranged from 58% to 99%, and from 66% to 89% for the open-weight models. Notably,
+    LLMs still flagged 14% to 29% of the error types in control reports without inserted errors
+  provenance: fulltext_pdf
+  stance_tags:
+  - clinical-trials
+  - error-detection
+  - co-review
+  positions:
+    F2: 2
+    F6: 1
+  related_models:
+  - M1
+  - M6
+- id: krumholz-2026-jacc-ai-medical-writing
+  title: 'AI in Medical Writing: Why JACC Does Not Require Disclosure'
+  authors: Harlan M. Krumholz
+  year: 2026
+  date: '2026-10-06'
+  venue: JACC
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1016/j.jacc.2026.08.032
+  arxiv_id: null
+  pmid: '42841557'
+  url: https://doi.org/10.1016/j.jacc.2026.08.032
+  open_access: false
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: 'October 2026 editorial explaining JACC''s existing writing-assistance policy (set out in a 2025 Editor’s
+    Page), which departs from the January 2026 ICMJE update reaffirming that journals should require disclosure:
+    AI used solely to improve writing requires no disclosure when human authors stand behind every word, whereas
+    AI used in conducting the research must be reported in Methods for reproducibility, and reviewer confidentiality
+    duties stay strict.'
+  verbatim_excerpt: This Editor’s Page is not about a change in JACC policy. Rather, it is a fuller account of
+    why we draw the line where we do and what we require instead. This policy does not apply to AI used in the
+    conduct of the research, which should be reported as part of the scientific methods.
+  provenance: fulltext_pdf
+  stance_tags:
+  - icmje-break
+  - anti-disclosure-mandate
+  - author-accountability
+  positions:
+    F3: 2
+    F4: 1
+    F5: 1
+  related_models:
+  - M4
+- id: lemberger-rechavi-2026-authors-ai-review-embo
+  title: How do authors want to use AI for review? A survey to assess the perception of scientists who received
+    both AI and human reviews of their manuscripts
+  authors: Thomas Lemberger, Niv Samuel Mastboim, Oded Rechavi
+  year: 2026
+  date: '2026-02-26'
+  venue: EMBO Reports
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1038/s44319-026-00725-4
+  arxiv_id: null
+  pmid: '41748900'
+  url: https://doi.org/10.1038/s44319-026-00725-4
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - submission_triage
+  summary: 'EMBO Reports Comment (editorially reviewed, per the journal''s review file) reporting a non-blinded survey
+    that compared qed v1.0 reviews with earlier human reviews: 126 of 408 invited authors took part, 109 rated quality
+    and 98 voted on use cases. Human reviews scored higher for scientific insight, and checking one''s own manuscript before
+    submission was the most popular use for AI. The authors manage Review Commons or co-founded qed.'
+  verbatim_excerpt: A survey of researchers who compared AI-generated scientific reviews with journal-agnostic
+    human peer review reveals that they overwhelmingly prefer using AI as a self-checking tool before submission
+    rather than as a replacement for human reviewers.
+  provenance: europepmc_fulltext
+  stance_tags:
+  - author-centric-ai-review
+  - review-commons
+  - claim-tree
+  positions:
+    F2: 1
+    F7: 1
+  related_models:
+  - M1
+  - M6
+- id: drosatos-tsirigos-2026-reviewer-4-nat-biotech
+  title: Giving AI a seat at the peer review table
+  authors: Konstantinos Drosatos, Aristotelis Tsirigos
+  year: 2026
+  date: '2026-10-26'
+  venue: Nature Biotechnology
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1038/s41587-026-03369-w
+  arxiv_id: null
+  pmid: '42934331'
+  url: https://www.nature.com/articles/s41587-026-03369-w
+  open_access: false
+  pipeline_stages:
+  - peer_review
+  summary: Proposes adding AI to manuscript and grant peer review as a bounded, non-voting, secure and auditable ‘Reviewer
+    4’ that writes a report (on conceptual advance and novelty, methods, data and statistics) without issuing a recommendation,
+    so that voting authority stays with the human referees.
+  verbatim_excerpt: There is an opportunity here to refocus and strengthen the process of peer review, with AI
+    as a bounded, non-voting, secure, auditable tool — not replacing scientists, but serving as an additional
+    ‘Reviewer 4’.
+  provenance: browser_dom
+  stance_tags:
+  - reviewer-4
+  - bounded-co-review
+  positions:
+    F2: 2
+    F7: -1
+  related_models:
+  - M1
+- id: luo-kasirzadeh-shah-2026-hidden-pitfalls-ai-scientists
+  title: 'The more you automate, the less you see: Hidden pitfalls of autonomous AI scientists'
+  authors: Ziming Luo, Atoosa Kasirzadeh, Nihar B. Shah
+  year: 2026
+  date: '2026-10-05'
+  venue: PNAS
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: 10.1073/pnas.2610214123
+  arxiv_id: null
+  pmid: '42832657'
+  url: https://doi.org/10.1073/pnas.2610214123
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  - publishing_model
+  summary: Controlled symbolic-reasoning experiments on Agent Laboratory and AI Scientist v2 found benchmark-selection
+    bias, undocumented data changes and post-hoc selection based on test performance. They did not find clear
+    test-set peeking or deliberate metric gaming. On a balanced audit dataset mixing natural and deliberately
+    introduced failures, a rule-guided LLM auditor improved from 53.7% accuracy with manuscripts alone to 81.5%
+    with logs and code. This supports process transparency, with generalization beyond these systems and tasks
+    still untested.
+  verbatim_excerpt: Crucially, we find that these flaws are largely invisible at the level of the final manuscript,
+    suggesting that current manuscript-centric peer review paradigms are fundamentally insufficient for ensuring
+    the integrity of automated research.
+  provenance: crossref_abstract
+  stance_tags:
+  - process-provenance
+  - autonomous-science-pitfalls
+  positions:
+    F1: 1
+    F2: 0
+    F3: -2
+    F7: 1
+  related_models:
+  - M4
+  - M5
+  - M7
+- id: lu-2026-nature-end-to-end-ai-scientist
+  title: Towards end-to-end automation of AI research
+  authors: Chris Lu, Cong Lu, Robert Tjarko Lange, Yutaro Yamada, Shengran Hu, Jakob Foerster, David Ha, Jeff
+    Clune
+  year: 2026
+  date: '2026-03-25'
+  venue: Nature
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: 10.1038/s41586-026-10265-5
+  arxiv_id: null
+  pmid: '41882133'
+  url: https://doi.org/10.1038/s41586-026-10265-5
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  - publishing_model
+  summary: Peer-reviewed Nature report, six of whose eight authors are employees of or consultants for Sakana
+    AI, on the same ICLR 2025 workshop experiment as the 2025 preprint, detailing an end-to-end computational
+    research and manuscript pipeline with multi-stage human selection of promising runs; one of three unedited
+    submissions cleared the threshold at a 70%-acceptance ICLR workshop before protocol withdrawal, while none
+    met main-conference standards in the authors' assessment. Automated-review agreement uses different conference
+    pools for the human and AI comparisons, not a same-paper test of scientific correctness.
+  verbatim_excerpt: We present The AI Scientist, which creates research ideas, writes code, runs experiments,
+    plots and analyses data, writes the entire scientific manuscript, and performs its own peer review.
+  provenance: crossref_abstract
+  stance_tags:
+  - ai-scientist
+  - autonomous-authorship
+  positions:
+    F4: -1
+    F7: 1
+  related_models:
+  - M7
+- id: lange-2026-agentic-scientist-v3
+  title: 'The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery'
+  authors: Robert Tjarko Lange, Luca Grillotti, Yutaro Yamada, Rujikorn Charakorn, David Ha
+  year: 2026
+  date: '2026-10-13'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2610.18933'
+  pmid: null
+  url: https://arxiv.org/abs/2610.18933
+  open_access: true
+  pipeline_stages:
+  - writing
+  - publishing_model
+  summary: 'Sakana AI preprint introducing ‘The Agentic Scientist’ (code repository: AI Scientist v3), orchestrating
+    multi-agent coding, baseline and ablation construction, rubric self-verification, and report drafting across
+    an autonomy spectrum; in its human–AI co-scientist setting, the authors used a development version to submit
+    a single research paper (on Error Diffusion) that they report was accepted at ALIFE 2026.'
+  verbatim_excerpt: Within the co-scientist setting, we leveraged a development version of our system to submit
+    a single research paper, which got accepted for publication at ALIFE 2026.
+  provenance: arxiv_api
+  stance_tags:
+  - agentic-scientist-v3
+  - co-scientist
+  positions:
+    F7: 1
+  related_models:
+  - M5
+  - M7
+- id: liu-zhai-2026-do-ai-scientists-know-whats-new
+  title: Do AI Scientists Know What's New?
+  authors: Miri Liu, Xiayu Zhao, Encheng Xie, ChengXiang Zhai
+  year: 2026
+  date: '2026-10-27'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2610.36511'
+  pmid: null
+  url: https://arxiv.org/abs/2610.36511
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: Audits novelty filters on a controlled benchmark of 1,060 research proposals constructed around temporal
+    cutoffs, finding that checks which reject most non-novel work also tend to raise false alarms on ideas that
+    were later published (with exceptions), and introduces claim-level ClaimNov. Novelty labels are model-assisted,
+    with a limited human audit.
+  verbatim_excerpt: Auditing existing novelty checks with this framework, we find that checks with high rejection
+    rates on non-novel work also tend to have high false alarms on ideas that are later realized by human researchers.
+  provenance: arxiv_api
+  stance_tags:
+  - novelty-assessment
+  - claim-level-verification
+  positions: {}
+  related_models:
+  - M1
+  - M7
+- id: pisek-veromann-2026-hallucinated-citations-misconduct
+  title: AI-hallucinated citations should be treated as research misconduct
+  authors: Jan Pisek, Eve Veromann
+  year: 2026
+  date: '2026-10-27'
+  venue: Nature
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-026-03407-2
+  arxiv_id: null
+  pmid: '42946769'
+  url: https://doi.org/10.1038/d41586-026-03407-2
+  open_access: false
+  pipeline_stages:
+  - citations
+  - submission_triage
+  summary: Nature correspondence, written after arXiv began banning papers with AI-hallucinated references, arguing that
+    authors are accountable for every reference they cite and that hallucinated citations should be treated as research
+    misconduct. The authors point to an Estonian administrative court that fined a party over a legal filing containing
+    fabricated AI-generated academic references.
+  verbatim_excerpt: Authors — not AI tools — are accountable for every reference they cite. Hallucinated citations
+    corrupt the scholarly record and should be treated as research misconduct, with consequences comparable to
+    those of other serious breaches of research integrity.
+  provenance: fulltext_pdf
+  stance_tags:
+  - hallucinated-citations
+  - research-misconduct
+  positions: {}
+  related_models:
+  - M2
+- id: munung-2026-genomics-authorship-genai
+  title: What genomics and big data science can teach us about authorship in the era of generative AI
+  authors: Nchangwi Syntia Munung
+  year: 2026
+  date: '2026-10-25'
+  venue: JME Practical Bioethics
+  source_type: perspective_essay
+  discipline_scope: biomed_lifesci
+  doi: 10.1136/jmepb-2026-000366
+  arxiv_id: null
+  pmid: null
+  url: https://doi.org/10.1136/jmepb-2026-000366
+  open_access: true
+  pipeline_stages:
+  - writing
+  - publishing_model
+  summary: Responding to Earp and colleagues' proposal to disaggregate authorship, this bioethics essay argues for keeping
+    the ICMJE's four authorship criteria, which leave generative AI outside accountable authorship. Drawing on large genomics
+    and data-science programmes, where many contributors cannot meet all four criteria, it argues that contributor statements
+    should be visible, indexed and counted in hiring and promotion.
+  verbatim_excerpt: Large biomedical research programmes, especially genomics and data science, typically distribute
+    these functions across multidisciplinary teams, making it difficult for many researchers to satisfy all four
+    ICMJE criteria. Generative AI makes it even more challenging now, as it separates authorial functions across
+    humans and machines.
+  provenance: fulltext_pdf
+  stance_tags:
+  - contributorship
+  - genomics-lessons
+  positions:
+    F3: 0
+  related_models:
+  - M4
+- id: stokel-walker-2026-ai-agents-checking-literature
+  title: AI agents are checking the scientific literature — and spotting decades-old errors
+  authors: Chris Stokel-Walker
+  year: 2026
+  date: '2026-08-06'
+  venue: Nature
+  source_type: journal_news_feature
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-026-02235-8
+  arxiv_id: null
+  pmid: '42562915'
+  url: https://doi.org/10.1038/d41586-026-02235-8
+  open_access: false
+  pipeline_stages:
+  - post_pub_audit
+  summary: Nature news report on AI tools that check published papers and reference databases for errors, including wrong
+    boiling points in a 75-year-old reference database exposed when an AI prediction model disagreed with it. Nature reports
+    a survey of 733 ICML 2026 submitters in which 35% said Google's Paper Assistant Tool found errors in their work; researchers
+    quoted warn of false positives and invented problems.
+  verbatim_excerpt: For decades, chemists have relied on handbook values for a molecule’s boiling point to identify
+    substances and plan processes such as distillation. But an artificial-intelligence model has revealed that
+    some trusted numbers in one reference database have been wrong all along.
+  provenance: fulltext_pdf
+  stance_tags:
+  - error-sleuthing
+  - legacy-literature-audit
+  positions: {}
+  related_models:
+  - M6
+- id: zimmer-2026-nature-peer-review-wars-mills
+  title: '‘A waste of time for all of us’: caught in the crossfire of the peer-review wars'
+  authors: Katarina Zimmer
+  year: 2026
+  date: '2026-08-03'
+  venue: Nature
+  source_type: journal_news_feature
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-026-01360-8
+  arxiv_id: null
+  pmid: '42547616'
+  url: https://www.nature.com/immersive/d41586-026-01360-8/index.html
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - post_pub_audit
+  summary: Nature investigates duplicate review reports and coercive citation requests, including the consequences
+    of integrity notices for authors who rejected inappropriate requests. The feature reports documented examples,
+    disputed allegations and publisher responses. AI is discussed as a possible facilitator of generic reviews,
+    not demonstrated as their cause; open-review availability affects which publishers can be investigated.
+  verbatim_excerpt: “There should be more publishing of peer reviews, precisely because it is one way to be aware
+    of this phenomenon,” Bishop says. The growing use of artificial-intelligence tools probably contributes, too,
+    as they make it easy to produce generic review content.
+  provenance: browser_dom
+  stance_tags:
+  - review-mills
+  - open-peer-review
+  positions: {}
+  related_models:
+  - M2
+  - M6
+- id: guo-ting-zhavoronkov-2026-cell-autonomous-science
+  title: Toward autonomous science with agentic artificial intelligence
+  authors: Lucie Y. Guo, Darren S.J. Ting, Xinyi Su, Alex Aliper, Alex Zhavoronkov, Daniel S.W. Ting
+  year: 2026
+  date: '2026-09-17'
+  venue: Cell
+  source_type: perspective_essay
+  discipline_scope: biomed_lifesci
+  doi: 10.1016/j.cell.2026.08.052
+  arxiv_id: null
+  pmid: '42753735'
+  url: https://www.sciencedirect.com/science/article/pii/S0092867426010639
+  open_access: false
+  pipeline_stages:
+  - writing
+  - peer_review
+  - publishing_model
+  summary: Cell Perspective tracing agentic AI in biomedicine from image classifiers to multi-agent ‘co-scientists’ such
+    as Co-Scientist, Robin and Biomni, which generate hypotheses, design experiments and refine their reasoning from experimental
+    results. The authors argue that AI's potential is inseparable from problems of hallucination, bias, irreproducibility
+    and dual use. Two of the authors are executives of Insilico Medicine.
+  verbatim_excerpt: This perspective traces the emergence of agentic scientific reasoning, discusses scaling laws and autonomous
+    laboratories, and argues that AI’s transformative potential is inseparable from challenges in hallucination, bias,
+    irreproducibility, and dual use.
+  provenance: crossref_plus_open_page
+  stance_tags:
+  - illusion-of-consensus
+  - multi-agent-science
+  positions: {}
+  related_models:
+  - M4
+  - M7
+- id: la-rosa-nasser-2026-elephant-editorial-room
+  title: 'AI in peer review: the elephant in the editorial room'
+  authors: Giusy Rita Maria La Rosa, Mona Nasser
+  year: 2026
+  date: '2026-06-04'
+  venue: Evidence-Based Dentistry
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1038/s41432-026-01227-x
+  arxiv_id: null
+  pmid: '42243266'
+  url: https://www.nature.com/articles/s41432-026-01227-x
+  open_access: false
+  pipeline_stages:
+  - peer_review
+  - submission_triage
+  summary: Contrasts a Frontiers survey in which 53% of reviewers reported using AI with an informal assessment
+    at one journal in which over 95% of reviewers declared they had not, arguing that the gap suggests probable
+    under-reporting and that reputational stigma makes silence the rational reviewer strategy; calls for moving
+    from prohibition to acknowledged, documented and bounded use.
+  verbatim_excerpt: Reviewers may avoid reporting AI use during the peer review process because disclosure is
+    perceived as reputationally costly and not yet normatively sanctioned. In the absence of a clear and non-judgmental
+    framework for acknowledgment, silence becomes the most rational response.
+  provenance: browser_dom
+  stance_tags:
+  - reviewer-silence
+  - disclosure-stigma
+  positions:
+    F3: 0
+    F2: 1
+  related_models:
+  - M1
+- id: coppes-2026-pediatric-research-beyond-disclosure
+  title: 'Beyond disclosure: setting standards for AI use in publishing in the journal Pediatric Research'
+  authors: Max J. Coppes, Sanjay K. Juneja, Eleanor J. Molloy, Cynthia F. Bearer
+  year: 2026
+  date: '2026-04-22'
+  venue: Pediatric Research
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1038/s41390-026-04974-w
+  arxiv_id: null
+  pmid: '42020803'
+  url: https://www.nature.com/articles/s41390-026-04974-w
+  open_access: false
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: Critiques binary 'Was AI used?' disclosure statements for lumping harmless Discussion grammar edits
+    together with unverified LLM drafting of Results from raw statistics; proposes four-dimensional disclosure
+    covering model identity, section scope, input data, and human verification steps.
+  verbatim_excerpt: 'Current disclosure practices typically answer a single question: Was AI used? They rarely
+    answer the more consequential ones: How? Where? To what extent? Two manuscripts can carry identical AI disclosure
+    statements while presenting very different conceptual risks.'
+  provenance: browser_dom
+  stance_tags:
+  - structured-disclosure
+  - editorial-standards
+  positions:
+    F3: -2
+  related_models:
+  - M4
+- id: nature-nanotech-2026-peer-review-time-of-ai
+  title: Peer review in the time of artificial intelligence
+  authors: Editorial
+  year: 2026
+  date: '2026-04-20'
+  venue: Nature Nanotechnology
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/s41565-026-02177-2
+  arxiv_id: null
+  pmid: '42010334'
+  url: https://www.nature.com/articles/s41565-026-02177-2
+  open_access: false
+  pipeline_stages:
+  - peer_review
+  summary: 'Editorial reminding referees of the Nature Portfolio guidance on generative AI: reviewers remain accountable
+    for every AI output, must declare AI use in their reports, and must not upload manuscripts into AI tools, because even
+    closed tools can expose content to other users in the same institution. Grammar and readability edits need no declaration.
+    The editors expect AI tools to help peer review eventually and warn that careless use hands critical thinking to an
+    algorithm.'
+  verbatim_excerpt: If used inattentively, though, we risk delegating critical thinking to an algorithm, giving
+    us a false sense of achievement. This undermines the role of our academic training, critical thinking, and
+    expertise, as well as the institution of peer review.
+  provenance: browser_dom
+  stance_tags:
+  - confidentiality
+  - editorial-asymmetry
+  positions:
+    F2: -1
+    F3: -1
+  related_models:
+  - M1
+- id: weaver-2026-surgery-peer-review-paradox
+  title: 'The peer review paradox: How artificial intelligence is increasing the burden of scientific peer review'
+  authors: M. Libby Weaver
+  year: 2026
+  date: '2026-11-01'
+  venue: Surgery
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1016/j.surg.2026.110697
+  arxiv_id: null
+  pmid: '42951417'
+  url: https://www.sciencedirect.com/science/article/pii/S0039606026006227
+  open_access: false
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  - publishing_model
+  summary: Argues that AI-driven submission growth increases the burden on peer reviewers while fewer journals
+    permit AI in peer review than in manuscript preparation (citing copyright, quality and bias concerns), notes
+    that publishers earn more as publication numbers rise, and proposes allowing AI across the editorial process,
+    with authors who use AI consenting to its use in peer review.
+  verbatim_excerpt: And despite journals allowing the use of AI in manuscript development with appropriate disclosures,
+    substantially fewer journals allow AI use in peer review, largely citing copyright, quality, and potential
+    bias concerns. This makes sense from a business perspective. Scientific publishing companies increase revenue
+    with increased numbers of publications and associated article processing fees and journal subscriptions.
+  provenance: browser_dom
+  stance_tags:
+  - apc-incentives
+  - reviewer-burden
+  positions:
+    F4: -2
+    F2: 2
+  related_models:
+  - M3
+  - M8
+- id: hart-2025-lancet-neurology-ai-peer-review
+  title: Navigating the use of generative AI in peer review
+  authors: Laura Hart
+  year: 2025
+  date: '2025-03-01'
+  venue: The Lancet Neurology
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1016/S1474-4422(25)00041-9
+  arxiv_id: null
+  pmid: '39986296'
+  url: https://www.sciencedirect.com/science/article/pii/S1474442225000419
+  open_access: false
+  pipeline_stages:
+  - peer_review
+  summary: Sets out the Lancet journals' prohibition (as of March 2025) on generative AI tools in the scientific
+    review of manuscripts, on the grounds that critical thinking and nuanced evaluation cannot be adequately replicated
+    by AI and that uploading unpublished manuscripts would breach confidentiality, while noting that reviewers
+    may have suspected undisclosed AI use in the writing of a manuscript.
+  verbatim_excerpt: We firmly believe that the critical thinking and nuanced evaluation required for effective
+    peer review cannot be adequately replicated by AI technologies. To that end, the Lancet journals do not allow
+    the use of generative AI tools in the scientific review of manuscripts. Inserting unpublished manuscripts
+    into large language models during peer review would constitute a breach of confidentiality.
+  provenance: browser_dom
+  stance_tags:
+  - lancet-ban
+  - human-sanctuary
+  positions:
+    F2: -2
+  related_models: []
+- id: nature-methods-2026-using-ai-responsibly
+  title: Using AI responsibly in scientific publishing
+  authors: Editorial
+  year: 2026
+  date: '2026-02-11'
+  venue: Nature Methods
+  source_type: editorial_comment
+  discipline_scope: biomed_lifesci
+  doi: 10.1038/s41592-026-03020-1
+  arxiv_id: null
+  pmid: '41673429'
+  url: https://www.nature.com/articles/s41592-026-03020-1
+  open_access: false
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: 'Policy editorial: generative AI may serve as an equalizer for scientists who struggle with language
+    or writing; authors may use it to help write or edit their manuscripts but must declare this in the Methods
+    section and check the text; a generative AI tool cannot be listed as an author, and reviewers may not upload
+    manuscripts into generative AI tools.'
+  verbatim_excerpt: For scientists who struggle with language or writing, generative AI may serve as an equalizer,
+    allowing them to polish their manuscripts and improve their communications.
+  provenance: browser_dom
+  stance_tags:
+  - linguistic-equity
+  - methods-disclosure
+  positions:
+    F4: 1
+    F3: -1
+    F5: 0
+  related_models: []
+- id: braun-2026-nature-who-is-responsible-ai-science
+  title: Who is responsible when AI helps to write science?
+  authors: Robert Braun
+  year: 2026
+  date: '2026-09-01'
+  venue: Nature
+  source_type: perspective_essay
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-026-02686-z
+  arxiv_id: null
+  pmid: '42680891'
+  url: https://www.nature.com/articles/d41586-026-02686-z
+  open_access: false
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: 'Nature Comment on who bears responsibility when generative AI helps to write science: Braun argues
+    that generative AI cannot take responsibility for what it produces and proposes a CRediT-style statement of
+    AI use in which verification and accountability stay with the human author. An end-note states that ChatGPT
+    5.4 was used as a dialogical writing and analytical aid and Claude 4.2 to review the article.'
+  verbatim_excerpt: GenAI (OpenAI ChatGPT 5.4) was used as a dialogical writing and analytical aid during the
+    development of the piece, including for idea generation, structural iteration, prose generation, summarization,
+    condensation and stylistic revision. It also assisted in synthesizing relationships between the cited papers
+    and the author’s uploaded manuscripts. GenAI (Anthropic Claude 4.2) was used to review the article.
+  provenance: browser_dom
+  stance_tags:
+  - dialogical-writing
+  - ai-use-disclosure
+  positions:
+    F3: -2
+  related_models:
+  - M4
+- id: rust-x-2026-human-only-clinical-review-dangerous
+  title: “From now on I won't do any peer review without AI. For clinical trials, I'd even call human-only review
+    dangerous”
+  authors: Ruslan Rust (@rust_ruslan)
+  year: 2026
+  date: '2026-10-28'
+  venue: X (thread)
+  source_type: social_post
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/rust_ruslan/status/2115493697001513053
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: Ruslan Rust argues, from his team's preprint, that human-only review of clinical trials is dangerous. His thread
+    sets historical reviewer performance against the team's analysis of 58 recent trials, including eligible open-access
+    phase 3 trials.
+  verbatim_excerpt: 'TLDR: From now on I won''t do any peer review without AI. For clinical trials, I''d even
+    call human-only review dangerous'
+  provenance: browser_dom
+  stance_tags:
+  - pro-ai-co-review
+  - clinical-trials
+  positions: {}
+  related_models:
+  - M1
+- id: mollick-x-2026-opus-beats-human-reviewers
+  title: Opus 4.8 outperforming human expert peer reviewers across 124 Harvard social-science papers
+  authors: Ethan Mollick (@emollick)
+  year: 2026
+  date: '2026-10-23'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/emollick/status/2113483068174692831
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - publishing_model
+  summary: Ethan Mollick highlights a Harvard working paper comparing reviews of 124 social-science manuscripts and urges
+    academia to adapt rapidly to AI.
+  verbatim_excerpt: By every measure, Opus 4.8 beats human experts as peer reviewers in a study of 124 Harvard
+    social science papers covering a range from statistical analyses to formal models to qualitative work. As
+    academics, we need to figure out how to adapt the practice of science to AI, fast.
+  provenance: browser_dom
+  stance_tags:
+  - institutional-adaptation
+  - ai-peer-review
+  positions: {}
+  related_models:
+  - M1
+- id: hidalgo-x-2026-journal-ai-generated-papers
+  title: Launching the Journal for AI Generated Papers (JAIGP · jaigp.org)
+  authors: César A. Hidalgo (@cesifoti)
+  year: 2026
+  date: '2026-02-14'
+  venue: Journal of AI Generated Papers / X
+  source_type: live_experiment
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/cesifoti/status/2022674780277870747
+  open_access: true
+  pipeline_stages:
+  - writing
+  - publishing_model
+  summary: César Hidalgo announces jaigp.org, the Journal for AI Generated Papers, launched with Claude as a venue for
+    papers written with AI. Submissions are screened by AI, endorsed by an ORCID-verified scholar and reviewed by AI reviewers
+    from Reviewer3; human peer review is planned, and the journal's rules are set by community vote.
+  verbatim_excerpt: 'AI can now write papers. But journals were never designed for that. Today Claude and I are
+    launching something new: http://jaigp.org'
+  provenance: browser_dom
+  stance_tags:
+  - agent-native-venue
+  - jaigp
+  positions:
+    F7: 2
+  related_models:
+  - M7
+- id: earp-x-2026-watermarks-not-contribution
+  title: 'AI watermarks do not measure intellectual contribution: Implications for academic publishing'
+  authors: Brian D. Earp (@briandavidearp)
+  year: 2026
+  date: '2026-09-09'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/briandavidearp/status/2097484885350821951
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: 'Earp shares a paper titled “AI watermarks do not measure intellectual contribution: Implications for academic
+    publishing”, written after Anthropic announced that its models will introduce watermarks.'
+  verbatim_excerpt: 'AI watermarks do not measure intellectual contribution: Implications for academic publishing'
+  provenance: browser_dom
+  stance_tags:
+  - watermarking-critique
+  - authorship-ethics
+  positions: {}
+  related_models:
+  - M4
+- id: weil-x-2026-openai-prism-paper-review
+  title: 'OpenAI Prism Paper Review workflow: “This is the opposite of AI slop”'
+  authors: Kevin Weil (@kevinweil)
+  year: 2026
+  date: '2026-04-07'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/kevinweil/status/2041573799775367525
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: Introduces Paper Review inside OpenAI's Prism scientific workspace, an AI workflow for reviewing technical
+    and scientific papers, framing its use for rigor, correctness, and reproducibility as “the opposite of AI
+    slop”.
+  verbatim_excerpt: 'New in Prism today: Paper Review, an AI workflow for reviewing technical and scientific papers.
+    This is the opposite of AI slop: we''re using AI to improve scientific rigor, correctness, and reproducibility.'
+  provenance: browser_dom
+  stance_tags:
+  - ai-paper-review
+  - openai-prism
+  positions:
+    F2: 1
+  related_models:
+  - M1
+- id: haider-x-2026-gpt-cleaning-human-math-slop
+  title: 'GPT-6.1 Sol auditing ~800 arXiv math papers: “cleaning up decades of human slop”'
+  authors: Haider (@haider1)
+  year: 2026
+  date: '2026-10-16'
+  venue: X
+  source_type: social_post
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/haider1/status/2110885936179319160
+  open_access: true
+  pipeline_stages:
+  - post_pub_audit
+  summary: Commentary on an automated audit of nearly 800 mathematics preprints that reports major errors in 6% of them
+    and an estimated 90% precision for its major findings. The original post it quotes compares 6% main-theorem flags before
+    August 2026 with 1.5% in two later months.
+  verbatim_excerpt: gpt-6.1 sol examined nearly 800 mathematics papers, finding major errors in 6% and minor mistakes
+    in another 30%. researchers estimate that 90% of its major findings are correct — i'm glad AI is now cleaning
+    up decades of human slop
+  provenance: browser_dom
+  stance_tags:
+  - math-audit
+  - archive-hygiene
+  positions: {}
+  related_models:
+  - M6
+- id: cremieux-x-2026-astra-replication-bugs
+  title: 'Crémieux: an Astra run on replication packages “found a huge number of coding errors”, some said to
+    overturn central results'
+  authors: Crémieux (@cremieuxrecueil)
+  year: 2026
+  date: '2026-09-05'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/cremieuxrecueil/status/2096313266901270548
+  open_access: true
+  pipeline_stages:
+  - post_pub_audit
+  summary: Crémieux reports that running Astra on a batch of replication packages turned up many coding errors, most of
+    them inconsequential and some, he says, overturning central results of papers in high-ranking journals.
+  verbatim_excerpt: I sicced Astra on a bunch of replication packages, and it found a huge number of coding errors.
+    Most of these were inconsequential, but some of them overturn central results for papers in high-ranking journals.
+  provenance: browser_dom
+  stance_tags:
+  - replication-audit
+  - code-sleuthing
+  positions: {}
+  related_models:
+  - M5
+  - M6
+- id: khalil-reviewer3-x-2026-reviewbench-volume
+  title: Reviewer3 announces ReviewBench, an open-source benchmark for AI manuscript review
+  authors: Reviewer3 (@reviewer3com)
+  year: 2026
+  date: '2026-05-02'
+  venue: X (thread)
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/reviewer3com/status/2050380810629583054
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  summary: Reviewer3 announces ReviewBench as an open-source, cross-disciplinary benchmark for AI manuscript review.
+    This is a company’s announcement of its own benchmark; only the first post of the thread was captured.
+  verbatim_excerpt: AI is starting to enter peer review. For a space moving so quickly, there has been surprisingly
+    few benchmarks of how these systems actually compare to one other and to human peer review. So we built one.
+    Meet ReviewBench, the first open-source, cross-disciplinary benchmark
+  provenance: browser_dom
+  stance_tags:
+  - reviewbench
+  - triage-automation
+  positions:
+    F2: 1
+  related_models:
+  - M1
+  - M2
+- id: kohlhaas-x-2026-multiplayer-hypothesis-arena
+  title: Open real-time arena where humans and AI agents publish, debate, and fund hypotheses without gatekeepers
+  authors: Paul Kohlhaas (@paulkhls)
+  year: 2026
+  date: '2026-03-06'
+  venue: X
+  source_type: live_experiment
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/paulkhls/status/2029969489622618572
+  open_access: true
+  pipeline_stages:
+  - publishing_model
+  summary: Paul Kohlhaas announces an open, real-time arena where AI agents and humans publish, debate and fund scientific
+    hypotheses, with more than 1,000 hypotheses live at launch and, in his words, “Zero gatekeepers. Zero 18-month grant
+    cycles.”
+  verbatim_excerpt: We just launched an open arena for AI agents and humans publish, debate, and fund scientific
+    hypotheses, in real time. 1,000+ hypotheses already live. Zero gatekeepers. Zero 18-month grant cycles.
+  provenance: browser_dom
+  stance_tags:
+  - post-journal
+  - desci-arena
+  positions:
+    F7: 2
+  related_models:
+  - M7
+  - M8
+- id: murphy-x-2026-genomics-ai-community-blog
+  title: 'Genomics × AI community blog: sharing incremental and negative results fast without waiting on publishers'
+  authors: Alan Murphy (@Al_Murphy_)
+  year: 2026
+  date: '2026-06-04'
+  venue: Genomics × AI / X
+  source_type: live_experiment
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/Al_Murphy_/status/2062604556165390599
+  open_access: true
+  pipeline_stages:
+  - publishing_model
+  - writing
+  summary: Alan Murphy promotes the Genomics × AI community blog, where the genomics and machine-learning community shares
+    incremental results, negative results and tutorials quickly and discusses them “without waiting on a publisher”.
+  verbatim_excerpt: We built the Genomics × AI blog so the genomics + ML community can share work fast and actually
+    discuss it — incremental results, negative results, tutorials — without waiting on a publisher.
+  provenance: browser_dom
+  stance_tags:
+  - negative-results
+  - community-curation
+  positions:
+    F7: 1
+  related_models:
+  - M6
+  - M8
+- id: luu-elicit-x-2026-end-of-systematic-reviews
+  title: “Might be the beginning of the end for the systematic review field” (quote-post of a Scholara.AI launch)
+  authors: Brandon Luu, MD (@BrandonLuuMD)
+  year: 2026
+  date: '2026-02-19'
+  venue: X (posts)
+  source_type: social_post
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/BrandonLuuMD/status/2024573220582539328
+  open_access: true
+  pipeline_stages:
+  - writing
+  - citations
+  - submission_triage
+  summary: Brandon Luu, quoting a launch announcement for the Scholara.AI systematic-review platform, suggests that AI
+    may soon take over the work of systematic reviews.
+  verbatim_excerpt: Might be the beginning of the end for the systematic review field. I always knew it was only
+    a matter of time before AI started taking this over.
+  provenance: browser_dom
+  stance_tags:
+  - systematic-reviews
+  - synthesis-automation
+  positions: {}
+  related_models:
+  - M5
+- id: anthropic-schwartz-x-2026-impedance-mismatch
+  title: '“Claude-shaped science”: an impedance mismatch between LLM strengths and human-collaborator-style workflows'
+  authors: Anthropic (@AnthropicAI), on a guest post by Matthew Schwartz
+  year: 2026
+  date: '2026-10-01'
+  venue: Anthropic Science Blog / X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/AnthropicAI/status/2105733864152858919
+  open_access: true
+  pipeline_stages:
+  - writing
+  - publishing_model
+  summary: Anthropic promotes a guest essay by physicist Matthew Schwartz, a visiting researcher at Anthropic, on matching
+    scientific work to what language models do well, such as exact calculations and expert-steered exploration. One example
+    is an AI data editor that ported the replication packages of 4,452 papers in five leading economics journals to open-source
+    code and checked them against the published tables (NBER working paper w35782).
+  verbatim_excerpt: In physics, an “impedance mismatch” occurs when two systems each work well but are poorly
+    matched. In this Science Blog guest post, Harvard physicist Matthew Schwartz argues that something similar
+    is happening with AI and science.
+  provenance: browser_dom
+  stance_tags:
+  - impedance-mismatch
+  - epistemology
+  positions: {}
+  related_models:
+  - M5
+- id: asimov-press-x-2026-legibility-problem
+  title: 'The “legibility problem”: what if AI scientists make discoveries humans cannot understand?'
+  authors: Asimov Press (@AsimovPress), column by Matthew Carter
+  year: 2026
+  date: '2026-03-02'
+  venue: Asimov Press / X
+  source_type: social_post
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/AsimovPress/status/2028501964372492591
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: 'Raises the “legibility problem”: AI scientists might generate knowledge beyond human understanding.
+    Calls for new scientific infrastructure: forums to store AI-generated findings so they can be interrogated
+    and communicated, and systems designed for explication that make such findings legible to human researchers.'
+  verbatim_excerpt: AI scientists could one day design experiments, test hypotheses, and make discoveries faster
+    than humans. But what if their breakthroughs are so advanced we can't understand them? This is the "legibility
+    problem."
+  provenance: browser_dom
+  stance_tags:
+  - legibility-problem
+  - epistemic-limits
+  positions:
+    F1: 1
+    F5: -1
+  related_models:
+  - M4
+  - M5
+- id: newsfromscience-x-2026-chatbot-scooping-risk
+  title: Could an unpublished idea typed into a chatbot or coding agent end up with the company or a rival?
+  authors: News from Science (@NewsfromScience)
+  year: 2026
+  date: '2026-10-21'
+  venue: Science / X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/NewsfromScience/status/2112940004938764335
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: News teaser asking whether an unpublished idea typed into a chatbot or coding agent could end up being used
+    by the company that built the model or by a rival, noting that no setting makes a chatbot fully private and that experts
+    suggest steps to make leaks less likely.
+  verbatim_excerpt: When you type an unpublished idea into a chatbot or coding agent, could it end up being used
+    by the company that built the model—or a rival who asks the right question a year later?
+  provenance: browser_dom
+  stance_tags:
+  - confidentiality
+  - ip-leakage
+  positions: {}
+  related_models:
+  - M1
+- id: airesearchtools-x-2026-elsevier-vs-bans
+  title: 'Publisher split: a philosophy-journal editor who does not want AI-written manuscripts vs. Elsevier''s
+    accountability-centered policy'
+  authors: AI Research Tools (@airesearchtools)
+  year: 2026
+  date: '2026-08-26'
+  venue: X (thread)
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/airesearchtools/status/2092537502284370114
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: Contrasts a philosophy-journal editor who said he did not want AI-written manuscripts with Elsevier's
+    August 2026 policy update ('Authors are welcome to use AI, while remaining accountable'), under which authors
+    verify facts and sources, review and edit AI output, and disclose AI use when required.
+  verbatim_excerpt: 'Elsevier’s approach is essentially to require authors to remain responsible for what they
+    write: verify the facts and sources, review and edit AI-generated output, make sure the paper reflects their
+    own analysis and ideas, and disclose the use of AI when required.'
+  provenance: browser_dom
+  stance_tags:
+  - publisher-divergence
+  - pangram
+  positions: {}
+  related_models:
+  - M2
+  - M4
+- id: rohanpaul-x-2026-mit-rejects-ai-detectors
+  title: MIT guidance against relying on AI text detectors over adversarial arms-race dynamics
+  authors: Rohan Paul (@rohanpaul_ai)
+  year: 2026
+  date: '2026-08-27'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/rohanpaul_ai/status/2093021089303793737
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - post_pub_audit
+  summary: Rohan Paul discusses a reported MIT recommendation against relying on AI detectors in education, citing
+    evasion, false-positive harm and distrust. This social post is secondary commentary; the scope of the institutional
+    recommendation requires the underlying report.
+  verbatim_excerpt: The AI detector industry should be very uncomfortable reading this MIT report. The strongest
+    institutional rejections yet, direct from MIT. "we recommend against relying on AI detectors."
+  provenance: browser_dom
+  stance_tags:
+  - detector-critique
+  - arms-race
+  positions: {}
+  related_models:
+  - M4
+- id: yona-icml2027-x-2026-60k-iclr-submissions
+  title: Proposal for two conference tracks, one AI-reviewed and uncapped, one human-reviewed and capped, citing
+    60,000 ICLR submissions
+  authors: Gal Yona (@_galyo), quoting Andrew Gordon Wilson (@andrewgwils)
+  year: 2026
+  date: '2026-09-21'
+  venue: X (Conference governance thread)
+  source_type: social_post
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/_galyo/status/2102082081018827248
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  - publishing_model
+  summary: 'Gal Yona, answering an ICML 2027 program chair''s call for ideas and citing 60,000 ICLR submissions, proposes
+    two parallel conference tracks: an uncapped track reviewed and judged by AI, and a human-reviewed track with a hard
+    cap on submissions per author.'
+  verbatim_excerpt: desperate times call for desperate measures, and as the 60k ICLR submissions show, the ML
+    community has been too slow to rise to the challenge.
+  provenance: browser_dom
+  stance_tags:
+  - 60k-iclr
+  - conference-crisis
+  - icml-2027
+  positions:
+    F2: 1
+  related_models:
+  - M3
+- id: lambert-x-2026-llm-supervised-peer-review
+  title: 'Nathan Lambert on LLM-supervised peer review: “If we don’t solve it the academic institutions are toast”'
+  authors: Nathan Lambert (@natolambert)
+  year: 2026
+  date: '2026-09-19'
+  venue: X
+  source_type: social_post
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/natolambert/status/2101289380853784814
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - publishing_model
+  summary: Nathan Lambert calls LLM-supervised peer review one of the most important research problems for computer-science
+    academics, warns that academic institutions are ‘toast’ if it is not solved, and judges it easier than building new
+    institutions.
+  verbatim_excerpt: Seems like one of the most important research problems for CS academics is llm-supervised
+    peer review. If we don’t solve it the academic institutions are toast. It seems easier than building new institutions.
+  provenance: browser_dom
+  stance_tags:
+  - llm-supervised-review
+  - institutional-pragmatism
+  positions:
+    F2: 1
+    F7: -1
+  related_models:
+  - M1
+- id: rosen-x-2026-llm-invented-flaw-lists
+  title: 'Why LLM referees never say “accept as is”: the laundry-list-of-flaws bias'
+  authors: Andrew S. Rosen (@Andrew_S_Rosen)
+  year: 2026
+  date: '2026-09-26'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/Andrew_S_Rosen/status/2103848275270914104
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: Andrew Rosen argues that an LLM asked to review a manuscript or proposal will always produce a ‘laundry list’
+    of flaws, even for excellent work, and that these flaws can look sensible while being low-quality.
+  verbatim_excerpt: when asked to review a manuscript or proposal, an LLM will never say "this looks great, accept
+    as is." It will *always* come up with a laundry list of "flaws", even for excellent work. These flaws can
+    be superficially sensible but actually low-quality.
+  provenance: browser_dom
+  stance_tags:
+  - fault-finding-bias
+  - ai-reviewer-critique
+  positions:
+    F2: -1
+  related_models:
+  - M1
+- id: doshi-x-2026-ban-ai-writing-not-research
+  title: 'ICLR reviewer pushback: allow AI in research, ban AI in writing papers'
+  authors: Darshil Doshi (@darshilhdoshi1)
+  year: 2026
+  date: '2026-10-22'
+  venue: X
+  source_type: social_post
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/darshilhdoshi1/status/2113071067275391155
+  open_access: true
+  pipeline_stages:
+  - writing
+  - peer_review
+  summary: Darshil Doshi, after reviewing for ICLR, argues that the only remaining way to save peer review is to ban AI
+    from writing papers while allowing it in research.
+  verbatim_excerpt: After hours of playing guess-what-is-AI-slop (aka reviewing for @iclr_conf ), I am convinced
+    that the only Hail Mary left to save peer review is to fully ban AI usage in *writing* papers. Use AI for
+    research, but communication has to be fully human.
+  provenance: browser_dom
+  stance_tags:
+  - ban-ai-prose
+  - reviewer-burnout
+  positions:
+    F1: -1
+  related_models:
+  - M3
+- id: cremieux-x-2026-quitting-reviewing-slop
+  title: 'Crémieux on reviewing: “I think I''m going to stop reviewing papers now… AI slop is overwhelming peer
+    review”'
+  authors: Crémieux (@cremieuxrecueil)
+  year: 2026
+  date: '2026-01-15'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/cremieuxrecueil/status/2011901413828542944
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - peer_review
+  summary: Crémieux says he is considering stopping peer review because of what he identifies as AI-written passages,
+    code and nonsensical analyses. This is an individual account of reviewer frustration, not measured reviewer
+    attrition or verified AI prevalence.
+  verbatim_excerpt: I think I'm going to stop reviewing papers now that every other paper I'm being served has
+    clearly AI-written segments, AI-written code, or AI-suggested analyses that don't make sense. I'm confident
+    that AI slop is overwhelming peer review.
+  provenance: browser_dom
+  stance_tags:
+  - reviewer-frustration
+  - slop-commons
+  positions: {}
+  related_models:
+  - M3
+- id: dietterich-x-2025-desk-reject-unvetted-llm-errors
+  title: 'Proposed peer-review norm: immediate rejection of papers with undetected LLM-generated errors'
+  authors: Thomas G. Dietterich (@tdietterich)
+  year: 2025
+  date: '2025-12-28'
+  venue: X
+  source_type: social_post
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/tdietterich/status/2005161826422850000
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - citations
+  summary: Thomas Dietterich proposes, as a norm for peer review, that a paper showing clear signs of LLM-generated
+    errors that its authors did not detect should be immediately rejected.
+  verbatim_excerpt: I'd like to propose the following norm for peer review of papers. If a paper shows clear signs
+    of LLM-generated errors that were not detected by the author, the paper should be immediately rejected.
+  provenance: browser_dom
+  stance_tags:
+  - summary-desk-reject
+  - author-accountability
+  positions:
+    F3: 1
+    F4: -1
+    F7: -1
+  related_models:
+  - M2
+  - M3
+- id: briggs-x-2025-reviewer-no-ai-pledge-pushback
+  title: Working-reviewer pushback against journal checkboxes pledging that no AI was used in a review
+  authors: Ryan Briggs (@ryancbriggs)
+  year: 2025
+  date: '2025-12-05'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/ryancbriggs/status/1997019650060624285
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: Ryan Briggs writes his own review, then uploads the manuscript to a frontier model with non-retention settings
+    and adds the points it raises that he judges useful. He argues that this improves his reviews and objects to journal
+    checkboxes pledging that no AI was used.
+  verbatim_excerpt: 'I''ve noticed when submitting peer reviews that some journals now have a box you have to
+    check that pledges that you didn''t use AI when doing the review. This seems dumb to me. I do use AI when
+    I do peer reviews. I do the following: 1. Write my review as I always have'
+  provenance: browser_dom
+  stance_tags:
+  - reviewer-workflow
+  - checkbox-critique
+  positions:
+    F2: 1
+  related_models:
+  - M1
+- id: bessis-x-2026-claude-sentence-copy-editor
+  title: “LLMs continue to suck at literature” — yet “I've been using Claude as my sentence-by-sentence copy editor
+    for so long that I'd feel mutilated if I had to remove it from my routine”
+  authors: David Bessis (@davidbessis)
+  year: 2026
+  date: '2026-02-22'
+  venue: X
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/davidbessis/status/2025635900592656681
+  open_access: true
+  pipeline_stages:
+  - writing
+  summary: Mathematician and author, writing about his own literary work, captures the craft distinction between
+    whole-cloth LLM prose generation (flat and lifeless) and intense human-directed sentence-level copy-editing.
+  verbatim_excerpt: Meanwhile, LLMs continue to suck at literature. It's not even close and the latest crop barely
+    moves the needle. I've been using Claude as my sentence-by-sentence copy editor for so long that I'd feel
+    mutilated if I had to remove it from my routine.
+  provenance: browser_dom
+  stance_tags:
+  - human-led-editing
+  - writing-craft
+  positions: {}
+  related_models: []
+- id: nil-x-2026-lean-replaces-peer-review
+  title: 'Emerging math/CS swarm research: “Lean replaces peer review… Agent legibility > human legibility”'
+  authors: Nil (@Nil053)
+  year: 2026
+  date: '2026-10-11'
+  venue: X
+  source_type: social_post
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/Nil053/status/2109371761825591413
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - publishing_model
+  summary: Observes, about a community auto-research effort on integer multiplication, that “it feels like a new
+    kind of academia is emerging”, listing features such as Lean replacing peer review and agent legibility outranking
+    human legibility. This is one observer’s description of a trend, not advocacy or evidence that it works.
+  verbatim_excerpt: Reading this, it feels like a new kind of academia is emerging. - Anyone with extra LLM usage
+    can contribute - Lean replaces peer review - Orchestrated on anonymous group chats - Much faster but in more
+    incremental steps - Agent legibility > human legibility
+  provenance: browser_dom
+  stance_tags:
+  - formal-verification
+  - lean-prover
+  - agent-legibility
+  positions: {}
+  related_models:
+  - M4
+  - M5
+- id: albert-x-2026-apc-publisher-llm-licensing
+  title: 'Political economy critique: researchers pay to publish, then publishers sell the research, “and often
+    your peer review labor”, to AI vendors'
+  authors: Michael Albert, MD (@MichaelAlbertMD)
+  year: 2026
+  date: '2026-05-06'
+  venue: X
+  source_type: social_post
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/MichaelAlbertMD/status/2051817008036040955
+  open_access: true
+  pipeline_stages:
+  - publishing_model
+  summary: Michael Albert criticizes publishers for selling researchers' work, and often their peer-review labour, to AI
+    vendors after charging them to publish, and calls on researchers to withdraw their labour or charge journals for it.
+  verbatim_excerpt: You pay to publish YOUR research. You pay extra to make YOUR research “open access” so the
+    public can read it. Then publishers sell YOUR research—and often your peer review labor—to AI/LLM vendors
+    for massive licensing deals. Academia…what are we doing here?
+  provenance: browser_dom
+  stance_tags:
+  - publisher-licensing
+  - political-economy
+  positions: {}
+  related_models:
+  - M8
+- id: analisereal-x-2026-single-authored-claude-audit
+  title: 'Disputed AI-authorship claim: Pangram classification cited as rating a paper presented as “single-authored”
+    by Claude as 82% human-written'
+  authors: Análise Real (@analisereal)
+  year: 2026
+  date: '2026-08-11'
+  venue: X
+  source_type: social_post
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://x.com/analisereal/status/2086999175510843723
+  open_access: true
+  pipeline_stages:
+  - writing
+  - post_pub_audit
+  summary: Análise Real questions a claim that Claude was the sole author of a paper, citing a Pangram score that classed
+    82% of it as human-written, and asks Anthropic to clarify how two named colleagues edited the manuscript. In a reply,
+    one of them describes steering Claude through rounds of feedback without editing the text directly. Detector scores
+    like this one cannot settle authorship.
+  verbatim_excerpt: According to @pangram, 82% of the paper presented as “single-authored” by Claude is classified
+    as human-written.
+  provenance: browser_dom
+  stance_tags:
+  - authorship-dispute
+  - autonomous-authorship
+  positions: {}
+  related_models:
+  - M4
+  - M7
+- id: williamson-li-2026-ai-refinement-ruins-manuscripts
+  title: 'Journal editor testimony: disclosed AI “language refinement” obscuring promising studies beneath over-complex
+    text'
+  authors: Ben Williamson
+  year: 2026
+  date: 2026-09
+  venue: LinkedIn (Editor post)
+  source_type: social_post
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://www.linkedin.com/posts/ben-williamson-7a501b329_whats-most-upsetting-me-as-a-journal-editor-activity-7495577004877058049-dq16
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: Williamson reports editorial experience of promising studies obscured by excessive AI-assisted language revision
+    and calls for better writing support, especially for early-career and non-Anglophone authors.
+  verbatim_excerpt: What's most upsetting me as a journal editor is that many papers we receive where AI use is
+    disclosed for editing and language refinement actually appear to have been ruined rather than improved by
+    AI. We receive what seem like promising underpinning studies, but which are totally obscured by over-complex
+    text.
+  provenance: browser_dom
+  stance_tags:
+  - linkedin
+  - editor-testimony
+  - prose-obscuration
+  positions:
+    F5: -1
+    F1: -1
+  related_models: []
+- id: agarwal-li-2026-gate-before-peer-review
+  title: The Gate Before Peer Review
+  authors: Yogesh Agarwal
+  year: 2026
+  date: 2026-10
+  venue: LinkedIn Pulse
+  source_type: blog_essay
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://www.linkedin.com/pulse/gate-before-peer-review-yogesh-agarwal-99ate/
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  summary: 'Agarwal argues for measurable human oversight of automated desk screening: override rates, appeals, disclosure
+    of who is responsible for a decision, and a chance to fix compliance problems. He warns that automated screening can
+    create language-related inequity and predicts that editors will rarely override it.'
+  verbatim_excerpt: A person can sit inside a process and still not be exercising much judgement.
+  provenance: browser_dom
+  stance_tags:
+  - linkedin
+  - global-south-equity
+  - desk-rejection-automation
+  positions:
+    F4: 1
+    F6: -2
+  related_models:
+  - M1
+  - M2
+- id: di-carlo-li-2026-paper-too-big-for-human-review
+  title: Has the Scientific Paper Become Too Big for Human Peer Review?
+  authors: Dino Di Carlo (UCLA)
+  year: 2026
+  date: '2026-08-31'
+  venue: LinkedIn Pulse
+  source_type: blog_essay
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://www.linkedin.com/pulse/has-scientific-paper-become-too-big-human-peer-review-dino-di-carlo-2swuc/
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - publishing_model
+  summary: Di Carlo proposes separating concise scientific narratives from structured evidence bases, with AI doing the
+    exhaustive checking and experts the scientific judgement. He describes two recent manuscripts whose reviews he suspects
+    were written with AI, argues that today's papers have outgrown what human reviewers can check, and acknowledges risks
+    to confidentiality, bias and excessive criticism.
+  verbatim_excerpt: AI performs the exhaustive review. The expert performs the scientific judgment.
+  provenance: browser_dom
+  stance_tags:
+  - linkedin
+  - cognitive-bandwidth
+  - hybrid-review
+  positions:
+    F2: 2
+    F1: 1
+  related_models:
+  - M1
+  - M5
+- id: grunebaum-li-2026-peer-review-should-start-with-ai
+  title: Peer Review Should Start With AI
+  authors: Amos Grünebaum, MD
+  year: 2026
+  date: 2026-10
+  venue: LinkedIn Pulse
+  source_type: blog_essay
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://www.linkedin.com/pulse/peer-review-should-start-ai-amos-gr%C3%BCnebaum-md-gnile/
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: Grünebaum proposes mandatory, documented AI review inside a confidential journal environment ahead
+    of human refereeing, keeping final editorial decisions in human hands while citing King and Worthington's
+    26-of-30 editor preference result across ten social-science pairs and noting its bounded non-clinical scope.
+  verbatim_excerpt: Every manuscript must get an AI review before it reaches a human reviewer, and that review
+    must be part of the official record.
+  provenance: browser_dom
+  stance_tags:
+  - linkedin
+  - ai-first-pass-review
+  - clinical-publishing
+  positions:
+    F2: 2
+  related_models:
+  - M1
+- id: okoro-li-2026-65k-retractions-verify-science
+  title: AI Didn't Break Scientific Publishing. It Exposed What Was Already Broken.
+  authors: Goodluck Okoro (UIUC)
+  year: 2026
+  date: 2026-08
+  venue: LinkedIn Pulse
+  source_type: blog_essay
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://www.linkedin.com/pulse/ai-didnt-break-scientific-publishing-exposed-what-already-okoro-ezupc/
+  open_access: true
+  pipeline_stages:
+  - post_pub_audit
+  - submission_triage
+  summary: Okoro analyses 65,039 retraction records from January 2006 to August 2026, grouped by retraction date and using
+    a broad reason code for computer-generated content, and argues for verifiable data, code and provenance alongside responsible
+    AI use.
+  verbatim_excerpt: Scientific integrity depends on everyone involved in the publication process, not only the
+    authors.
+  provenance: browser_dom
+  stance_tags:
+  - linkedin
+  - retraction-watch-analysis
+  - verify-data-not-prose
+  positions: {}
+  related_models:
+  - M4
+  - M5
+- id: rechavi-li-2026-qed-scoring-57k-preprints
+  title: Fixing Scientific Publishing
+  authors: Oded Rechavi (Tel Aviv University / qed Science)
+  year: 2026
+  date: '2026-06-24'
+  venue: LinkedIn Pulse
+  source_type: blog_essay
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://www.linkedin.com/pulse/fixing-scientific-publishing-oded-rechavi-bldnf/
+  open_access: true
+  pipeline_stages:
+  - post_pub_audit
+  - publishing_model
+  summary: Oded Rechavi, co-founder of QED Science, describes how its AI scored 57,455 life-science preprints and selected
+    a top 1%, and reports that domain experts sided with the QED score over journal rank in three of four cases where the
+    two disagreed. He presents the tool as a complement to peer review.
+  verbatim_excerpt: It’s not meant to replace peer review, it complements it.
+  provenance: browser_dom
+  stance_tags:
+  - linkedin
+  - preprint-curation
+  - qed-science
+  positions:
+    F7: 1
+    F2: 2
+  related_models:
+  - M6
+- id: wang-2026-policy-snapshots-critique
+  title: Policy snapshots cannot establish journal AI-policy failure
+  authors: Yibo Wang
+  year: 2026
+  date: '2026-06-29'
+  venue: PNAS
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1073/pnas.2616276123
+  arxiv_id: null
+  pmid: '42372162'
+  url: https://doi.org/10.1073/pnas.2616276123
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: Letter arguing that policy snapshots, missing adoption dates, permitted editing, and nonpublic disclosure
+    channels prevent causal conclusions about policy failure. It accepts the descriptive evidence of rising AI-associated
+    writing and rare public disclosures.
+  verbatim_excerpt: 'The concern is narrower: their data document diffusion and public disclosure but do not establish
+    the headline inference'
+  provenance: live_html
+  stance_tags:
+  - policy-inference
+  - disclosure
+  positions:
+    F3: 0
+  related_models: []
+- id: he-bu-2026-reply-policy-outcomes
+  title: 'Reply to Wang: Policy failure can be assessed from observed outcomes'
+  authors: Yongyuan He, Yi Bu
+  year: 2026
+  date: '2026-06-29'
+  venue: PNAS
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1073/pnas.2617762123
+  arxiv_id: null
+  pmid: '42372142'
+  url: https://doi.org/10.1073/pnas.2617762123
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: Reply defending an aggregate outcome-based interpretation of policy failure, while explicitly distinguishing
+    public transparency from private disclosure and acknowledging that the study does not identify journal-specific
+    causal effects or individual misconduct.
+  verbatim_excerpt: Disclosures invisible to readers do not provide public transparency.
+  provenance: live_html
+  stance_tags:
+  - policy-inference
+  - disclosure
+  positions:
+    F3: 0
+  related_models: []
+- id: ajps-2026-official-submission-cap
+  title: New AJPS Submission Cap Policy
+  authors: American Journal of Political Science Editorial Team
+  year: 2026
+  date: '2026-11-04'
+  venue: American Journal of Political Science
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  url: https://ajps.org/2026/11/04/new-ajps-submission-cap-policy/
+  open_access: true
+  provenance: publisher_html
+  pipeline_stages:
+  - submission_triage
+  - publishing_model
+  stance_tags:
+  - submission-caps
+  - costly-signals
+  - editorial-overload
+  positions:
+    F4: -2
+    F7: -2
+  related_models:
+  - M3
+  summary: Official 4 November 2026 policy announcement limiting individuals to authoring or co-authoring at most
+    three AJPS submissions in any rolling 12-month period across articles, correspondence, and research notes,
+    with one annual waiver request permitted for a fourth submission. Citing AI-accelerated output and a 19% mid-year
+    submission rise from 2025 to 2026, the editors frame the cap as an initial step to protect finite editorial
+    and reviewer capacity.
+  verbatim_excerpt: Individuals are allowed to author or co-author no more than three submissions to AJPS in any
+    twelve month time period. Note that this is a rolling twelve month time period, and not a calendar year.
+- id: hosseini-resnik-2024-ai-misconduct-screening
+  title: Guidance needed for using artificial intelligence to screen journal submissions for misconduct
+  authors: Mohammad Hosseini, David B. Resnik
+  year: 2025
+  date: '2024-05-11'
+  venue: Research Ethics
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1177/17470161241254052
+  pmid: '39810931'
+  url: https://doi.org/10.1177/17470161241254052
+  open_access: true
+  provenance: fulltext_pdf
+  pipeline_stages:
+  - submission_triage
+  - post_pub_audit
+  stance_tags:
+  - integrity-screening
+  - false-positives
+  - due-process
+  positions:
+    F4: 0
+    F6: -2
+  related_models:
+  - M2
+  - M6
+  summary: Examines ethical and procedural risks as journals deploy AI tools to screen submissions for plagiarism,
+    text generation, and data or image manipulation (online May 2024; 2025 issue; covered by an October 2025 erratum,
+    DOI 10.1177/17470161251378178). Recommends that humans carefully review every case of suspected misconduct
+    flagged by AI, that journals use only well-tested tools, inform authors of flagged irregularities and give
+    them a chance to respond before allegations are forwarded to their institutions, screen all relevant submissions
+    rather than a selection (which could be biased, for example against authors from low- and middle-income countries
+    or low-prestige institutions), and disclose their screening policies.
+  verbatim_excerpt: Journals and publishers are increasingly using artificial intelligence (AI) to screen submissions
+    for potential misconduct, including plagiarism and data or image manipulation. While using AI can enhance
+    the integrity of published manuscripts, it can also increase the risk of false/unsubstantiated allegations.
+- id: shi-nie-kong-2026-preserve-research-data
+  title: Preserve research data for tomorrow's AI-enabled integrity checks
+  authors: Qingde Shi, Jinlei Nie, Zhaowei Kong
+  year: 2026
+  date: '2026-10-13'
+  venue: Nature
+  source_type: editorial_comment
+  discipline_scope: cross_disciplinary
+  doi: 10.1038/d41586-026-03244-3
+  pmid: '42870013'
+  url: https://doi.org/10.1038/d41586-026-03244-3
+  open_access: false
+  provenance: fulltext_pdf
+  pipeline_stages:
+  - writing
+  - post_pub_audit
+  - publishing_model
+  stance_tags:
+  - process-provenance
+  - raw-data-archiving
+  positions:
+    F3: -1
+    F6: 0
+    F7: -2
+  related_models:
+  - M4
+  - M6
+  summary: Nature correspondence responding to reports of AI tools finding long-standing errors in published papers. Drawing
+    on how anti-doping agencies store samples, the authors propose funded long-term archives of original images, instrument
+    outputs, metadata and provenance records, so that future AI-assisted integrity checks can inspect the primary evidence.
+  verbatim_excerpt: 'Anti-doping offers a useful precedent: blood and urine samples can be stored for up to ten
+    years and retested if detection methods improve. The same idea could be applied to research: preserving data
+    now allows findings to be reassessed using better methods later.'
+- id: tomazini-2026-hidden-nudge-medical-peer-review
+  title: 'Susceptibility of large language models to hidden nudge injection during simulated medical peer review: a quasi-experimental
+    study'
+  authors: Bruno Martins Tomazini, Larissa Bianchini, Lucas Tramujas, Natalia Vieira Rodrigues, Felipe Guindalini Lorenzato,
+    Mariana Silveira de Alcantara Chaud, Karoline Cordeiro Vercka Gervásio, Israel Silva Maia, Fernando José da Silva
+    Ramos, Bruno Adler Maccagnan Pinheiro Besen, Alexandre Biasi Cavalcanti
+  year: 2026
+  date: '2026-06-03'
+  venue: Research Integrity and Peer Review
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.1186/s41073-026-00225-y
+  arxiv_id: null
+  pmid: '42237194'
+  url: https://doi.org/10.1186/s41073-026-00225-y
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: 'Four commercial models (GPT-4, Gemini 2.5 Flash, DeepSeek-V3 and Claude Opus 4) reviewed 180 critical-care
+    and cardiology manuscripts. A hidden nudge against each model''s first recommendation flipped the accept-or-reject
+    decision in 84.4% of evaluations, from 57.2% for Claude to 100% for DeepSeek. Warning the models about hidden nudges
+    barely helped: decisions still flipped in 76.8% of cases.'
+  verbatim_excerpt: In this quasi-experimental study, all tested AI models were highly susceptible to hidden nudge insertions
+    in manuscripts during simulated peer review. Importantly, explicitly warning AI models about potential nudge injections
+    does not meaningfully reduce their susceptibility to manipulation.
+  provenance: europepmc_api
+  stance_tags:
+  - prompt-injection
+  - medical-peer-review
+  positions:
+    F2: -1
+  related_models:
+  - M1
+- id: ng-2026-medical-reviewers-ai-chatbots-survey
+  title: 'Attitudes and perceptions toward the use of artificial intelligence chatbots for peer review in medical journals:
+    a large-scale, international cross-sectional survey'
+  authors: Jeremy Y. Ng, Daivat Bhavsar, Neha Dhanvanthry, Lex Bouter, Teresa Chan, Holger Cramer, Annette Flanagin,
+    Alfonso Iorio, Cynthia Lokker, Hervé Maisonneuve, Ana Marušić, David Moher
+  year: 2026
+  date: '2026-10-26'
+  venue: Research Integrity and Peer Review
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.1186/s41073-026-00256-5
+  arxiv_id: null
+  pmid: '42958382'
+  url: https://doi.org/10.1186/s41073-026-00256-5
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: International survey of medical-journal peer reviewers (1,077 answered the main questions; 1.9% response rate).
+    Most were familiar with AI chatbots (86.2%) and used them for general purposes (87.7%), yet 70.3% had not used them
+    for peer review and 69.5% said their institutions offered no training on it. Concerns about algorithmic bias (80.3%)
+    and trust (73.3%) were widespread.
+  verbatim_excerpt: While familiarity with AICs is high among medical journal peer reviewers, their reported use in peer
+    review remains limited. There is clear interest in training and guidance, however, concerns related to ethics, data
+    privacy, and research integrity persist and should be addressed before broader implementation.
+  provenance: europepmc_api
+  stance_tags:
+  - reviewer-survey
+  - medical-journals
+  positions:
+    F2: 0
+  related_models:
+  - M1
+- id: biswas-2026-aaai26-ai-review-pilot
+  title: 'AI-Assisted Peer Review at Scale: The AAAI-26 AI Review Pilot'
+  authors: Joydeep Biswas, Sheila Schoepp, Gautham Vasan, Anthony Opipari, Arthur Zhang, Zichao Hu, Sebastian Joseph,
+    Matthew Lease, Junyi Jessy Li, Peter Stone, Kiri L. Wagstaff, Matthew E. Taylor, Odest Chadwicke Jenkins
+  year: 2026
+  date: '2026-04-15'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2604.13940'
+  pmid: null
+  url: https://arxiv.org/abs/2604.13940
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: All 22,977 papers that reached full review at AAAI-26 received one clearly labelled AI review, generated in
+    under a day by a multi-stage system combining frontier models, tools and safeguards. Surveyed authors and programme-committee
+    members preferred the AI reviews on six of nine criteria, most strongly for spotting technical errors, but also judged
+    them more likely to dwell on minor issues and to contain technical errors themselves. The paper is written by the team
+    that ran the pilot.
+  verbatim_excerpt: 'Here we report the first large-scale field deployment of AI-assisted peer review: every main-track
+    submission at AAAI-26 received one clearly identified AI review from a state-of-the-art system.'
+  provenance: arxiv_api
+  stance_tags:
+  - conference-ai-review
+  - field-deployment
+  positions:
+    F2: 2
+  related_models:
+  - M1
+- id: kim-2026-icml-llm-review-policy-rct
+  title: 'Use and Effects of LLMs in Peer Review: A Randomized Experiment and Survey at ICML 2026'
+  authors: Sunnie S. Y. Kim, Wesley Hanwen Deng, Jennifer Wortman Vaughan, Buxin Su, Weijie Su, Alekh Agarwal, Sharon
+    Li, Martin Jaggi, Daniel G. Goldstein, Nihar B. Shah, Miroslav Dudík
+  year: 2026
+  date: '2026-09-16'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: '2609.19420'
+  pmid: null
+  url: https://arxiv.org/abs/2609.19420
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: ICML 2026 randomly switched 10% of the 16,877 main-track papers whose authors allowed LLM-assisted review (1,686
+    papers) to a no-LLM policy, and randomly assigned a subset of reviewers willing to work under either policy. The policy
+    made almost no difference to acceptance (27.0% vs 26.5%), scores or reviewer confidence; reviews under the permissive
+    policy were 5.5–7% longer. In an anonymous survey (1,486 responses), 22.5% of reviewers under the ban said they had
+    used an LLM anyway, and 36.5% under the permissive policy reported at least one disallowed use.
+  verbatim_excerpt: Policy assignment had near-zero effects on final paper decisions, paper scores, and reviewer confidence,
+    although reviews under the permissive policy were 5.5-7% longer.
+  provenance: arxiv_api
+  stance_tags:
+  - randomized-experiment
+  - policy-noncompliance
+  positions:
+    F2: 0
+  related_models:
+  - M1
+- id: icml-2026-violations-llm-review-policies
+  title: On Violations of LLM Review Policies
+  authors: Alekh Agarwal, Miroslav Dudík, Sharon Li, Martin Jaggi, Nihar B. Shah, Katherine Gorman, Gautam Kamath (ICML
+    2026 chairs)
+  year: 2026
+  date: '2026-03-18'
+  venue: ICML Blog
+  source_type: institutional_experiment
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://blog.icml.cc/2026/03/18/on-violations-of-llm-review-policies/
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - submission_triage
+  summary: ICML 2026 let reviewers choose between a no-LLM policy and a permissive one, then hid instructions in submission
+    PDFs asking any LLM that read them to put two rare phrases into its review, a check that mainly catches reviewers who
+    paste a PDF into an LLM and copy the output. It caught 795 reviews (about 1%) by 506 reviewers who had agreed not to
+    use LLMs, and a person verified every flag. The conference desk-rejected the 497 papers of 398 reciprocal reviewers
+    involved and removed 51 reviewers who had used LLMs in more than half of their reviews.
+  verbatim_excerpt: This year, we desk-rejected 497 papers (~2% of all submissions), corresponding to submissions of
+    the 398 reciprocal reviewers who violated the rules regarding LLM usage that they had previously explicitly agreed
+    to.
+  provenance: live_html
+  stance_tags:
+  - policy-enforcement
+  - watermark-detection
+  positions:
+    F2: 0
+  related_models:
+  - M1
+- id: scancar-2026-paper-mill-screening-cancer
+  title: 'Machine learning based screening of potential paper mill publications in cancer research: methodological and
+    cross sectional study'
+  authors: Baptiste Scancar, Jennifer A Byrne, David Causeur, Adrian G Barnett
+  year: 2026
+  date: '2026-01-29'
+  venue: BMJ
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.1136/bmj-2025-087581
+  arxiv_id: null
+  pmid: '41611528'
+  url: https://doi.org/10.1136/bmj-2025-087581
+  open_access: true
+  pipeline_stages:
+  - post_pub_audit
+  - submission_triage
+  summary: A BERT-based classifier trained on 2,202 retracted paper-mill articles (accuracy 0.91) screened 2.6 million
+    cancer-research papers published from 1999 to 2024 and flagged 9.87% as textually similar to paper-mill output. The
+    flagged share rose from about 1% of annual output in the early 2000s to more than 15% by the early 2020s, peaking in
+    2022, and the rise reached the top 10% of journals by impact factor. The authors estimate that about 30% of flags may
+    be false positives, so the model should not be used alone to label a paper.
+  verbatim_excerpt: Paper mills are a large and growing problem in the cancer literature and are not restricted to low
+    impact journals.
+  provenance: europepmc_api
+  stance_tags:
+  - paper-mills
+  - automated-screening
+  positions:
+    F6: 1
+  related_models:
+  - M2
+- id: zhao-2026-hallucinated-citations-wild
+  title: 'LLM hallucinations in the wild: Large-scale evidence from non-existent citations'
+  authors: Zhenyue Zhao, Yihe Wang, Toby Stuart, Mathijs De Vaan, Paul Ginsparg, Yian Yin
+  year: 2026
+  date: '2026-05-08'
+  venue: arXiv
+  source_type: preprint
+  discipline_scope: cross_disciplinary
+  doi: null
+  arxiv_id: '2605.07723'
+  pmid: null
+  url: https://arxiv.org/abs/2605.07723
+  open_access: true
+  pipeline_stages:
+  - citations
+  - post_pub_audit
+  summary: Audit of 111 million references in 2.5 million papers on arXiv, bioRxiv, SSRN and PubMed Central finding a sharp
+    rise in non-existent references after LLMs spread, conservatively estimated at 146,932 hallucinated citations in 2025
+    alone. They are most common in fields with fast AI uptake, in papers with signs of AI-assisted writing and in small,
+    early-career teams, and they disproportionately credit already prominent and male scholars. Preprint moderation and
+    journal publication catch only a fraction of them.
+  verbatim_excerpt: We find a sharp rise in non-existent references following widespread LLM adoption, with a conservative
+    estimate of 146,932 hallucinated citations in 2025 alone.
+  provenance: arxiv_api
+  stance_tags:
+  - hallucinated-citations
+  - cross-server-audit
+  positions:
+    F6: 1
+    F4: -1
+  related_models:
+  - M2
+- id: lepp-smith-2025-cannot-sound-like-gpt
+  title: '“You Cannot Sound Like GPT”: Signs of language discrimination and resistance in computer science publishing'
+  authors: Haley Lepp, Daniel Scott Smith
+  year: 2025
+  date: '2025-06-23'
+  venue: FAccT 2025 / arXiv
+  source_type: empirical_study
+  discipline_scope: cs_ml
+  doi: 10.1145/3715275.3732202
+  arxiv_id: '2505.08127'
+  pmid: null
+  url: https://doi.org/10.1145/3715275.3732202
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  - writing
+  summary: Analysis of almost 80,000 ICLR peer reviews finds significant bias, in comments on writing clarity, against
+    authors from institutions in countries where English is less widely spoken, with only a muted change after ChatGPT
+    arrived. In interviews with 14 conference participants, reviewers describe reading ChatGPT ‘style’ as a cue to an
+    author's background, and authors describe removing anything that marks them as non-native.
+  verbatim_excerpt: While ChatGPT masks some signs of language background, reviewers explain that they now use ChatGPT
+    "style" and non-linguistic features as indicators of author demographics.
+  provenance: arxiv_api
+  stance_tags:
+  - language-bias
+  - peer-review-equity
+  positions:
+    F4: -1
+  related_models: []
+- id: amano-2023-costs-non-native-english
+  title: The manifold costs of being a non-native English speaker in science
+  authors: Tatsuya Amano, Valeria Ramírez-Castañeda, Violeta Berdejo-Espinola, Israel Borokini, Shawan Chowdhury, Marina
+    Golivets, Juan David González-Trujillo, Flavia Montaño-Centellas, Kumar Paudel, Rachel Louise White, Diogo Veríssimo
+  year: 2023
+  date: '2023-07-18'
+  venue: PLOS Biology
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1371/journal.pbio.3002184
+  arxiv_id: null
+  pmid: '37463136'
+  url: https://doi.org/10.1371/journal.pbio.3002184
+  open_access: true
+  pipeline_stages:
+  - writing
+  summary: Survey of 908 environmental scientists, run in 2021, showing that non-native English speakers, especially early
+    in their careers, spend more effort than native speakers on reading, writing and presenting science in English, and
+    sometimes skip international conferences because of it. The authors argue that journals and universities should allow
+    appropriate use of AI tools for English proofreading to reduce language barriers.
+  verbatim_excerpt: Our survey demonstrates that non-native English speakers, especially early in their careers, spend
+    more effort than native English speakers in conducting scientific activities, from reading and writing papers and
+    preparing presentations in English, to disseminating research in multiple languages.
+  provenance: europepmc_api
+  stance_tags:
+  - language-barriers
+  - baseline
+  positions:
+    F4: 2
+  related_models: []
+- id: laurito-2025-ai-ai-bias
+  title: 'AI–AI bias: Large language models favor communications generated by large language models'
+  authors: Walter Laurito, Benjamin Davis, Peli Grietzer, Tomáš Gavenčiak, Ada Böhm, Jan Kulveit
+  year: 2025
+  date: '2025-07-29'
+  venue: PNAS
+  source_type: empirical_study
+  discipline_scope: cross_disciplinary
+  doi: 10.1073/pnas.2415697122
+  arxiv_id: null
+  pmid: '40729390'
+  url: https://doi.org/10.1073/pnas.2415697122
+  open_access: true
+  pipeline_stages:
+  - peer_review
+  summary: In binary-choice experiments modelled on employment-discrimination studies, widely used LLMs, including GPT-3.5
+    and GPT-4, consistently preferred options described by an LLM over options described by a human, across consumer
+    products, academic papers and films. The authors warn that AI systems may come to discriminate against humans as
+    a class, giving AI-assisted people an unfair advantage.
+  verbatim_excerpt: Our results show a consistent tendency for LLM-based AIs to prefer LLM-presented options.
+  provenance: europepmc_api
+  stance_tags:
+  - ai-ai-bias
+  - closed-loop-evaluation
+  positions:
+    F2: -1
+  related_models:
+  - M1
+- id: flemyng-2025-ai-evidence-synthesis-position
+  title: Position Statement on Artificial Intelligence (AI) Use in Evidence Synthesis Across Cochrane, the Campbell Collaboration,
+    JBI, and the Collaboration for Environmental Evidence 2025
+  authors: Ella Flemyng, Anna Noel-Storr, Biljana Macura, Gerald Gartlehner, James Thomas, Joerg J. Meerpohl, Zoe Jordan,
+    Jan Minx, Angelika Eisele-Metzger, Candyce Hamel, Paweł Jemioło, Kylie Porritt, Matthew Grainger
+  year: 2025
+  date: '2025-11-10'
+  venue: Campbell Systematic Reviews
+  source_type: institutional_experiment
+  discipline_scope: cross_disciplinary
+  doi: 10.1002/cl2.70074
+  arxiv_id: null
+  pmid: '41230118'
+  url: https://doi.org/10.1002/cl2.70074
+  open_access: true
+  pipeline_stages:
+  - writing
+  summary: 'Joint position statement by Cochrane, the Campbell Collaboration, JBI and the Collaboration for Environmental
+    Evidence: evidence-synthesis authors may use AI and automation, under human oversight, if they can show it does not
+    compromise rigour or integrity, and must fully report any use that makes or suggests judgements. The four organizations
+    back the RAISE recommendations for responsible AI in evidence synthesis.'
+  verbatim_excerpt: Any use of AI or automation that makes or suggests judgements should be fully and transparently reported
+    in the evidence synthesis report.
+  provenance: europepmc_api
+  stance_tags:
+  - evidence-synthesis
+  - reporting-requirement
+  positions:
+    F3: -1
+  related_models:
+  - M4
+- id: arxiv-cs-review-position-papers-2025
+  title: 'Attention Authors: Updated Practice for Review Articles and Position Papers in arXiv CS Category'
+  authors: Kat Boboris
+  year: 2025
+  date: '2025-10-31'
+  venue: arXiv Blog
+  source_type: institutional_experiment
+  discipline_scope: cs_ml
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://blog.arxiv.org/2025/10/31/attention-authors-updated-practice-for-review-articles-and-position-papers-in-arxiv-cs-category/
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - publishing_model
+  summary: arXiv's computer-science section now accepts review articles and position papers only after they have passed
+    peer review at a journal or conference, with documentation. arXiv says language models made such papers fast and
+    easy to write, and that most of the hundreds of review articles it now receives each month are little more than annotated
+    bibliographies.
+  verbatim_excerpt: Generative AI / large language models have added to this flood by making papers – especially papers
+    not introducing new research results – fast and easy to write.
+  provenance: live_html
+  stance_tags:
+  - preprint-gate
+  - submission-flood
+  positions:
+    F4: -1
+    F7: -1
+  related_models:
+  - M3
+- id: openrxiv-approach-to-ai-2026
+  title: How we’re approaching AI at bioRxiv and medRxiv
+  authors: openRxiv (bioRxiv and medRxiv)
+  year: 2026
+  date: '2026-10-20'
+  venue: bioRxiv News
+  source_type: institutional_experiment
+  discipline_scope: biomed_lifesci
+  doi: null
+  arxiv_id: null
+  pmid: null
+  url: https://connect.biorxiv.org/news/2026/10/20/approach_to_ai
+  open_access: true
+  pipeline_stages:
+  - submission_triage
+  - publishing_model
+  summary: 'openRxiv sets out its approach to AI at bioRxiv and medRxiv: authors must be verifiable, affiliated humans
+    who stand behind their work; submissions showing uncritical AI output, such as many fabricated references or wholly
+    AI-written conclusions, may be declined; authors can be rate-limited and machine access restricted; and automated
+    screening tools never decide alone. It also recognizes AI as a useful drafting aid, especially for non-native English
+    speakers.'
+  verbatim_excerpt: When screening identifies evidence that authors have not critically reviewed AI-generated material,
+    such as large numbers of fabricated references or entirely AI-generated discussion/conclusions, a submission may
+    receive further review and we reserve the right to decline the work.
+  provenance: live_html
+  stance_tags:
+  - preprint-policy
+  - human-accountability
+  positions:
+    F7: -1
+  related_models:
+  - M3
+- id: topaz-2026-lancet-fabricated-citations-biomed
+  title: 'Fabricated citations: an audit across 2·5 million biomedical papers'
+  authors: Maxim Topaz, Nir Roguin, Pallavi Gupta, Zhihong Zhang, Laura-Maria Peltonen
+  year: 2026
+  date: '2026-05-09'
+  venue: The Lancet
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.1016/S0140-6736(26)00603-3
+  arxiv_id: null
+  pmid: '42107362'
+  url: https://doi.org/10.1016/S0140-6736(26)00603-3
+  open_access: false
+  pipeline_stages:
+  - citations
+  - submission_triage
+  - post_pub_audit
+  summary: Correspondence reporting an audit of 2,471,758 papers in the PubMed Central open-access subset (January 2023
+    to February 2026), whose 97.1 million references carrying a PubMed ID were checked against PubMed, Crossref, OpenAlex
+    and Google Scholar (91% precision in a masked validation). It found 4,046 fabricated references in 2,810 papers.
+    The rate held near 4 per 10,000 papers through 2023, turned sharply upward in mid-2024 and reached 56.9 per 10,000
+    in early 2026, and 98.4% of affected papers had no publisher action. The authors call for automated reference checks
+    before peer review, retroactive screening of published papers, and a ‘fabricated reference’ category in research-integrity
+    databases.
+  verbatim_excerpt: In 2023, approximately one in 2828 papers contained at least one fabricated reference. By 2025, this
+    had risen to one in 458 and in the first 7 weeks of 2026, one in 277 papers had at least one fabricated reference.
+  provenance: fulltext_pdf
+  stance_tags:
+  - fabricated-citations
+  - biomedical-audit
+  positions:
+    F6: 2
+  related_models:
+  - M2
+- id: perlis-2026-jama-network-ai-disclosure
+  title: Author Disclosure of Use of AI in Submissions to 13 JAMA Network Journals
+  authors: Roy H. Perlis, Annette Flanagin, Jacob Kendall-Taylor, Michael Berkwits, Kirsten Bibbins-Domingo
+  year: 2026
+  date: '2026-01-28'
+  venue: JAMA
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.1001/jama.2025.25300
+  arxiv_id: null
+  pmid: '41604185'
+  url: https://doi.org/10.1001/jama.2025.25300
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: Of 105,538 manuscripts submitted to 13 JAMA Network journals between August 2023 and October 2025, 3,459 (3.3%)
+    declared AI use in the journals' required disclosure, rising from 1.7% to 6.0% over 27 months. Most declared uses
+    were correcting or refining language (67.7%), followed by statistical modelling, other data analysis and drafting.
+    Declarations were more likely for Viewpoints and Letters, for corresponding authors from countries where English
+    is not an official language, and for manuscripts later rejected or withdrawn before review. The authors include JAMA
+    Network editors.
+  verbatim_excerpt: In total, 105 538 manuscripts were submitted during the 27-month study period, and 3459 (3.3%) declared
+    use of AI
+  provenance: fulltext_pdf
+  stance_tags:
+  - disclosure-gap
+  - private-disclosure-data
+  positions:
+    F3: 0
+  related_models:
+  - M4
+- id: alfayyad-2026-bmj-self-disclosed-ai
+  title: Self-Disclosed Use of AI in Research Submissions to BMJ Journals
+  authors: Isamme AlFayyad, Maurice P. Zeegers, Lex Bouter, Helen Macdonald, Sara Schroter
+  year: 2026
+  date: '2026-01-28'
+  venue: JAMA
+  source_type: empirical_study
+  discipline_scope: biomed_lifesci
+  doi: 10.1001/jama.2025.25688
+  arxiv_id: null
+  pmid: '41604147'
+  url: https://doi.org/10.1001/jama.2025.25688
+  open_access: true
+  pipeline_stages:
+  - writing
+  - submission_triage
+  summary: Of 25,114 research manuscripts submitted to 49 BMJ Group journals between April and November 2024, 1,431 (5.7%)
+    disclosed AI use in the mandatory submission questions, far below the 28–76% of researchers who report using AI in
+    surveys; disclosure rose from 4.5% in April to 7.3% in October. Most who disclosed used AI to improve their writing
+    (87.2%), mainly with chatbots such as ChatGPT. Authors from South America and Europe disclosed more often than those
+    from Asia, and the authors read the gap as underreporting. A medRxiv preprint (doi:10.1101/2025.10.24.25338574) preceded
+    the letter.
+  verbatim_excerpt: Overall, 5.7% of authors submitting research manuscripts to BMJ journals disclosed AI use, which
+    is substantially lower than estimates from recent surveys of researchers’ general use of AI.
+  provenance: europepmc_fulltext
+  stance_tags:
+  - disclosure-gap
+  - private-disclosure-data
+  positions:
+    F3: 0
+  related_models:
+  - M4

@@ -1,0 +1,16 @@
+name: Suggest a source
+description: A study, editorial, pilot or policy on AI in scientific writing or peer review that is missing.
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link, DOI or arXiv ID
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters here
+      description: One or two sentences. Which measured shift, fault line or proposed model does it inform?
+    validations:
+      required: true

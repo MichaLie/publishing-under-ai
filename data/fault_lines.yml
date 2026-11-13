@@ -1,0 +1,101 @@
+# Seven contested fault lines shaping scientific publishing under AI (2025–2026).
+# Pole positions on individual sources are recorded in data/sources.yml (-2 to +2 on relevant axes)
+# so build.py computes voice counts and spectrum distributions directly from the records.
+
+- id: F1
+  short: What is a paper now?
+  stage: writing
+  question: When fluent scientific prose costs almost nothing to generate, does writing a manuscript still test scientific thinking, or has prose become a secondary view layer over data and code?
+  pole_a:
+    code: craft
+    label: Writing IS the thinking
+    summary: Drafting prose forces authors to discover gaps in logic and own every claim; delegating text generation produces smooth paragraphs around half-formed ideas and shifts cognitive effort onto readers.
+  pole_b:
+    code: interface
+    label: Executable package first
+    summary: The 5,000-word static essay compresses messy computation into narrative theatre; verified datasets, runnable code, and machine-checkable claims should be the primary record, with prose rendered per reader.
+  hinge: Whether scientific reasoning happens during prose composition itself or upstream in experimental design and formal analysis.
+
+- id: F2
+  short: LLMs inside peer review
+  stage: peer_review
+  question: Should peer review stay a strictly human sanctuary, adopt structured AI co-review loops, or hand first-pass evaluation to models?
+  pole_a:
+    code: human_sanctuary
+    label: Human-only sanctuary
+    summary: Uploading unpublished manuscripts risks leaking confidential work, invites generic rubber-stamped critiques, exposes venues to hidden prompt injection, and breaks human accountability for gatekeeping.
+  pole_b:
+    code: hybrid_co_review
+    label: Structured AI co-review & triage
+    summary: Automated completeness checks, statistical/citation audits, and LLM review-feedback prompts (piloted at ICLR 2025) catch surface defects early and push human reviewers toward more concrete critiques.
+  hinge: Whether AI tools relieve reviewer burnout or accelerate mutual disengagement where AI writes, AI reviews, and nobody reads deeply.
+
+- id: F3
+  short: Disclosure vs. disclosure theatre
+  stage: submission_triage
+  question: Do mandatory AI-use declarations protect scholarly transparency, or do they punish conscientious authors while leaving bad actors untouched?
+  pole_a:
+    code: mandatory_disclosure
+    label: Granular disclosure & audit
+    summary: Editors and readers need explicit accounting of where generative tools shaped text, code, figures, or literature synthesis; undisclosed generation erodes trust in authorship.
+  pole_b:
+    code: anti_theatre
+    label: Drop prose policing
+    summary: Unverifiable AI badges risk stigmatizing honest authors (especially non-native English writers), incentivize hiding routine use once LLMs sit inside every word processor, and distract from checking whether data and citations hold up.
+  hinge: Whether self-reported tool declarations carry real epistemic signal once generative assistance is embedded across everyday research software.
+
+- id: F4
+  short: The slop commons vs. the equity dividend
+  stage: submission_triage
+  question: Does near-zero marginal cost drown volunteer editors and reviewers, or does generative drafting level the global linguistic playing field?
+  pole_a:
+    code: commons_collapse
+    label: Tragedy of the review commons
+    summary: Collapsing the time cost of plausible manuscripts fuels submission surges and industrial paper mills, exhausting unpaid reviewers and possibly pushing editors back toward institutional prestige heuristics.
+  pole_b:
+    code: equity_dividend
+    label: Dismantling the Anglophone tax
+    summary: Multilingual scientists may spend far less energy fighting English idiom and surface bias against non-native phrasing, letting under-resourced labs compete on scientific substance.
+  hinge: Whether rising submission volume comes mainly from opportunistic volume maximization and paper mills or from previously excluded legitimate researchers.
+
+- id: F5
+  short: Stylistic monoculture vs. standardization
+  stage: writing
+  question: Is LLM-assisted polishing flattening scientific voice, vocabulary, and conceptual diversity, or is it welcome clarity?
+  pole_a:
+    code: monoculture_risk
+    label: Rhetorical & epistemic flattening
+    summary: Measurable surges in model-favored vocabulary and uniform framing risk erasing disciplinary nuance and disguising weak study design behind confident fluency.
+  pole_b:
+    code: clarity_standard
+    label: Cleaner, faster communication
+    summary: Clearer structure and standardized phrasing help readers and machines extract methods and findings quickly.
+  hinge: Whether convergence stays at surface word choice or quietly narrows which papers get cited and which interpretations look authoritative.
+
+- id: F6
+  short: Mass AI error-sleuthing
+  stage: post_pub_audit
+  question: Do unvetted AI flags create reputational spam, or should autonomous AI pipelines scan millions of published papers to flag errors and fraud?
+  pole_a:
+    code: false_positive_harm
+    label: Human-verified flags only
+    summary: Broadcasting raw LLM error accusations across thousands of papers (as debated in 2025 viral error-hunting initiatives) can misread domain notation, harm innocent authors, and flood editors with false alarms.
+  pole_b:
+    code: scalable_hygiene
+    label: Archive-scale automated hygiene
+    summary: Human sleuths can inspect only a sliver of the literature; automated checkers for hallucinated references, impossible statistics, image duplication, and tortured/synthetic text clean the record at scale.
+  hinge: How the community balances false negatives (undetected errors sitting in PubMed/arXiv) against false positives (publicly accusing authors over model misreadings).
+
+- id: F7
+  short: Fortify journals vs. unbundle publishing
+  stage: publishing_model
+  question: Does scholarly communication cope by hardening traditional journal gates with human friction, or by unbundling the static journal article altogether?
+  pole_a:
+    code: fortify_gates
+    label: High-friction human gates
+    summary: Submission caps, verified author identity, mandatory raw-data deposition, and preregistration aim to restore costly signals that synthetic mass production cannot fake cheaply.
+  pole_b:
+    code: unbundle_post_journal
+    label: Preprints + continuous verification
+    summary: Separate rapid open dissemination from layered evaluation (Publish-Review-Curate, funder-backed journal exits like Arcadia/Astera, and explicit agent-native venues like Agents4Science).
+  hinge: Whether journals still provide irreplaceable curation worth fortifying, or whether the static pre-publication journal bottleneck is itself obsolete.

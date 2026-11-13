@@ -1,0 +1,117 @@
+# Eight concrete institutional & technical models proposed or piloted in 2025–2026
+# to cope with AI in manuscript writing and peer review.
+
+- id: M1
+  name: AI Review-Critic & Bounded "Reviewer 4" Loops
+  tagline: Keep human editors and referees accountable while deploying auditable AI for technical checks and review-quality feedback
+  stage: peer_review
+  maturity: one_large_trial_plus_proposals
+  examples:
+    - ICLR 2025 / Nature Machine Intelligence randomized trial (~20,000 human reviews offered optional LLM feedback)
+    - EMBO / Review Commons + qed author-centric pre-submission self-check survey and pilot (2026)
+    - Nature Biotechnology "Reviewer 4" proposal, JAMA Network's stated plan to explore "driver-assistance" hybrid strategies, & OpenAI Prism Paper Review workflow (2025–2026)
+    - Clinical-trial methodological error screeners tested on inserted RCT flaws (Brian et al. 2026 preprint)
+  mechanism: Manuscripts stay under human editorial accountability while bounded AI tools run consistency, statistical, and reporting checks — either upstream for authors before submission or alongside human referees as a non-voting technical report and review-specificity coach.
+  solves: Targets mechanical, arithmetic, and reporting omissions that time-pressed human referees miss while nudging vague two-line reviews toward concrete critique.
+  breaks_when: Reviewers rubber-stamp the AI report, LLMs invent plausible flaw lists on strong papers, or unlogged desk tools penalize non-Anglophone manuscripts without human override tracking.
+  fault_lines: [F2, F4]
+
+- id: M2
+  name: Forensic Integrity Hubs & Adversarial Sanitization
+  tagline: Screen synthetic submissions, phantom citations, and prompt injections at manuscript ingestion — with human verification
+  stage: submission_triage
+  maturity: deployed_commercial_and_academic
+  examples:
+    - STM Integrity Hub & publisher paper-mill / review-mill screening pipelines
+    - Screening for hidden white-font or micro-font PDF text aimed at LLM reviewers (recommended; a flagging tool for CHI 2027 is described secondhand)
+    - Automated reference-existence cross-checks against bibliographic databases (~$0.04/paper API cost in one venue-scale scan, before human adjudication)
+    - Proposed due-process safeguards for misconduct screening, with human verification and author reply (Hosseini & Resnik 2024/2025)
+  mechanism: "Treats manuscript ingestion like cybersecurity with due process: flags invisible PDF prompt layers, cross-checks cited DOIs and titles against bibliographic registries, screens figures for duplication or generative artifacts, and routes candidate flags to human editors before any adverse decision."
+  solves: Flags candidate phantom citations and crude prompt injections before volunteer referee hours are spent.
+  breaks_when: Selected AI-manipulated Western blots and xenograft figures fool PhD readers near chance (50.5%), semantic rewrites evade surface filters, and unverified desk flags risk false accusations without transparent author appeal routes.
+  fault_lines: [F2, F4, F6]
+
+- id: M3
+  name: Costly-Signal & Scarcity Restoration
+  tagline: Reintroduce human bandwidth limits where prose fluency no longer filters effort
+  stage: submission_triage
+  maturity: proposed_and_selectively_piloted
+  examples:
+    - American Journal of Political Science (AJPS) rolling 12-month cap of 3 submissions per author or co-author, with one annual waiver request (enacted 4 Nov 2026)
+    - arXiv limit of 2 submissions per calendar month per submitter from October 2026 (up to 3 active submissions, a limit in place since 2024)
+    - Individual proposal ahead of ICML 2027 for a human-reviewed conference track with a hard per-author cap beside an uncapped AI-reviewed track (Yona 2026)
+  mechanism: "Because polished prose no longer signals scarce human labor, venues shift screening to resources that models cannot mint infinitely: rolling per-author submission budgets and capped human-reviewed tracks."
+  solves: Aims to cap zero-marginal-cost submission surges directly (effectiveness untested; arXiv calls its limit a stopgap) without relying on brittle AI-text classifiers or token watermarks.
+  breaks_when: Flat co-author caps squeeze large interdisciplinary labs and early-career collaborators.
+  fault_lines: [F3, F4, F7]
+
+- id: M4
+  name: Process Provenance ("Research Flight Recorders")
+  tagline: Move past binary AI-prose checkboxes toward workflow traces, raw-data archives, and formal verification
+  stage: writing
+  maturity: early_pilots_and_proposals
+  examples:
+    - End-to-end agent log traces, full hypothesis pools, and code-execution audits tested in PNAS (Luo, Kasirzadeh & Shah 2026) and proposed in Cell (Guo et al. 2026)
+    - Funded archives of raw images, instrument outputs, and provenance metadata proposed in Nature (Shi, Nie & Kong 2026)
+    - Proposed four-dimension AI disclosure in Pediatric Research (Coppes et al. 2026) & the proposed Resnik–Hosseini three-tier materiality framework vs. JACC's existing writing-only exemption (Krumholz 2026)
+    - Registered Reports (Stage 1 pre-data acceptance) and Lean formal proof verification in mathematics and theoretical CS
+  mechanism: Audits how a study unfolded across hypotheses, raw instrument files, rejected runs, and formal proofs so editors and readers can inspect analytical choices that a polished manuscript PDF conceals.
+  solves: Targets post-hoc selection bias, undocumented data modifications, and low-information AI checkboxes (in one PNAS study of two AI-scientist systems, an LLM auditor's accuracy on a constructed benchmark rose from 53.7% to 81.5% when given logs and code).
+  breaks_when: High tooling friction outside computational fields; exploratory wet-lab science looks messy when surveilled commit-by-commit, and long-term raw-file repositories require sustained funder support.
+  fault_lines: [F1, F3, F7]
+
+- id: M5
+  name: Executable & Modular Research Packages
+  tagline: Treat static prose as a view layer over runnable code, primary data, and interactive paper-agents
+  stage: writing
+  maturity: research_prototypes
+  examples:
+    - Paper2Agent (Nature 2026) converting 74 of 100 computational-biology papers into Model Context Protocol (MCP) servers and interactive workflows
+    - A partner's prototype for eLife mapping claims to evidence across ten of its neuroscience papers (2026)
+    - Executable MyST / Curvenote / Jupyter-native articles
+  mechanism: Packages data, computational environments, code, and structured claim graphs alongside the narrative text so continuous integration and downstream readers can execute and inspect methods directly.
+  solves: Targets computational irreproducibility and separates executable verification from rhetorical polish, while human experts still guide open-ended biological validation. (For scale, on OpenAI's from-scratch PaperBench benchmark the best-scoring unaided agents reached 21.0–26.0% mean partial credit when re-implementing papers.)
+  breaks_when: Wet-lab, clinical, qualitative, and field sciences cannot reduce experimental validity to container re-execution, and agreement with reference outputs checks faithful execution without proving underlying scientific truth.
+  fault_lines: [F1, F5, F7]
+
+- id: M6
+  name: Publish-Review-Curate (PRC) + Open Audit Bots
+  tagline: Preprint openly, run specialized technical check-bots with human verification, and curate via editors
+  stage: post_pub_audit
+  maturity: live_ecosystem
+  examples:
+    - eLife PRC model, Review Commons, PCI (Peer Community In), and Genomics x AI rapid community blog
+    - QED Science scoring a year's worth of life-science preprints (57,455), by the developer's account (2026)
+    - Specialized replication, formula, and reference screeners (Astra code-package auditor, GPT-6.1 Sol arXiv math scans, Problematic Paper Screener)
+  mechanism: Separates rapid open preprint dissemination from binary accept/reject gates; specialized screeners inspect code, proofs, reference tables, and citations while human editors verify flags and curate conceptual significance.
+  solves: Aims to reduce multi-journal rejection cascades where one flawed or synthetic manuscript burns several closed referee pools in sequence.
+  breaks_when: University hiring and grant panels still weight legacy journal mastheads, and broadcasting unverified bot flags risks reputational harm when models misread domain notation (F6).
+  fault_lines: [F2, F6, F7]
+
+- id: M7
+  name: Dedicated Agent-Native Venues & Sandboxes
+  tagline: Give autonomous AI research systems an explicit, labeled track for open stress-testing
+  stage: publishing_model
+  maturity: live_experiment_2025_2026
+  examples:
+    - Stanford Agents4Science 2025 (>300 submissions, 48 accepted papers with AI first authors and AI reviewers on OpenReview)
+    - Journal of AI Generated Papers (JAIGP, jaigp.org, launched by César A. Hidalgo in Feb 2026)
+    - Sakana AI Scientist (Yamada et al. 2025; Lu et al. Nature 2026 — same human-filtered, protocol-withdrawn ICLR workshop test) & The Agentic Scientist (an Error Diffusion paper produced by human researchers using a development version, reported accepted at ALIFE 2026)
+  mechanism: Establishes dedicated conferences and journals explicitly labeled for AI-authored or AI-reviewed work so autonomous pipelines can be audited openly outside covert human-only queues.
+  solves: Provides a transparent sandbox for benchmarking agentic workflows, claim-level novelty filters (ClaimNov), and methodological failure modes without covert rule-breaking.
+  breaks_when: Critics warn dedicated AI venues normalize synthetic volume ("slop") or obscure heavy human steering behind nominal AI-authorship branding.
+  fault_lines: [F1, F2, F7]
+
+- id: M8
+  name: Institutional Journal Exit
+  tagline: Funders and institutes mandate open modular outputs and opt out of legacy journals
+  stage: publishing_model
+  maturity: bold_institutional_experiments
+  examples:
+    - Astera Institute policy ending funding and permission for traditional journal articles (in effect by June 2025)
+    - Arcadia Science open modular publishing experiment (lessons analyzed 2023–2025)
+    - Open hypothesis and modular release platforms bypassing journal cycles (2025–2026)
+  mechanism: Research funders remove the commercial journal incentive for their grantees — declining to pay APCs to publishers and funding immediate open datasets, code, and modular reports instead.
+  solves: Bypasses journal APCs, multi-month review queues, and prestige-driven narrative packaging for funded grantees.
+  breaks_when: Early-career researchers returning to conventional university departments face hiring and grant friction without journal lines, and self-hosted reports can struggle to attract independent external peer scrutiny.
+  fault_lines: [F1, F4, F7]
