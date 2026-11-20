@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.2 — 20 November 2026
+
+- 27 new sources (168 in total), each added after its full text was read:
+  - Writing and style: a proposal to review a short brief plus a machine-verifiable appendix (Kostakos); two defences of writing as thinking (Nature Reviews Bioengineering; Kronblad and Jonsson); broader claims in LLM summaries; certainty raised when models rewrite findings; fewer critical citations; 44 years of CHI prose; AI vocabulary and language background in ophthalmology and in PubMed Central.
+  - Disclosure and triage: AI-use statements in medical education journals; the Journal of Medical Ethics declaration proposal; version 4 of the ERA Forum guidelines; a public-trust experiment; author interviews before desk rejection at TMLR; submission growth at Organization Science; detector failure at new model generations.
+  - Citations: a meta-analysis of quotation errors in medicine up to 2022; when hallucinated citations amount to misconduct; real references that do not support the claim.
+  - Integrity and audit: open health datasets and Global Burden of Disease papers; AI reviewers judged by scientists on Nature-family papers; an OCR defence against hidden instructions; AI error-checking of machine-learning papers; a sabotage red-team; the Galaxy platform; a benchmark of nine agents writing papers.
+- Measured shifts SW2–SW8 extended with the new evidence; headlines unchanged.
+- Essay: the craft view of writing now links the Nature Reviews Bioengineering editorial; four sentences added (ERA Forum guidelines; the limits of process access; scientists rating AI reviewers on Nature-family papers).
+- Proposed models: M4 notes what logs cannot show; M2 lists the OCR test.
+- Placements: the Barnett and Spick blog and the Nature Partnerships "Writing is thinking" blog are now unplaced, because the Spick et al. study and the Nature Reviews Bioengineering editorial they echo are placed.
+- Sources that would share a label now carry a, b after the year (for example Kim et al. ’26a); the ERA Forum guidelines are labelled ERA Forum.
+
 ## 1.1 — 13 November 2026
 
 - The page now opens with its take-away and a "Start here" guide for different readers; sections renamed (What changed · Where people disagree · Proposed fixes · All sources · About).

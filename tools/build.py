@@ -164,14 +164,34 @@ def _surname_of(person: str) -> str:
     return words[-1] if len(words) >= 2 else (words[0] if words else p)
 
 
+# Year suffixes (a, b, ...) for sources that would otherwise share a label,
+# filled by assign_cite_suffixes() before any page is rendered.
+_CITE_SUFFIX: dict = {}
+
+
+def assign_cite_suffixes(sources: list) -> None:
+    _CITE_SUFFIX.clear()
+    groups: dict = {}
+    for s in sources:
+        groups.setdefault(short_cite(s, compact_year=True), []).append(s)
+    for members in groups.values():
+        if len(members) > 1:
+            members = sorted(members, key=lambda s: (str(s.get("date") or ""), s.get("id", "")))
+            for i, s in enumerate(members):
+                _CITE_SUFFIX[s["id"]] = "abcdefghij"[i]
+
+
 def short_cite(src: dict, compact_year: bool = False) -> str:
     authors = str(src.get("authors", "")).strip()
     yr = str(src.get("year", ""))
-    yr_fmt = f"’{yr[-2:]}" if (compact_year and len(yr) == 4) else f"({yr})"
+    sfx = _CITE_SUFFIX.get(src.get("id"), "")
+    yr_fmt = f"’{yr[-2:]}{sfx}" if (compact_year and len(yr) == 4) else f"({yr}{sfx})"
+    if authors.startswith("ERA Forum"):
+        return f"ERA Forum {yr_fmt}"
     if authors.startswith("American Journal of Political Science"):
         return f"AJPS Editors {yr_fmt}"
     if authors.lower() == "editorial":
-        v = str(src.get("venue", "Editorial")).replace("Nature Nanotechnology", "Nat. Nanotech.")
+        v = str(src.get("venue", "Editorial")).replace("Nature Nanotechnology", "Nat. Nanotech.").replace("Nature Reviews Bioengineering", "Nat. Rev. Bioeng.")
         return f"{v} {yr_fmt}"
     if authors.startswith("ICLR 2026"):
         return f"ICLR Chairs {yr_fmt}"
@@ -232,6 +252,7 @@ def build() -> int:
         reverse=True,
     )
     src_by_id = {s["id"]: s for s in sources}
+    assign_cite_suffixes(sources)
 
     total_sources = len(sources)
     genre_counts = {"empirical": 0, "editorial": 0, "discourse": 0, "sleuth": 0, "experiment": 0, "social": 0}
@@ -1883,7 +1904,7 @@ footer.foot {{
       </div>
       <div class="prov-card">
         <h3>How to cite</h3>
-        <p>Liegertová M. <em>Publishing Under AI (2025–2026)</em>. Version 1.1, 2026. https://michalie.github.io/publishing-under-ai/</p>
+        <p>Liegertová M. <em>Publishing Under AI (2025–2026)</em>. Version 1.2, 2026. https://michalie.github.io/publishing-under-ai/</p>
       </div>
     </div>
   </section>
@@ -2086,7 +2107,7 @@ document.addEventListener('keydown', (e) => {{
     n_2025_2026 = sum(1 for s in sources if int(s.get("year", 0)) >= 2025)
     export_payload = {
         "title": "Publishing Under AI (2025–2026)",
-        "version": "1.1",
+        "version": "1.2",
         "position_scale": "-2 argues for pole_a (the more cautious side: keep or tighten human control); +2 argues for pole_b (lets AI in or opens up the system); ±1 leans that way or mainly supplies evidence for it; 0 addresses the question without taking a side.",
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "counts": {
