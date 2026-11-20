@@ -24,6 +24,7 @@
   examples:
     - STM Integrity Hub & publisher paper-mill / review-mill screening pipelines
     - Screening for hidden white-font or micro-font PDF text aimed at LLM reviewers (recommended; a flagging tool for CHI 2027 is described secondhand)
+    - OCR conversion of submitted PDFs, which removed the effect of hidden-text instructions on AI review scores in one test (Jarrett et al., JAMA Network Open 2026)
     - Automated reference-existence cross-checks against bibliographic databases (~$0.04/paper API cost in one venue-scale scan, before human adjudication)
     - Proposed due-process safeguards for misconduct screening, with human verification and author reply (Hosseini & Resnik 2024/2025)
   mechanism: "Treats manuscript ingestion like cybersecurity with due process: flags invisible PDF prompt layers, cross-checks cited DOIs and titles against bibliographic registries, screens figures for duplication or generative artifacts, and routes candidate flags to human editors before any adverse decision."
@@ -57,7 +58,7 @@
     - Registered Reports (Stage 1 pre-data acceptance) and Lean formal proof verification in mathematics and theoretical CS
   mechanism: Audits how a study unfolded across hypotheses, raw instrument files, rejected runs, and formal proofs so editors and readers can inspect analytical choices that a polished manuscript PDF conceals.
   solves: Targets post-hoc selection bias, undocumented data modifications, and low-information AI checkboxes (in one PNAS study of two AI-scientist systems, an LLM auditor's accuracy on a constructed benchmark rose from 53.7% to 81.5% when given logs and code).
-  breaks_when: High tooling friction outside computational fields; exploratory wet-lab science looks messy when surveilled commit-by-commit, and long-term raw-file repositories require sustained funder support.
+  breaks_when: High tooling friction outside computational fields; exploratory wet-lab science looks messy when surveilled commit-by-commit, and long-term raw-file repositories require sustained funder support. Logs record what ran, not whether the analysis was sound, and in one red-team preprint AI-assisted human auditors with logs, code and reruns (90 minutes each) did not separate deliberately sabotaged experiments from honest ones significantly better than chance (AUROC 0.59).
   fault_lines: [F1, F3, F7]
 
 - id: M5
